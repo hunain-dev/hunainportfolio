@@ -1,0 +1,1703 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Actay';
+  src: url('/public/Assets/Fonts/Actay-Regular.otf') 
+}
+@font-face {
+  font-family: 'ActayCondensed';
+  src: url('/public/Assets/Fonts/ActayCondensed-ThinItalic.otf') 
+}
+
+@font-face {
+  font-family: 'MarvinVisions';
+  src: url('/public/Assets/Fonts/MarvinVisions-Bold.otf') 
+}
+
+@font-face {
+  font-family: 'Quasar';
+  src: url('/public/Assets/Fonts/Quasar.otf') 
+}
+@font-face {
+  font-family: 'sigana';
+  src: url('/public/Assets/Fonts/sigana-condensed.otf') 
+}
+@font-face {
+  font-family: 'Stadium';
+  src: url('/public/Assets/Fonts/Stadium.ttf') 
+}
+@font-face {
+  font-family: 'ThatAppeal';
+  src: url('/public/Assets/Fonts/ThatAppeal-FreeDemo-BF65b7880fefd18.otf') 
+}
+@font-face {
+  font-family: 'TypeMonster';
+  src: url('/public/Assets/Fonts/TypeMonster-FreeDemo-BF65d7910e35896.otf') 
+}
+@font-face {
+  font-family: 'Morganite';
+  src: url('/public/Assets/Fonts/Morganite-Black.ttf') 
+}
+@font-face {
+  font-family: 'rejouice';
+  src: url('/public/Assets/Fonts/rejoucie.ttf') 
+}
+::selection{
+  background-color: black;
+  color: white;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth; /* Native smooth scrolling */
+
+}
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  height: 9vh;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 4vw;
+  box-shadow: 5px 3px 10px  rgb(169, 168, 168);
+  padding: 0 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vw;
+  position: fixed;
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%);
+  z-index: 999999999999;
+  margin-top: 1.5vw;
+}
+.navbar .left h2{
+  font-family: MarvinVisions;
+  font-size: 3vw;
+  font-weight: 500;
+  color: #212020;
+ 
+}
+.navbar h2{
+  font-family: Actay;
+  font-size: 1.2vw;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar .right{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2vw;
+}
+
+.full {
+  position: absolute;
+  height: 100%;
+  width: 60%;
+  opacity: 0;
+
+}
+
+
+.full a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+.Home{
+  width: 100%;
+  margin-top: 8vw;
+   
+  }
+
+.Fronttext{
+  height: 15vh;
+  width: 60%;
+  margin: 6vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.Fronttext h1{
+  font-family: ActayCondensed;
+  font-weight: 500;
+  font-size: 3vw;
+  padding: 0.3VW 0;
+
+}
+
+.Fronttext h4{
+  font-family: Actay;
+  font-size: 1.4vw;
+  font-weight: 500;
+  color: rgb(33, 32, 32);
+
+
+}
+
+.Marquee {
+  height: 45vh;
+  width: 100%;
+  margin: 8vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  gap: 3vw;
+  padding: 2vw 0;
+
+}
+
+.track {
+  display: flex;
+  width: 200%;
+  position: absolute;
+}
+
+.content {
+  display: inline-block;
+  padding-right: 3vw; 
+  white-space: nowrap;
+}
+
+.Marquee h1 {
+  font-family: Morganite, sans-serif;
+  font-weight: 500;
+  font-size: 15.5vw;
+  text-transform: uppercase;
+  color: rgb(33, 32, 32);
+
+}
+
+.imageupper {
+  height: 42vh;
+  width: 20vw;
+  background-color: rgba(255, 255, 255, 0.8);  /* White with transparency */
+  position: absolute;
+  z-index: 9999;
+  border-radius: 21%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  backdrop-filter: blur(8px);  /* Glass effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.imageupper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+}
+
+
+.Client{
+  height: 10vh;
+  width: 40%;
+  margin: 1vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.selectives{
+  gap: 0.3vw;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.selectives img{
+  height: 6vh;
+}
+.selectives h2{
+ font-family: Actay;
+ font-weight: 500;
+ font-size: 1.6vw;
+ margin-left: 1vw;
+}
+
+.Button{
+  height: 10vh;
+  width: 40%;
+  margin: 3vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 3vw;
+  
+}
+
+button{
+  border: none;
+  padding: 1.2vw 3vw;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  font-family: Actay;
+  border-radius: 3vw;
+  font-size: 1.3vw;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.Aboutus{
+  width: 100%;
+  margin-top: 2vw;
+}
+
+.Aboutme{
+    margin: 0 auto;
+  width: 75%;
+}
+
+.Aboutme h2{
+ font-family: rejouice;
+ font-weight: 500;
+ font-size: 3vw;
+ margin: 3vw 0;
+ text-transform: uppercase;
+ color: #1d1d1d;
+}
+
+.Aboutme h4{
+  font-family: Actay;
+  font-weight: 500;
+  font-size: 1.7vw;
+  text-align: center;
+ }
+
+ .AboutClient{
+  margin: 0 auto;
+  margin-top: 10vw;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ }
+
+ .AboutClients{
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+ }
+ .AboutClient h4{
+
+ font-family: rejouice;
+ margin: 1vw 0;
+ font-size: 2vw;
+ text-transform: uppercase;
+ font-weight: 500;
+ }
+ 
+ .AboutClients img{
+
+  height: 15vh;
+  margin: 1vw 0;
+
+ }
+
+ .AboutClients h3{
+  font-family: Actay;
+  font-size: 2vw;
+  font-weight: 500;
+
+
+  
+ }
+
+ .AboutClients h5{
+  
+  font-family: ActayCondensed;
+  font-size: 2vw;
+  font-weight: 500;
+  margin: 1vw 0;
+
+
+  
+ } .AboutClients h6{
+  
+  font-family: Actay;
+  font-size: 1.9vw;
+  text-align: center;
+  font-weight: 500;
+  margin: 2vw 0;
+  padding: 0 3vw;
+
+
+  
+ }.Impactfulldesign {
+  width: 100%;
+  margin-top: 19vh;
+  padding: 1vw;
+  text-align: center;
+  line-height: 21vw;
+  text-transform: uppercase;
+  color: #0b0b0b;
+  
+}
+
+
+
+
+.text-content h2,
+.text-content h1 {
+  font-size: 28vw;
+  font-family: Morganite;
+  color: #0b0b0b;
+}
+
+.myskills{
+  margin-top: 20vh;
+  width: 100%;
+  padding: 1vw 3vw;
+}
+
+.myskills h1{
+  font-family: rejouice;
+  font-weight: 500;
+  font-size: 3.2vw;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.myskills {
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  gap: 4vw; 
+  padding: 2vh;
+  height: 29vh;
+  margin-top: 1vw;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14vh;
+  height: 14vh;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: grab; /* Dragging cursor */
+}
+
+.skill-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+
+.Ourservices{
+  width: 100%;
+  margin-top: 15vh;
+}
+
+.Ourservices h1{
+  font-family: rejouice;
+  font-weight: 500;
+  font-size: 3vw;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.Designs{
+  width: 100%;
+  height: 100%;
+  padding: 2vw 2vw;
+}
+
+
+.Designs h3{
+  font-family: MarvinVisions;
+  font-weight: 500;
+  font-size: 3vw;
+  color: rgb(25, 24, 24);
+
+}
+
+.Designs ul{
+ padding: 1vw 2vw;
+ font-family: Actay;
+ margin: 2vw 0;
+ font-size: 2vw;
+ color: rgb(25, 24, 24);
+
+}
+.Designs li{
+ padding: 1.1vw 1vw;
+}
+
+.project{
+  width: 100%;
+  margin-top: 6vh;
+  padding: 2vw 2vw;
+}
+
+.WorkCollection{
+  width: 80%;
+  margin: 0 auto;
+
+  margin-bottom: 6vw;
+}
+
+.WorkCollection h2{
+  font-family: rejouice;
+  font-weight: 500;
+  font-size: 3vw;
+  text-align: center;
+  margin: 3vw 0;
+
+}
+
+.WorkCollection h5{
+  font-family: Actay;
+  font-weight: 500;
+  font-size: 2vw;
+  text-align: center;
+  color: #1d1d1d;
+
+}
+
+.Card {
+  width: 100%;
+  padding: 3vw;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 2vw; 
+  width: 90%;
+  padding: 2vw 2vw;
+}
+
+
+
+.image {
+  width:90%;
+  height: 53vh;
+  margin: 3vw auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cards h4 {
+  font-family: "Actay", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1vw;
+  padding: 0 3vw;
+  color: rgb(26, 25, 25);
+}
+
+
+
+
+.Certified{
+margin-top: 10vh;
+width: 100%;
+}
+
+.CertifiedCard h2{
+  font-family: Quasar;
+  font-weight: 500;
+  font-size: 4.5vw;
+  text-align: center;
+
+}
+
+
+.CertifiedCard {
+  width: 100%;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column; /* ✅ Text ko upar rakhne ke liye */
+  align-items: center;
+  justify-content: center;
+  margin: 4vw 0;
+  margin-bottom: 7vw;
+}
+
+.CertifiedCard h2 {
+  text-align: center;
+  font-size: 2.5vw;
+  font-family: rejouice ;
+  margin-bottom: 6vw;
+  color: #1a1919;
+}
+
+.Certifiedcards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw;
+  width: 90%;
+}
+
+.Certifiedcardsimage {
+  width:100%;
+  height: 73vh;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.Certifiedcardsimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.CertifiedCard h4 {
+  font-family: "Actay", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1vw;
+  padding: 0 3vw;
+  color: rgb(26, 25, 25);
+}
+
+/* FAQ Container */
+.faqs-container {
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.faq-title {
+  font-weight: 500;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15vh;
+  font-family:rejouice ;
+  text-transform: uppercase;
+  font-size: 4vw;
+  
+}
+
+/* FAQ Items */
+.faq-item {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-family: Actay;
+  font-weight: 500;
+}
+
+
+/* Question Section */
+.faq-question {
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  font-family: Actay;
+  font-weight: 500;
+  color: rgb(52, 50, 50);
+}
+
+/* Answer Section */
+.faq-answer {
+  font-size: 1.3rem;
+  color: rgb(52, 50, 50);
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 100px;
+  margin-top: 10px;
+}
+
+/* Plus & Minus Icon */
+.faq-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(180deg);
+}
+
+
+.contact{
+  width: 100%;
+  padding: 2vw 2vw;
+}
+
+.contactadresss{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
+}
+
+
+.contactadresss h2{
+  font-family:ThatAppeal ;
+  font-weight: 500;
+  font-size: 4vw;
+  margin: 1vw 0;
+
+
+}
+.contactadresss a{
+ color: #0b0b0b;
+ text-decoration: none;
+
+}
+.contactadresss h3{
+  font-family:Actay ;
+  font-weight: 500;
+  font-size: 1.9vw;
+
+}
+
+.Footer{
+  width: 100%;
+  padding: 2vw 2vw;
+  margin-top: 13vh;
+}
+
+.Footer H2{
+  font-family:ActayCondensed ;
+  font-weight: 500;
+  font-size: 7.3vw;
+  text-align: center;
+}
+
+.Loader {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3vw;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) 
+{
+ 
+.navbar {
+opacity: 0;
+}
+
+
+.Home{
+  width: 100%;
+  margin-top: 8vw;
+  margin-bottom: 16vw;
+   
+  }
+
+  .Fronttext{
+    height: 14vh;
+    width: 100%;
+  
+  }
+  .Fronttext h1{
+    font-size: 10vw;
+    padding: 0.1vw 0;
+  
+  }
+  .Fronttext h4{
+    font-size: 5vw;
+  
+  
+  }
+
+  .Marquee {
+    height: 43vh;
+    margin: 5vh auto;
+    padding: 3vw 0;
+  
+  }
+  .Marquee h1 {
+    font-size: 40vw;
+  
+  }
+  .imageupper {
+    height: 35vh;
+    width: 58vw;
+    border-radius: 20%;
+  
+  }
+  
+
+.Client{
+  height: 10vh;
+  width: 100%;
+  
+}
+
+.selectives{
+  gap: 1.5vw;
+  
+}
+.selectives img{
+  height: 7vh;
+}
+.selectives h2{
+  font-size: 5.5vw;
+ }
+ .Button{
+  height: 10vh;
+  width: 100%;
+ 
+  
+}
+button{
+  padding: 5vw 6vw;
+  font-size: 4vw;
+}
+
+.Aboutus{
+  width: 100%;
+  margin-top: 2vw;
+  }
+
+.Aboutme{
+width: 95%  !important;
+margin-bottom: 3vw;
+}
+
+.Aboutme h2{
+  text-align: center;
+  font-size: 10vw !important;
+ }
+ 
+.Aboutme h4{
+  font-size: 2.1vh !important;
+  text-align: center;
+
+ }
+
+ .AboutClient{
+  margin-top: 9vh;
+  width: 100%  !important ;
+ }
+
+
+ .AboutClient h4{
+
+  font-size: 6vw;
+  margin-bottom: 2vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  }
+  
+ .AboutClients img{
+
+  height: 13vh;
+  margin: 1vw 0;
+  margin-bottom: 5vw;
+
+ }
+
+
+
+ .AboutClients h3{
+  font-size: 8vw;
+
+
+  
+ }
+ .AboutClients h5{
+  
+  font-size: 9vw;
+  
+ }
+
+ .AboutClients h6{
+  
+  font-size: 5vw;
+
+  
+ }
+
+ .Impactfulldesign {
+  margin-top: 7vh;
+  line-height: 27vw;
+  
+}
+
+.text-content h2,
+.text-content h1 {
+  font-size: 35vw;
+}
+
+
+ .myskills{
+  margin-top: 14vh;
+  width: 100%;
+  margin-bottom: 12vh;
+}
+
+.myskills h1{
+  font-size: 8vw;
+
+}
+
+.skill-item {
+  width: 9vh;
+  height: 9vh;
+}
+
+.Ourservices{
+  width: 100%;
+  margin-top: 10vh;
+  padding: 0 3vw;
+}
+.Ourservices h1{
+  font-size: 10vw;
+  margin-bottom: 8vw;
+
+}
+
+
+.Designs{
+  padding: 2vw 1vw;
+  }
+  
+.Designs h3{
+  font-size: 5vw;
+  color: rgb(25, 24, 24);
+
+}
+.Designs ul{
+  padding: 1vw 2vw;
+  margin: 3vw 0;
+  font-size: 4.5vw;
+ 
+ }
+ 
+.project{
+  width: 100%;
+  margin-top: 6vh;
+  padding: 2vw 2vw;
+
+}
+
+
+.WorkCollection{
+  width: 100%;
+  margin-bottom: 9vw;
+}
+.WorkCollection h2{
+  font-size: 8vw;
+  margin: 4vw 0;
+
+}
+
+.WorkCollection h5{
+  font-size: 4vw;
+
+}
+.Card {
+  width: 100%;
+
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  gap: 2vw; 
+  width: 100%;
+
+}
+
+
+
+.image {
+  width:100%;
+  height: 39vh;
+  }
+
+  .cards h4 {
+    font-size: 4vw;
+    padding: 2vw 3vw;
+  }
+  
+.Certified{
+  margin-top: 10vh;
+  width: 100%;
+
+  }
+  
+
+.CertifiedCard h2{
+  font-size: 6.5vw;
+
+}
+
+.CertifiedCard {
+  margin-top: 9vw;
+
+}
+.Certifiedcards {
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+}
+
+
+
+.Certifiedcardsimage {
+  width:100%;
+  height: 43vh;
+  margin-bottom: 5vw;
+}
+
+.CertifiedCard h4 {
+  font-size: 5vw;
+}
+
+.faqs-container {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Title */
+.faq-title {
+  margin-bottom: 10vh;
+  font-size: 9vw;
+  
+}
+
+
+/* FAQ Items */
+.faq-item {
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 13px;
+}
+
+
+.contact{
+  width: 100%;
+  padding: 3vw 2vw;
+}
+.contactadresss{
+  width: 100%;
+
+
+
+}
+
+
+.contactadresss h2{
+  font-size: 12vw;
+
+
+}
+.contactadresss h3{
+  font-size: 4vw;
+
+}
+
+
+.Footer{
+  width: 100%;
+  padding: 2vw 2vw;
+  margin-top: 6vh;
+}
+.Footer H2{
+  font-size: 11vw;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    
+ 
+
+.Home{
+  width: 100%;
+  margin-top: 8vw;
+  margin-bottom: 16vw;
+   
+  }
+  
+  
+  .Fronttext{
+    width: 100%;
+  
+  }
+  
+  .Fronttext h1{
+    font-size: 8vw;
+  
+  }
+  .Fronttext h4{
+    font-size: 5vw;
+  
+  
+  }
+  
+  .Marquee {
+    margin: 10vh auto;
+    padding: 3vw 0;
+  
+  }
+  .Marquee h1 {
+    font-size: 40vw;
+  
+  }
+  .imageupper {
+    height: 43vh;
+    width: 52vw;
+    border-radius: 20%;
+  
+  }
+  
+.Client{
+  height: 10vh;
+  width: 100%;
+  
+}
+
+.selectives{
+  gap: 1.5vw;
+  
+}
+.selectives img{
+  height: 7vh;
+}
+.selectives h2{
+  font-size: 5.5vw;
+ }
+ .Button{
+  height: 18vh;
+  width: 100%;
+ 
+  
+}
+
+button{
+  padding: 4vw 6vw;
+  font-size: 4vw;
+}
+
+
+
+
+.Aboutus{
+  width: 100%;
+  margin-top: 2vw;
+  }
+
+.Aboutme{
+width: 95%  !important;
+margin-bottom: 3vw;
+}
+
+.Aboutme h2{
+  text-align: center;
+  font-size: 10vw !important;
+ }
+ 
+.Aboutme h4{
+  font-size: 2.1vh !important;
+  text-align: center;
+
+ }
+
+ .AboutClient{
+  margin-top: 9vh;
+  width: 100%  !important ;
+ }
+
+
+ .AboutClient h4{
+
+  font-size: 6vw;
+  margin-bottom: 2vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  }
+  
+ .AboutClients img{
+
+  height: 12vh;
+  margin: 1vw 0;
+  margin-bottom: 3vw;
+
+ }
+
+
+
+ .AboutClients h3{
+  font-size: 6vw;
+
+
+  
+ }
+ .AboutClients h5{
+  
+  font-size: 7vw;
+  
+ }
+
+ .AboutClients h6{
+  
+  font-size: 4.5vw;
+
+  
+ }
+
+ .Impactfulldesign {
+  margin-top: 9vh;
+  line-height: 27vw;
+  
+}
+
+.text-content h2,
+.text-content h1 {
+  font-size: 35vw;
+}
+
+.myskills{
+  margin-top: 14vh;
+  width: 100%;
+  margin-bottom: 13vh;
+}
+
+.myskills h1{
+  font-size: 7vw;
+  font-weight: 500;
+
+}
+
+.skill-item {
+  width: 12vh;
+  height: 12vh;
+}
+
+
+.Ourservices{
+  width: 100%;
+  margin-top: 10vh;
+  padding: 0 2vw;
+}
+
+.project{
+  width: 100%;
+  margin-top: 6vh;
+  padding: 2vw 2vw;
+
+}
+
+.Card {
+  width: 100%;
+
+}
+
+.cards {
+  grid-template-columns: repeat(1, 1fr); 
+  width: 100%;
+}
+
+
+.image {
+  width:100%;
+  height: 50vh;
+  }
+
+
+  .cards h4 {
+    font-size: 5.1vw;
+    padding: 2vw 3vw;
+  }
+  .Certified{
+    margin-top: 10vh;
+    width: 100%;
+  
+    }
+    
+  
+  .CertifiedCard h2{
+    font-size: 6vw;
+  
+  }
+  
+  .CertifiedCard {
+    margin-top: 9vw;
+    margin-bottom: 8vw;
+  
+  }
+  .Certifiedcards {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  
+.Certifiedcardsimage {
+  width:100%;
+  height: 55vh;
+  margin-bottom: 5vw;
+}
+
+.CertifiedCard h4 {
+  font-size: 5vw;
+}
+
+
+.faqs-container {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Title */
+.faq-title {
+  margin-bottom: 10vh;
+  font-size: 9vw;
+  
+}
+
+
+/* FAQ Items */
+.faq-item {
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 13px;
+}
+
+
+.contact{
+  width: 100%;
+  padding: 3vw 2vw;
+}
+.contactadresss{
+  width: 100%;
+
+
+
+}
+
+
+.contactadresss h2{
+  font-size: 10vw;
+
+
+}
+.contactadresss h3{
+  font-size: 3.5vw;
+
+}
+
+
+.Footer{
+  width: 100%;
+  padding: 2vw 2vw;
+  margin-top: 6vh;
+}
+.Footer H2{
+  font-size: 7vw;
+}
+
+}
+
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px){
+
+  
+
+
+
+  .navbar {
+    height: 10vh;
+    width: 48%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 3vh; 
+    }
+  
+
+.navbar h2{
+  font-family: Actay;
+  font-size: 1.3vw;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.Home{
+  width: 100%;
+  margin-top: 10vw;
+   
+  }
+  .Fronttext{
+    width: 70%;
+    margin: 6vh auto;
+    
+  
+  }
+  .Fronttext h1{
+    font-size: 5vw;
+  
+  }
+  .Fronttext h4{
+    font-size: 3vw;
+  
+  
+  }
+  
+.Marquee {
+  height: 45vh;
+  width: 100%;
+  margin: 9vh auto;
+
+}
+
+.Marquee h1 {
+  font-size: 24vw;
+
+}
+
+
+.imageupper {
+  height: 45vh;
+  width: 28vw;
+}
+
+.Client{
+  width: 60%;
+  margin: 1vh auto;
+    
+}
+
+.selectives img{
+  height: 8vh;
+}
+.selectives h2{
+  font-size: 2.6vw;
+ }
+ .Button{
+  height: 18vh;
+  width: 100%;
+ 
+  
+}
+button{
+  padding: 2.6vw 5vw;
+  font-size: 1.6vw;
+}
+
+
+.Aboutus{
+  width: 100%;
+  margin-top: 2vw;
+  }
+
+  .Aboutme{
+    width: 90%  !important;
+    margin-bottom: 4vw;
+    }
+    
+    .Aboutme h2{
+      text-align: center;
+      font-size: 5vw !important;
+     }
+     
+    .Aboutme h4{
+      font-size: 3.8vh !important;
+      text-align: center;
+    
+     }
+    
+     .AboutClient{
+      margin-top: 9vh;
+      width: 100%  !important ;
+     }
+    
+    
+     .AboutClient h4{
+    
+      font-size: 3.5vw;
+      margin-bottom: 1vw;
+      }
+      
+     .AboutClients img{
+    
+      height: 15vh;
+      margin-bottom: 1vw;
+    
+     }
+    
+    
+    
+     .AboutClients h3{
+      font-size:3vw;
+    
+    
+      
+     }
+     .AboutClients h5{
+      
+      font-size: 4vw;
+      
+     }
+    
+     .AboutClients h6{
+      
+      font-size: 2.5vw;
+    
+      
+     }
+     
+ .Impactfulldesign {
+  margin-top: 9vh;
+  line-height: 27vw;
+  
+}
+
+.text-content h2,
+.text-content h1 {
+  font-size: 36vw;
+}
+.myskills{
+  margin-top: 14vh;
+  width: 100%;
+  margin-bottom: 13vh;
+}
+
+.myskills h1{
+  font-size: 6vw;
+  font-weight: 500;
+
+}
+
+.skill-item {
+  width: 16vh;
+  height: 16vh;
+}
+
+
+.Ourservices{
+  width: 100%;
+  margin-top: 10vh;
+  padding: 0 2vw;
+}
+
+.project{
+  width: 100%;
+  margin-top: 6vh;
+  padding: 2vw 2vw;
+
+}
+
+.Card {
+  width: 100%;
+
+}
+
+.cards {
+  grid-template-columns: repeat(1, 1fr); 
+  width: 100%;
+  }
+
+
+.image {
+  width:80%;
+  height: 70vh;
+  }
+
+
+  .cards h4 {
+    font-size: 3.4vw;
+    padding: 1vw 4vw;
+  }
+  .Certified{
+    margin-top: vh;
+    width: 100%;
+    
+    }
+    
+  
+  .CertifiedCard h2{
+    font-size:4vw;
+  
+  }
+  
+  .CertifiedCard {
+    margin-top: 9vw;
+    margin-bottom: 9vw;
+  
+  }
+  .Certifiedcards {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  
+.Certifiedcardsimage {
+  width:80%;
+  height: 90vh;
+  margin-bottom: 5vw;
+}
+
+.CertifiedCard h4 {
+  font-size: 3vw;
+}
+
+.faqs-container {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Title */
+.faq-title {
+  margin-bottom: 9vh;
+  font-size: 5vw;
+  
+}
+
+
+/* FAQ Items */
+.faq-item {
+  padding: 30px;
+}
+
+
+.contact{
+  width: 100%;
+  padding: 6vw 2vw;
+}
+.contactadresss{
+  width: 100%;
+
+
+
+}
+
+
+.contactadresss h2{
+  font-size: 7vw;
+
+
+}
+.contactadresss h3{
+  font-size: 2.5vw;
+
+}
+
+
+.Footer{
+  width: 100%;
+  padding: 2vw 2vw;
+  margin-top: 6vh;
+}
+.Footer H2{
+  font-size: 8vw;
+}
+}
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+
+}
