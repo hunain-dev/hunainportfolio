@@ -1,11 +1,9 @@
-import Myskills from "./myskills"
+import MySkillss from './Myskillss';
 const Stack = () => {
   return (
-    <div id="Stack">
-
-      <Myskills/>
+    <div>
+      <MySkillss/>
     </div>
   )
 }
-
 export default Stack

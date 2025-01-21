@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Myskills = () => {
+const Myskillss = () => {
     const skillsimg = [
         { img: "Assets/images/html.png" },
         { img: "Assets/images/css.png" },
@@ -30,5 +30,5 @@ const Myskills = () => {
     );
 };
 
-export default Myskills;
+export default Myskillss;
     
