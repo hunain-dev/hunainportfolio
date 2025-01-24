@@ -12,7 +12,7 @@ const Marquee = () => {
                 <motion.div
                   key={index}
                   className="content"
-                  initial={{ x: '50%' }} 
+                  initial={{ x: '40%' }} 
                   animate={{ x: '-100%' }} 
                   
                     transition={{

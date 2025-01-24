@@ -1,6 +1,6 @@
 import { useState } from "react";
-
 const Cards = () => {
+    
     const [playingVideo, setPlayingVideo] = useState(null);
 
     const data = [
@@ -26,7 +26,6 @@ const Cards = () => {
         {
             cardimg: '/Assets/images/king.jpg',
             cardh4: ' ORG Chango',
-            link: 'https://orgchango.com'
         },
         // Modified Ochi card with video
         {
@@ -36,6 +35,16 @@ const Cards = () => {
             cardimg: '/Assets/images/ochi.png',
 
         },
+        {
+            cardimg: 'https://mir-s3-cdn-cf.behance.net/projects/404/27ec6f201055899.Y3JvcCwxMjU5LDk4NCwxMDIsNTk.png    ',
+            cardh4: ' CROING | Creative agency',
+            isVideo: true,
+            videoSrc: '/Assets/images/croing.mp4', // Path to the video
+
+        },
+
+
+     
     ];
 
     const openLink = (url) => {
@@ -48,7 +57,7 @@ const Cards = () => {
     };
 
     return (
-        <div className="Card">
+        <div  className="Card">
             <div className="cards">
                 {data.map((elem, index) => {
                     return (

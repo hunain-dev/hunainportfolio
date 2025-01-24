@@ -153,6 +153,7 @@ gap: 2vw;
   color: rgb(33, 32, 32);
 
 
+
 }
 
 .Marquee {
@@ -182,12 +183,12 @@ gap: 2vw;
 }
 
 .Marquee h1 {
-  font-family: Morganite, sans-serif;
+  font-family: TypeMonster, sans-serif;
   font-weight: 500;
   font-size: 15.5vw;
   text-transform: uppercase;
-  color: rgb(33, 32, 32);
-
+  color: #212020;
+ 
 }
 
 .imageupper {
@@ -359,7 +360,9 @@ button{
 
 
   
- }.Impactfulldesign {
+ }
+ 
+ .Impactfulldesign {
   width: 100%;
   margin-top: 19vh;
   padding: 1vw;
@@ -375,11 +378,11 @@ button{
 
 .text-content h2,
 .text-content h1 {
-  font-size: 28vw;
-  font-family: Morganite;
-  color: #0b0b0b;
+    font-size: 28vw;
+    font-family: Morganite;
+  
+   
 }
-
 .myskills{
   margin-top: 20vh;
   width: 100%;
@@ -736,29 +739,16 @@ width: 100%;
   text-align: center;
 }
 
-.Loader {
-  height: 100vh;
-  width: 100%;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 3vw;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-}
-
 
 
 
 @media (max-width: 768px) 
-{
- 
+{ 
+
+  .cursor {
+  opacity: 0;
+  }
+  
 .navbar {
 opacity: 0;
 }
@@ -1091,8 +1081,9 @@ margin-bottom: 3vw;
 
 
 @media (min-width: 768px) and (max-width: 1024px){
-    
- 
+  .navbar {
+    opacity: 0;
+    }
 
 .Home{
   width: 100%;
@@ -1379,9 +1370,6 @@ margin-bottom: 3vw;
 }
 
 }
-
-
-
 
 
 @media (min-width: 1025px) and (max-width: 1280px){
@@ -1677,6 +1665,18 @@ button{
   font-size: 8vw;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 .video-thumbnail {
   position: relative;
   width: 100%;
@@ -1700,4 +1700,18 @@ button{
   border-radius: 50%;
   cursor: pointer;
 
+}
+
+.cursor {
+  height: 4.5vh;
+  width: 2.1vw;
+  background-color: #333;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition:  0.2s; /* Remove smooth transition to avoid lag */
 }
