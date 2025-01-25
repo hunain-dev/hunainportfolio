@@ -46,6 +46,11 @@
   font-family: 'rejouice';
   src: url('/public/Assets/Fonts/rejoucie.ttf') 
 }
+
+@font-face {
+  font-family: 'gunplay';
+  src: url('/public/Assets/Fonts/gunplay.ttf') 
+}
 ::selection{
   background-color: black;
   color: white;
@@ -68,15 +73,10 @@ html,body{
 
 .navbar {
   height: 9vh;
-  width: 50%;
-  margin: 0 auto;
-  background-color: #f5f5f5;
-  border-radius: 4vw;
-  box-shadow: 5px 5px 20px 5px rgb(233, 229, 229);
-  padding: 0 3vw;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2.5vw;
   position: fixed;
   top: 0; 
@@ -84,49 +84,94 @@ html,body{
   transform: translateX(-50%);
   z-index: 999999999999;
   margin-top: 1.5vw;
+  padding: 0 1.5vw;
+  
+
 }
-.navbar .left h2{
-  font-family: MarvinVisions;
-  font-size: 3vw;
+
+.left h1{
+  font-family: gunplay;
   font-weight: 500;
-  color: #212020;
+  text-transform: uppercase;
+  font-size: 2.5vw;
  
-}
-.navbar h2{
+ }
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: Actay;
-  font-size: 1.2vw;
+  gap: 2vw;
+
+}
+
+
+.bottom h2{
+  font-size: 1.3vw;
   font-weight: 500;
-  cursor: pointer;
 }
 
-.navbar .right{
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 2vw;
-}
-
-.full {
-  position: absolute;
-  height: 100%;
-  width: 60%;
-  opacity: 0;
-
-}
-
-
-.full a {
+.animated-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
   color: white;
-  text-decoration: none;
+  background-color: #242627;
+  border: none;
+  border-radius: 2vw; 
   cursor: pointer;
-
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-weight: 500;
 }
+
+.animated-button:hover {
+  background-color: #38393a; 
+  transform: scale(1.1); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.animated-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); 
+}
+
+
+
 .Home{
   width: 100%;
   margin-top: 8vw;
+  position: relative;
+  overflow: hidden;
    
   }
+.Homeicon{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 999999999;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
 
+
+.Homeicons{
+  height: 80vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+
+.Homeicons img{
+  height: 50vh;
+}
 .Fronttext{
   height: 15vh;
   width: 60%;
@@ -749,18 +794,52 @@ width: 100%;
   opacity: 0;
   }
   
-.navbar {
-opacity: 0;
-}
+  .navbar {
+    height: 9vh;
+    width: 100%;
+    position: relative;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: 2vw;
+    padding: 0 2vw;
 
+    
+  
+  }
+  
+  .left h1{
+    font-family: gunplay;
+    font-weight: 500;
+    font-size: 5vw;
+   
+   }
+  .bottom{
+    opacity: 0;
+  
+  }
+  
+  
 
+  .animated-button {
+    padding: 6vw 2vw;
+    font-size: 3.1vw;
+  }
+  
+  .animated-button:hover {
+    transform: scale(1); 
+  }
+  
 .Home{
   width: 100%;
-  margin-top: 8vw;
+  margin-top: 4vw;
   margin-bottom: 16vw;
    
   }
-
+ 
+  .Homeicons img{
+    opacity: 0;
+  }
   .Fronttext{
     height: 14vh;
     width: 100%;
@@ -778,7 +857,7 @@ opacity: 0;
   }
 
   .Marquee {
-    height: 43vh;
+    height: 30vh;
     margin: 5vh auto;
     padding: 3vw 0;
   
@@ -1081,9 +1160,41 @@ margin-bottom: 3vw;
 
 
 @media (min-width: 768px) and (max-width: 1024px){
+
   .navbar {
+    height: 9vh;
+    width: 100%;
+    position: relative;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: 2vw;
+    padding: 0 2vw;
+
+    
+  
+  }
+  
+  .left h1{
+    font-family: gunplay;
+    font-weight: 500;
+    font-size: 5vw;
+   
+   }
+  .bottom{
     opacity: 0;
-    }
+  
+  }
+
+  .animated-button {
+    padding: 4vw 3vw;
+    font-size: 2.5vw;
+  }
+  
+  .animated-button:hover {
+    transform: scale(1); 
+  }
+  
 
 .Home{
   width: 100%;
@@ -1091,8 +1202,9 @@ margin-bottom: 3vw;
   margin-bottom: 16vw;
    
   }
-  
-  
+  .Homeicons img{
+    opacity: 0;
+  }
   .Fronttext{
     width: 100%;
   
@@ -1143,7 +1255,6 @@ margin-bottom: 3vw;
  .Button{
   height: 18vh;
   width: 100%;
- 
   
 }
 
@@ -1151,8 +1262,6 @@ button{
   padding: 4vw 6vw;
   font-size: 4vw;
 }
-
-
 
 
 .Aboutus{
@@ -1379,21 +1488,73 @@ margin-bottom: 3vw;
 
 
   .navbar {
-    height: 10vh;
-    width: 48%;
-    background-color: #fff;
-    margin: 0 auto;
-    margin-top: 3vh; 
-    }
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5vw;
+    position: fixed;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 999999999999;
+    margin-top: 1.5vw;
+    padding: 0 1.5vw;
+    
   
-
-.navbar h2{
-  font-family: Actay;
-  font-size: 1.3vw;
-  font-weight: 500;
-  cursor: pointer;
-}
-
+  }
+  
+  .left h1{
+    font-family: gunplay;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 3vw;
+   
+   }
+  .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Actay;
+    gap: 2vw;
+  
+  }
+  
+  
+  .bottom h2{
+    font-size: 1.4vw;
+    font-weight: 500;
+  }
+  
+  .animated-button {
+    padding: 2vw 30px;
+    font-size: 1vw;
+    font-weight: bold;
+    color: white;
+    background-color: #242627;
+    border: none;
+    border-radius: 2vw; 
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .animated-button:hover {
+    background-color: #38393a; 
+    transform: scale(1.1); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .animated-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); 
+  }
+  
+  
 
 .Home{
   width: 100%;
