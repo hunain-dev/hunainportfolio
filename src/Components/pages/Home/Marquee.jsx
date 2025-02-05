@@ -6,19 +6,19 @@ const Marquee = () => {
       <div className="Marquee">
         <Marqueepic/>
         <div className="track">
-          {['Muhammad Hunain  Front-end Developer','Muhammad Hunain  Front-end Developer','Muhammad Hunain  Front-end Developer'].map(
+          {['Front-end reactjs developer','Front-end reactjs developer','Front-end reactjs developer'].map(
             (elem, index) => {
               return (
                 <motion.div
                   key={index}
                   className="content"
-                  initial={{ x: '10%' }} 
+                  initial={{ x: '13%' }} 
                   animate={{ x: '-100%' }} 
                   
                     transition={{
                             ease: 'linear',
                             repeat: Infinity,
-                            duration: 50
+                            duration: 70
                           }}
                 >
                   <h1>{elem}</h1>

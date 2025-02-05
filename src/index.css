@@ -51,15 +51,52 @@
   font-family: 'gunplay';
   src: url('/public/Assets/Fonts/gunplay.ttf') 
 }
+
+@font-face {
+  font-family: 'Akrobat';
+  src: url('/public/Assets/Fonts/Akrobat.ttf') 
+}
+
+@font-face {
+  font-family: 'GeoplaceSC';
+  src: url('/public/Assets/Fonts/GeoplaceSC-Bold.ttf') 
+}
+
+
+@font-face {
+  font-family: 'FaqroExtendedWideTrial';
+  src: url('/public/Assets/Fonts/FaqroExtendedWideTrial-Regular.ttf') 
+}
 ::selection{
   background-color: black;
   color: white;
 }
+.Loader {
+  height: 100vh;
+  width: 100%;
+  position: fixed;  
+  top: 0;  
+  left: 0; 
+  z-index: 9990999;  
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.Loader h1{
+font-size: 4vw;
+text-transform: uppercase;
+color: white;
+font-family: FaqroExtendedWideTrial;
+text-align: center;
+  
+}
 html,body{
   height: 100%;
   width: 100%;
-  scroll-behavior: smooth; /* Native smooth scrolling */
+  scroll-behavior: smooth;
+  background-color: #f7f4f3;
 
 }
 .smooth-scroll {
@@ -72,71 +109,50 @@ html,body{
 }
 
 .navbar {
-  height: 9vh;
-  width: 100%;
+  height: 10vh;
+  width: 40%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 2.5vw;
+  justify-content: center;
   position: fixed;
   top: 0; 
   left: 50%; 
   transform: translateX(-50%);
-  z-index: 999999999999;
-  margin-top: 1.5vw;
-  padding: 0 1.5vw;
+  z-index: 999;
+  margin-top: 1vw;
+  background-color: #F7F4F3;
+  border-radius: 30vw;
   
 
 }
 
-.left h1{
-  font-family: gunplay;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 2.5vw;
- 
- }
-.bottom{
+
+ .bottom {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Actay;
-  gap: 2vw;
-
+  font-family: 'Gilroy', sans-serif;  /* Added quotes and fallback font */
+  gap: 2.2vw;
+  padding: 0.6vw 2vw;
+  box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5);  /* Added RGBA for transparency */
+  border-radius: 2vw;
 }
-
 
 .bottom h2{
-  font-size: 1.3vw;
+  font-size: 1vw;
   font-weight: 500;
+  color: #262525;
 }
 
-.animated-button {
-  padding: 15px 30px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  background-color: #242627;
-  border: none;
-  border-radius: 2vw; 
-  cursor: pointer;
-  outline: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  font-weight: 500;
-}
+.bottom h2:nth-child(1){
+ background-color: #F94106;
+ padding: 0.8vw 1.8vw;
+ border-radius: 2vw;
+ color: white !important ;
 
-.animated-button:hover {
-  background-color: #38393a; 
-  transform: scale(1.1); 
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 
-.animated-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); 
-}
 
 
 
@@ -145,6 +161,7 @@ html,body{
   margin-top: 8vw;
   position: relative;
   overflow: hidden;
+  position: relative;
    
   }
 .Homeicon{
@@ -170,7 +187,7 @@ html,body{
 }
 
 .Homeicons img{
-  height: 50vh;
+  height: 35vh;
 }
 .Fronttext{
   height: 15vh;
@@ -192,8 +209,8 @@ html,body{
 }
 
 .Fronttext h4{
-  font-family: Actay;
-  font-size: 1.4vw;
+  font-family: ActayCondensed;
+  font-size: 1.6vw;
   font-weight: 500;
   color: rgb(33, 32, 32);
 
@@ -228,7 +245,7 @@ html,body{
 }
 
 .Marquee h1 {
-  font-family: TypeMonster, sans-serif;
+  font-family: Akrobat, sans-serif;
   font-weight: 500;
   font-size: 15.5vw;
   text-transform: uppercase;
@@ -237,26 +254,26 @@ html,body{
 }
 
 .imageupper {
-  height: 42vh;
-  width: 20vw;
-  background-color: rgba(255, 255, 255, 0.8);  /* White with transparency */
+  height: 41vh;
+  width: 18vw;
+  background-color:#B3CDFF;  
   position: absolute;
-  z-index: 9999;
+  z-index: 99;
   border-radius: 21%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  backdrop-filter: blur(8px);  /* Glass effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  backdrop-filter: blur(8px); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);  
 }
+
 
 .imageupper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: inherit;
 }
 
 
@@ -272,7 +289,7 @@ html,body{
 }
 
 .selectives{
-  gap: 0.3vw;
+  gap: 0.2vw;
   display: flex;
   align-items: center;
   
@@ -286,7 +303,8 @@ html,body{
  font-family: Actay;
  font-weight: 500;
  font-size: 1.6vw;
- margin-left: 1vw;
+ margin-left: 0.6vw;
+ color: #242627;
 }
 
 .Button{
@@ -303,12 +321,12 @@ html,body{
 
 button{
   border: none;
-  padding: 1.2vw 3vw;
-  background-color: rgb(34, 33, 33);
+  padding: 1.5vw 3.2vw;
+  background-color:#242627;
   color: white;
   font-family: Actay;
   border-radius: 3vw;
-  font-size: 1.3vw;
+  font-size: 1vw;
   cursor: pointer;
 }
 
@@ -331,16 +349,19 @@ button{
  font-family: rejouice;
  font-weight: 500;
  font-size: 3vw;
- margin: 3vw 0;
+ margin: 4vw 0;
  text-transform: uppercase;
- color: #1d1d1d;
+ color: #242627;
+
 }
 
 .Aboutme h4{
   font-family: Actay;
   font-weight: 500;
-  font-size: 1.7vw;
+  font-size: 1.6vw;
   text-align: center;
+  color: #242627;
+
  }
 
  .AboutClient{
@@ -367,6 +388,8 @@ button{
  font-size: 2vw;
  text-transform: uppercase;
  font-weight: 500;
+ color: #242627;
+
  }
  
  .AboutClients img{
@@ -380,6 +403,8 @@ button{
   font-family: Actay;
   font-size: 2vw;
   font-weight: 500;
+  color: #242627;
+
 
 
   
@@ -391,17 +416,21 @@ button{
   font-size: 2vw;
   font-weight: 500;
   margin: 1vw 0;
+  color: #242627;
+
 
 
   
  } .AboutClients h6{
   
   font-family: Actay;
-  font-size: 1.9vw;
+  font-size: 1.5vw;
   text-align: center;
   font-weight: 500;
   margin: 2vw 0;
   padding: 0 3vw;
+  color: #242627;
+
 
 
   
@@ -414,8 +443,40 @@ button{
   text-align: center;
   line-height: 21vw;
   text-transform: uppercase;
-  color: #0b0b0b;
-  
+  position: relative;
+  color: #1e1e1f;
+
+}
+
+.mans {
+  height: 93vh;
+  width: 50%;
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.mans img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  animation: moveImage 4s ease-in-out infinite; /* Keyframe animation */
+}
+
+@keyframes moveImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2%); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
 }
 
 
@@ -440,6 +501,9 @@ button{
   font-size: 3.2vw;
   text-transform: uppercase;
   text-align: center;
+  color: #242627;
+
+  
 
 }
 .myskills {
@@ -451,7 +515,7 @@ button{
   flex-wrap: wrap; 
   justify-content: center;
   align-items: center;
-  gap: 4vw; 
+  gap: 3.5vw; 
   padding: 2vh;
   height: 29vh;
   margin-top: 1vw;
@@ -461,8 +525,8 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 14vh;
-  height: 14vh;
+  width: 13vh;
+  height: 13vh;
   border-radius: 50%;
   overflow: hidden;
   cursor: grab; /* Dragging cursor */
@@ -480,6 +544,8 @@ button{
 .Ourservices{
   width: 100%;
   margin-top: 15vh;
+
+
 }
 
 .Ourservices h1{
@@ -488,6 +554,8 @@ button{
   font-size: 3vw;
   text-transform: uppercase;
   text-align: center;
+  color: #242627;
+
 
 }
 
@@ -502,15 +570,15 @@ button{
   font-family: MarvinVisions;
   font-weight: 500;
   font-size: 3vw;
-  color: rgb(25, 24, 24);
+  color: #242627;
 
 }
 
 .Designs ul{
  padding: 1vw 2vw;
  font-family: Actay;
- margin: 2vw 0;
- font-size: 2vw;
+ margin: 1.7vw 0;
+ font-size: 1.7vw;
  color: rgb(25, 24, 24);
 
 }
@@ -520,15 +588,14 @@ button{
 
 .project{
   width: 100%;
-  margin-top: 6vh;
+  margin-top: 5vh;
   padding: 2vw 2vw;
 }
 
 .WorkCollection{
   width: 80%;
   margin: 0 auto;
-
-  margin-bottom: 6vw;
+  margin-bottom: 2vw;
 }
 
 .WorkCollection h2{
@@ -537,15 +604,17 @@ button{
   font-size: 3vw;
   text-align: center;
   margin: 3vw 0;
+  color: #242627;
+
 
 }
 
 .WorkCollection h5{
   font-family: Actay;
   font-weight: 500;
-  font-size: 2vw;
+  font-size: 1.7vw;
   text-align: center;
-  color: #1d1d1d;
+  color: #242627;
 
 }
 
@@ -618,15 +687,16 @@ width: 100%;
   align-items: center;
   justify-content: center;
   margin: 4vw 0;
-  margin-bottom: 7vw;
+  margin-bottom: 8vw;
 }
 
 .CertifiedCard h2 {
   text-align: center;
   font-size: 2.5vw;
   font-family: rejouice ;
-  margin-bottom: 6vw;
-  color: #1a1919;
+  margin-bottom: 5vw;
+  color: #242627;
+
 }
 
 .Certifiedcards {
@@ -634,11 +704,15 @@ width: 100%;
   grid-template-columns: repeat(2, 1fr);
   gap: 2vw;
   width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Certifiedcardsimage {
   width:100%;
-  height: 73vh;
+  height: 70vh;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 10px;
@@ -658,7 +732,7 @@ width: 100%;
   text-align: center;
   margin-top: 1vw;
   padding: 0 3vw;
-  color: rgb(26, 25, 25);
+  color: #242627;
 }
 
 /* FAQ Container */
@@ -675,10 +749,12 @@ width: 100%;
   font-weight: 500;
   text-align: center;
   color: #333;
-  margin-bottom: 15vh;
+  margin-bottom: 7vh;
   font-family:rejouice ;
   text-transform: uppercase;
-  font-size: 4vw;
+  font-size: 2.4vw;
+  color: #242627;
+
   
 }
 
@@ -697,7 +773,7 @@ width: 100%;
 
 /* Question Section */
 .faq-question {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -705,14 +781,14 @@ width: 100%;
   transition: all 0.3s ease-in-out;
   font-family: Actay;
   font-weight: 500;
-  color: rgb(52, 50, 50);
+  color: #242627;
+
 }
 
 /* Answer Section */
 .faq-answer {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: rgb(52, 50, 50);
-
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
@@ -756,18 +832,20 @@ width: 100%;
   font-weight: 500;
   font-size: 4vw;
   margin: 1vw 0;
+  color: #242627;
+
 
 
 }
 .contactadresss a{
- color: #0b0b0b;
+  color: #242627;
  text-decoration: none;
 
 }
 .contactadresss h3{
   font-family:Actay ;
   font-weight: 500;
-  font-size: 1.9vw;
+  font-size: 1.5vw;
 
 }
 
@@ -782,1059 +860,9 @@ width: 100%;
   font-weight: 500;
   font-size: 7.3vw;
   text-align: center;
-}
-
-
-
-
-@media (max-width: 768px) 
-{ 
-
-  .cursor {
-  opacity: 0;
-  }
-  
-  .navbar {
-    height: 9vh;
-    width: 100%;
-    position: relative;
-    top: 0; 
-    left: 50%; 
-    transform: translateX(-50%);
-    margin-top: 2vw;
-    padding: 0 2vw;
-
-    
-  
-  }
-  
-  .left h1{
-    font-family: gunplay;
-    font-weight: 500;
-    font-size: 5vw;
-   
-   }
-  .bottom{
-    opacity: 0;
-  
-  }
-  
-  
-
-  .animated-button {
-    padding: 6vw 2vw;
-    font-size: 3.1vw;
-  }
-  
-  .animated-button:hover {
-    transform: scale(1); 
-  }
-  
-.Home{
-  width: 100%;
-  margin-top: 4vw;
-  margin-bottom: 16vw;
-   
-  }
- 
-  .Homeicons img{
-    opacity: 0;
-  }
-  .Fronttext{
-    height: 14vh;
-    width: 100%;
-  
-  }
-  .Fronttext h1{
-    font-size: 10vw;
-    padding: 0.1vw 0;
-  
-  }
-  .Fronttext h4{
-    font-size: 5vw;
-  
-  
-  }
-
-  .Marquee {
-    height: 30vh;
-    margin: 5vh auto;
-    padding: 3vw 0;
-  
-  }
-  .Marquee h1 {
-    font-size: 40vw;
-  
-  }
-  .imageupper {
-    height: 35vh;
-    width: 58vw;
-    border-radius: 20%;
-  
-  }
-  
-
-.Client{
-  height: 10vh;
-  width: 100%;
-  
-}
-
-.selectives{
-  gap: 1.5vw;
-  
-}
-.selectives img{
-  height: 7vh;
-}
-.selectives h2{
-  font-size: 5.5vw;
- }
- .Button{
-  height: 10vh;
-  width: 100%;
- 
-  
-}
-button{
-  padding: 5vw 6vw;
-  font-size: 4vw;
-}
-
-.Aboutus{
-  width: 100%;
-  margin-top: 2vw;
-  }
-
-.Aboutme{
-width: 95%  !important;
-margin-bottom: 3vw;
-}
-
-.Aboutme h2{
-  text-align: center;
-  font-size: 10vw !important;
- }
- 
-.Aboutme h4{
-  font-size: 2.1vh !important;
-  text-align: center;
-
- }
-
- .AboutClient{
-  margin-top: 9vh;
-  width: 100%  !important ;
- }
-
-
- .AboutClient h4{
-
-  font-size: 6vw;
-  margin-bottom: 2vw;
-  text-transform: uppercase;
-  font-weight: 500;
-  }
-  
- .AboutClients img{
-
-  height: 13vh;
-  margin: 1vw 0;
-  margin-bottom: 5vw;
-
- }
-
-
-
- .AboutClients h3{
-  font-size: 8vw;
-
-
-  
- }
- .AboutClients h5{
-  
-  font-size: 9vw;
-  
- }
-
- .AboutClients h6{
-  
-  font-size: 5vw;
-
-  
- }
-
- .Impactfulldesign {
-  margin-top: 7vh;
-  line-height: 27vw;
-  
-}
-
-.text-content h2,
-.text-content h1 {
-  font-size: 35vw;
-}
-
-
- .myskills{
-  margin-top: 14vh;
-  width: 100%;
-  margin-bottom: 12vh;
-}
-
-.myskills h1{
-  font-size: 8vw;
-
-}
-
-.skill-item {
-  width: 9vh;
-  height: 9vh;
-}
-
-.Ourservices{
-  width: 100%;
-  margin-top: 10vh;
-  padding: 0 3vw;
-}
-.Ourservices h1{
-  font-size: 10vw;
-  margin-bottom: 8vw;
-
-}
-
-
-.Designs{
-  padding: 2vw 1vw;
-  }
-  
-.Designs h3{
-  font-size: 5vw;
-  color: rgb(25, 24, 24);
-
-}
-.Designs ul{
-  padding: 1vw 2vw;
-  margin: 3vw 0;
-  font-size: 4.5vw;
- 
- }
- 
-.project{
-  width: 100%;
-  margin-top: 6vh;
-  padding: 2vw 2vw;
-
-}
-
-
-.WorkCollection{
-  width: 100%;
-  margin-bottom: 9vw;
-}
-.WorkCollection h2{
-  font-size: 8vw;
-  margin: 4vw 0;
-
-}
-
-.WorkCollection h5{
-  font-size: 4vw;
-
-}
-.Card {
-  width: 100%;
-
-}
-
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr); 
-  gap: 2vw; 
-  width: 100%;
-
-}
-
-
-
-.image {
-  width:100%;
-  height: 39vh;
-  }
-
-  .cards h4 {
-    font-size: 4vw;
-    padding: 2vw 3vw;
-  }
-  
-.Certified{
-  margin-top: 10vh;
-  width: 100%;
-
-  }
-  
-
-.CertifiedCard h2{
-  font-size: 6.5vw;
-
-}
-
-.CertifiedCard {
-  margin-top: 9vw;
-
-}
-.Certifiedcards {
-  grid-template-columns: repeat(1, 1fr);
-  width: 100%;
-}
-
-
-
-.Certifiedcardsimage {
-  width:100%;
-  height: 43vh;
-  margin-bottom: 5vw;
-}
-
-.CertifiedCard h4 {
-  font-size: 5vw;
-}
-
-.faqs-container {
-  max-width: 100%;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-/* Title */
-.faq-title {
-  margin-bottom: 10vh;
-  font-size: 9vw;
-  
-}
-
-
-/* FAQ Items */
-.faq-item {
-  border-radius: 8px;
-  margin-bottom: 12px;
-  padding: 13px;
-}
-
-
-.contact{
-  width: 100%;
-  padding: 3vw 2vw;
-}
-.contactadresss{
-  width: 100%;
-
-
-
-}
-
-
-.contactadresss h2{
-  font-size: 12vw;
-
-
-}
-.contactadresss h3{
-  font-size: 4vw;
-
-}
-
-
-.Footer{
-  width: 100%;
-  padding: 2vw 2vw;
-  margin-top: 6vh;
-}
-.Footer H2{
-  font-size: 11vw;
-}
-
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px){
-
-  .navbar {
-    height: 9vh;
-    width: 100%;
-    position: relative;
-    top: 0; 
-    left: 50%; 
-    transform: translateX(-50%);
-    margin-top: 2vw;
-    padding: 0 2vw;
-
-    
-  
-  }
-  
-  .left h1{
-    font-family: gunplay;
-    font-weight: 500;
-    font-size: 5vw;
-   
-   }
-  .bottom{
-    opacity: 0;
-  
-  }
-
-  .animated-button {
-    padding: 4vw 3vw;
-    font-size: 2.5vw;
-  }
-  
-  .animated-button:hover {
-    transform: scale(1); 
-  }
-  
-
-.Home{
-  width: 100%;
-  margin-top: 8vw;
-  margin-bottom: 16vw;
-   
-  }
-  .Homeicons img{
-    opacity: 0;
-  }
-  .Fronttext{
-    width: 100%;
-  
-  }
-  
-  .Fronttext h1{
-    font-size: 8vw;
-  
-  }
-  .Fronttext h4{
-    font-size: 5vw;
-  
-  
-  }
-  
-  .Marquee {
-    margin: 10vh auto;
-    padding: 3vw 0;
-  
-  }
-  .Marquee h1 {
-    font-size: 40vw;
-  
-  }
-  .imageupper {
-    height: 43vh;
-    width: 52vw;
-    border-radius: 20%;
-  
-  }
-  
-.Client{
-  height: 10vh;
-  width: 100%;
-  
-}
-
-.selectives{
-  gap: 1.5vw;
-  
-}
-.selectives img{
-  height: 7vh;
-}
-.selectives h2{
-  font-size: 5.5vw;
- }
- .Button{
-  height: 18vh;
-  width: 100%;
-  
-}
-
-button{
-  padding: 4vw 6vw;
-  font-size: 4vw;
-}
-
-
-.Aboutus{
-  width: 100%;
-  margin-top: 2vw;
-  }
-
-.Aboutme{
-width: 95%  !important;
-margin-bottom: 3vw;
-}
-
-.Aboutme h2{
-  text-align: center;
-  font-size: 10vw !important;
- }
- 
-.Aboutme h4{
-  font-size: 2.1vh !important;
-  text-align: center;
-
- }
-
- .AboutClient{
-  margin-top: 9vh;
-  width: 100%  !important ;
- }
-
-
- .AboutClient h4{
-
-  font-size: 6vw;
-  margin-bottom: 2vw;
-  text-transform: uppercase;
-  font-weight: 500;
-  }
-  
- .AboutClients img{
-
-  height: 12vh;
-  margin: 1vw 0;
-  margin-bottom: 3vw;
-
- }
-
-
-
- .AboutClients h3{
-  font-size: 6vw;
-
-
-  
- }
- .AboutClients h5{
-  
-  font-size: 7vw;
-  
- }
-
- .AboutClients h6{
-  
-  font-size: 4.5vw;
-
-  
- }
-
- .Impactfulldesign {
-  margin-top: 9vh;
-  line-height: 27vw;
-  
-}
-
-.text-content h2,
-.text-content h1 {
-  font-size: 35vw;
-}
-
-.myskills{
-  margin-top: 14vh;
-  width: 100%;
-  margin-bottom: 13vh;
-}
-
-.myskills h1{
-  font-size: 7vw;
-  font-weight: 500;
-
-}
-
-.skill-item {
-  width: 12vh;
-  height: 12vh;
-}
-
-
-.Ourservices{
-  width: 100%;
-  margin-top: 10vh;
-  padding: 0 2vw;
-}
-
-.project{
-  width: 100%;
-  margin-top: 6vh;
-  padding: 2vw 2vw;
-
-}
-
-.Card {
-  width: 100%;
-
-}
-
-.cards {
-  grid-template-columns: repeat(1, 1fr); 
-  width: 100%;
-}
-
-
-.image {
-  width:100%;
-  height: 50vh;
-  }
-
-
-  .cards h4 {
-    font-size: 5.1vw;
-    padding: 2vw 3vw;
-  }
-  .Certified{
-    margin-top: 10vh;
-    width: 100%;
-  
-    }
-    
-  
-  .CertifiedCard h2{
-    font-size: 6vw;
-  
-  }
-  
-  .CertifiedCard {
-    margin-top: 9vw;
-    margin-bottom: 8vw;
-  
-  }
-  .Certifiedcards {
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-  }
-  
-.Certifiedcardsimage {
-  width:100%;
-  height: 55vh;
-  margin-bottom: 5vw;
-}
-
-.CertifiedCard h4 {
-  font-size: 5vw;
-}
-
-
-.faqs-container {
-  max-width: 100%;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-/* Title */
-.faq-title {
-  margin-bottom: 10vh;
-  font-size: 9vw;
-  
-}
-
-
-/* FAQ Items */
-.faq-item {
-  border-radius: 8px;
-  margin-bottom: 12px;
-  padding: 13px;
-}
-
-
-.contact{
-  width: 100%;
-  padding: 3vw 2vw;
-}
-.contactadresss{
-  width: 100%;
-
-
-
-}
-
-
-.contactadresss h2{
-  font-size: 10vw;
-
-
-}
-.contactadresss h3{
-  font-size: 3.5vw;
-
-}
-
-
-.Footer{
-  width: 100%;
-  padding: 2vw 2vw;
-  margin-top: 6vh;
-}
-.Footer H2{
-  font-size: 7vw;
-}
-
-}
-
-
-@media (min-width: 1025px) and (max-width: 1280px){
-
-  
-
-
-
-  .navbar {
-    height: 9vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2.5vw;
-    position: fixed;
-    top: 0; 
-    left: 50%; 
-    transform: translateX(-50%);
-    z-index: 999999999999;
-    margin-top: 1.5vw;
-    padding: 0 1.5vw;
-    
-  
-  }
-  
-  .left h1{
-    font-family: gunplay;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 3vw;
-   
-   }
-  .bottom{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Actay;
-    gap: 2vw;
-  
-  }
-  
-  
-  .bottom h2{
-    font-size: 1.4vw;
-    font-weight: 500;
-  }
+  color: #242627;
   
-  .animated-button {
-    padding: 2vw 30px;
-    font-size: 1vw;
-    font-weight: bold;
-    color: white;
-    background-color: #242627;
-    border: none;
-    border-radius: 2vw; 
-    cursor: pointer;
-    outline: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    font-weight: 500;
-  }
-  
-  .animated-button:hover {
-    background-color: #38393a; 
-    transform: scale(1.1); 
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  .animated-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); 
-  }
-  
-  
-
-.Home{
-  width: 100%;
-  margin-top: 10vw;
-   
-  }
-  .Fronttext{
-    width: 70%;
-    margin: 6vh auto;
-    
-  
-  }
-  .Fronttext h1{
-    font-size: 5vw;
-  
-  }
-  .Fronttext h4{
-    font-size: 3vw;
-  
-  
-  }
-  
-.Marquee {
-  height: 45vh;
-  width: 100%;
-  margin: 9vh auto;
-
-}
-
-.Marquee h1 {
-  font-size: 24vw;
-
-}
-
-
-.imageupper {
-  height: 45vh;
-  width: 28vw;
-}
-
-.Client{
-  width: 60%;
-  margin: 1vh auto;
-    
-}
-
-.selectives img{
-  height: 8vh;
-}
-.selectives h2{
-  font-size: 2.6vw;
- }
- .Button{
-  height: 18vh;
-  width: 100%;
- 
-  
-}
-button{
-  padding: 2.6vw 5vw;
-  font-size: 1.6vw;
-}
-
-
-.Aboutus{
-  width: 100%;
-  margin-top: 2vw;
-  }
-
-  .Aboutme{
-    width: 90%  !important;
-    margin-bottom: 4vw;
-    }
-    
-    .Aboutme h2{
-      text-align: center;
-      font-size: 5vw !important;
-     }
-     
-    .Aboutme h4{
-      font-size: 3.8vh !important;
-      text-align: center;
-    
-     }
-    
-     .AboutClient{
-      margin-top: 9vh;
-      width: 100%  !important ;
-     }
-    
-    
-     .AboutClient h4{
-    
-      font-size: 3.5vw;
-      margin-bottom: 1vw;
-      }
-      
-     .AboutClients img{
-    
-      height: 15vh;
-      margin-bottom: 1vw;
-    
-     }
-    
-    
-    
-     .AboutClients h3{
-      font-size:3vw;
-    
-    
-      
-     }
-     .AboutClients h5{
-      
-      font-size: 4vw;
-      
-     }
-    
-     .AboutClients h6{
-      
-      font-size: 2.5vw;
-    
-      
-     }
-     
- .Impactfulldesign {
-  margin-top: 9vh;
-  line-height: 27vw;
-  
-}
-
-.text-content h2,
-.text-content h1 {
-  font-size: 36vw;
-}
-.myskills{
-  margin-top: 14vh;
-  width: 100%;
-  margin-bottom: 13vh;
-}
-
-.myskills h1{
-  font-size: 6vw;
-  font-weight: 500;
-
-}
-
-.skill-item {
-  width: 16vh;
-  height: 16vh;
-}
-
-
-.Ourservices{
-  width: 100%;
-  margin-top: 10vh;
-  padding: 0 2vw;
-}
-
-.project{
-  width: 100%;
-  margin-top: 6vh;
-  padding: 2vw 2vw;
-
-}
-
-.Card {
-  width: 100%;
-
-}
-
-.cards {
-  grid-template-columns: repeat(1, 1fr); 
-  width: 100%;
-  }
-
-
-.image {
-  width:80%;
-  height: 70vh;
-  }
-
-
-  .cards h4 {
-    font-size: 3.4vw;
-    padding: 1vw 4vw;
-  }
-  .Certified{
-    margin-top: vh;
-    width: 100%;
-    
-    }
-    
-  
-  .CertifiedCard h2{
-    font-size:4vw;
-  
-  }
-  
-  .CertifiedCard {
-    margin-top: 9vw;
-    margin-bottom: 9vw;
-  
-  }
-  .Certifiedcards {
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-  }
-  
-.Certifiedcardsimage {
-  width:80%;
-  height: 90vh;
-  margin-bottom: 5vw;
-}
-
-.CertifiedCard h4 {
-  font-size: 3vw;
-}
-
-.faqs-container {
-  max-width: 100%;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-/* Title */
-.faq-title {
-  margin-bottom: 9vh;
-  font-size: 5vw;
-  
-}
-
-
-/* FAQ Items */
-.faq-item {
-  padding: 30px;
-}
-
-
-.contact{
-  width: 100%;
-  padding: 6vw 2vw;
-}
-.contactadresss{
-  width: 100%;
-
-
-
-}
-
-
-.contactadresss h2{
-  font-size: 7vw;
-
-
-}
-.contactadresss h3{
-  font-size: 2.5vw;
-
-}
-
-
-.Footer{
-  width: 100%;
-  padding: 2vw 2vw;
-  margin-top: 6vh;
-}
-.Footer H2{
-  font-size: 8vw;
-}
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1866,13 +894,1138 @@ button{
 .cursor {
   height: 4.5vh;
   width: 2.1vw;
-  background-color: #333;
+  background-color: #38393a; /* Default color for the cursor */
   border-radius: 50%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
   pointer-events: none;
-  mix-blend-mode: difference;
-  transition:  0.2s; /* Remove smooth transition to avoid lag */
+  transition: 0.2s;
 }
+
+
+@media (max-width: 768px) { 
+
+  .cursor {
+  opacity: 0;
+  }
+  
+  .navbar {
+    height: 9vh;
+    width: 100%;
+    position: relative;
+    position: fixed;  
+    bottom: 0;  /* Places it at the very bottom of the screen */
+    left: 50%;
+    margin-top:91vh;
+    transform: translateX(-50%); /* Centers the navbar horizontally */
+    padding: 0 2vw;
+      z-index: 999;  /* Ensures the navbar appears on top of other content */
+  }
+    
+  
+  
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gilroy', sans-serif;  /* Added quotes and fallback font */
+    gap: 2.2vw;
+    padding: 3vw 4vw;
+    box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5);  /* Added RGBA for transparency */
+    border-radius: 4vw;
+  }
+  
+  
+.bottom h2{
+  font-size: 3.2vw;
+  font-weight: 500;
+  color: #262525;
+}
+
+.bottom h2:nth-child(1){
+ background-color: #F94106;
+ padding: 3vw 4vw;
+ border-radius: 4vw;
+ color: white !important ;
+
+}
+
+
+  .animated-button {
+    padding: 6vw 2vw;
+    font-size: 3.1vw;
+  }
+  
+  .animated-button:hover {
+    transform: scale(1); 
+  }
+  
+.Home{
+  width: 100%;
+  margin-top: -5vw;
+  margin-bottom: 12vw;
+   
+  }
+ 
+  .Homeicons img{
+    opacity: 0;
+  }
+  .Fronttext{
+    height: 15vh;
+    width: 100%;
+  
+  }
+  .Fronttext h1{
+    font-size: 7vw;
+    padding: 1.6vw 0;
+    font-weight: 500;
+
+  
+  }
+  .Fronttext h4{
+    font-size: 5vw;
+    text-align: center  ;
+    font-weight: 600;
+  
+  
+  }
+
+  .Marquee {
+    height: 31vh;
+    margin: 3vh auto;
+    padding: 1vw 0;
+  
+  }
+  .Marquee h1 {
+    font-size: 40vw;
+  
+  }
+  .imageupper {
+    height: 30vh;
+    width: 55vw;
+    border-radius: 20%;
+  
+  }
+  
+
+.Client{
+  height: 6vh;
+  width: 100%;
+  
+}
+
+.selectives{
+  gap: 1.2vw;
+  
+}
+.selectives img{
+  height: 4.7vh;
+}
+.selectives h2{
+  font-size: 5.2vw;
+ }
+ .Button{
+  height: 6vh;
+  width: 100%;
+ 
+  
+}
+button{
+  padding: 5vw 5.6vw;
+  font-size: 3.8vw;
+}
+
+.Aboutus{
+  width: 100%;
+  margin-top: 2vw;
+  }
+
+.Aboutme{
+width: 100%  !important;
+margin-bottom: 1vw;
+padding: 0 4vw;
+}
+
+.Aboutme h2{
+  text-align: center;
+  font-size: 8vw !important;
+ }
+ 
+.Aboutme h4{
+  font-size: 1.8vh !important;
+  text-align: center;
+
+ }
+
+ .AboutClient{
+  margin-top: 7vh;
+  width: 100%  !important ;
+ }
+
+
+ .AboutClient h4{
+
+  font-size: 5vw;
+  margin-bottom: 2vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  }
+  
+ .AboutClients img{
+
+  height: 10vh;
+  margin: 1vw 0;
+  margin-bottom: 4vw;
+
+ }
+
+
+
+ .AboutClients h3{
+  font-size: 6.5vw;
+
+
+  
+ }
+ .AboutClients h5{
+  
+  font-size: 7vw;
+  
+ }
+
+ .AboutClients h6{
+  
+  font-size: 4.5vw;
+
+  
+ }
+
+ .Impactfulldesign {
+  margin-top: 5vh;
+  line-height: 31vw;
+  padding: 5vw 1vw;
+  
+}
+
+.mans {
+  height: 40vh;
+  width: 80%;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.text-content h2,
+.text-content h1 {
+  font-size: 40vw;
+  color: #262525;
+}
+
+
+ .myskills{
+  margin-top: 9vh;
+  width: 100%;
+  margin-bottom: 9vh;
+}
+
+.myskills h1{
+  font-size: 7vw;
+
+}
+
+.skill-item {
+  width: 10vh;
+  height:10vh;
+}
+
+.Ourservices{
+  width: 100%;
+  margin-top: 5vh;
+  padding: 0 3vw;
+}
+.Ourservices h1{
+  font-size: 7vw;
+  margin-bottom: 5vw;
+
+}
+
+
+.Designs{
+  padding: 2vw 1vw;
+  }
+  
+.Designs h3{
+  font-size: 6vw;
+  color: rgb(25, 24, 24);
+
+}
+.Designs ul{
+  padding: 1vw 2vw;
+  margin: 3vw 0;
+  font-size: 4.3vw;
+ 
+ }
+ 
+.project{
+  width: 100%;
+  margin-top: 5vh;
+  padding: 2vw 2vw;
+  margin-bottom: 3vw;
+
+}
+
+
+.WorkCollection{
+  width: 100%;
+  margin-bottom: 5vw;
+}
+.WorkCollection h2{
+  font-size: 7vw;
+  margin: 3vw 0;
+
+}
+
+.WorkCollection h5{
+  font-size: 3.5vw;
+
+}
+.Card {
+  width: 100%;
+
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  gap: 4vw; 
+  width: 100%;
+
+}
+
+
+
+.image {
+  width:100%;
+  height: 39vh;
+  }
+
+  .cards h4 {
+    font-size: 4vw;
+    padding: 2vw 3vw;
+  }
+  
+
+  
+
+.CertifiedCard h2{
+  font-size: 4.8vw;
+  text-align: center;
+
+}
+
+.CertifiedCard {
+  margin-top: 6vw;
+
+}
+.Certifiedcards {
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+}
+
+
+
+.Certifiedcardsimage {
+  width:100%;
+  height: 38vh;
+  margin-bottom: 5vw;
+}
+
+.CertifiedCard h4 {
+  font-size: 5vw;
+}
+
+.faqs-container {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Title */
+.faq-title {
+  margin-bottom: 5vh;
+  font-size: 6vw;
+  
+}
+
+
+/* FAQ Items */
+.faq-item {
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 13px;
+}
+
+
+.contact{
+  width: 100%;
+  padding: 3vw 2vw;
+}
+.contactadresss{
+  width: 100%;
+
+
+
+}
+
+
+.contactadresss h2{
+  font-size: 10vw;
+
+
+}
+.contactadresss h3{
+  font-size: 3vw;
+
+}
+
+
+.Footer{
+  width: 100%;
+  padding: 2vw 2vw;
+  margin-top: 6vh;
+}
+.Footer H2{
+  font-size: 11vw;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+  .cursor {
+    opacity: 0;
+    }
+    .navbar {
+      height: 5vh;
+      width: 100%;
+      position: relative;
+      position: fixed;  
+      bottom: 0;  /* Places it at the very bottom of the screen */
+      left: 50%;
+      margin-top:91vh;
+      transform: translateX(-50%); /* Centers the navbar horizontally */
+      padding: 0 2vw;
+        z-index: 999;  /* Ensures the navbar appears on top of other content */
+    }
+      
+    
+    
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Gilroy', sans-serif;  /* Added quotes and fallback font */
+      gap: 2.2vw;
+      padding: 2vw 4vw;
+      box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5);  /* Added RGBA for transparency */
+      border-radius: 4vw;
+    }
+    
+    
+  .bottom h2{
+    font-size: 3vw;
+    font-weight: 500;
+    color: #262525;
+  }
+  
+  .bottom h2:nth-child(1){
+   background-color: #F94106;
+   padding: 2vw 4.2vw;
+   border-radius: 4vw;
+   color: white !important ;
+  
+  }
+  
+  
+
+
+  .Home{
+    width: 100%;
+    margin-top: -1vw;
+    margin-bottom: 13vw;
+     
+    }
+   
+
+ 
+  
+ 
+  .Fronttext{
+    height: 22vh;
+    width: 100%;
+  
+  }
+  .Fronttext h1{
+    font-size: 7vw;
+    padding: 1.6vw 0;
+    font-weight: 500;
+
+  
+  }
+  .Fronttext h4{
+    font-size: 5vw;
+    text-align: center  ;
+    font-weight: 600;
+  
+  
+  }
+
+  .Marquee {
+    height: 36vh;
+    margin: 3vh auto;
+    padding: 1vw 0;
+  
+  }
+  .Marquee h1 {
+    font-size: 27vw;
+  
+  }
+  .imageupper {
+    height: 35vh;
+    width: 37vw;
+    border-radius: 20%;
+  
+  }
+  
+  
+.Client{
+  height: 10vh;
+  width: 100%;
+  margin-top: 7vw;
+  
+}
+
+.selectives{
+  gap: 1.5vw;
+  
+}
+.selectives img{
+  height: 6vh;
+}
+.selectives h2{
+  font-size: 5vw;
+ }
+ .Button{
+  height: 12vh;
+  width: 100%;
+  
+}
+
+button{
+  padding: 3vw 5vw;
+  font-size: 3.5vw;
+}
+
+
+.Aboutus{
+  width: 100%;
+  margin-top: 2vw;
+  }
+
+.Aboutme{
+width: 95%  !important;
+margin-bottom: 3vw;
+}
+
+.Aboutme h2{
+  text-align: center;
+  font-size: 8vw !important;
+ }
+ 
+.Aboutme h4{
+  font-size: 2.5vh !important;
+  text-align: center;
+
+ }
+
+ .AboutClient{
+  margin-top: 6vh;
+  width: 100%  !important ;
+ }
+
+
+ .AboutClient h4{
+
+  font-size: 5vw;
+  margin-bottom: 2vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  }
+  
+ .AboutClients img{
+
+  height: 9vh;
+  margin: 2vw 0;
+  margin-bottom: 4vw;
+
+ }
+
+
+
+ .AboutClients h3{
+  font-size: 5vw;
+
+
+  
+ }
+ .AboutClients h5{
+  
+  font-size: 6vw;
+  
+ }
+
+ .AboutClients h6{
+  
+  font-size: 4vw;
+
+  
+ }
+
+ .Impactfulldesign {
+  margin-top: 9vh;
+  line-height: 27vw;
+  
+}
+.mans {
+  height: 60vh;
+  width: 80%;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.text-content h2,
+.text-content h1 {
+  font-size: 37vw;
+}
+
+.myskills{
+  margin-top: 11vh;
+  width: 100%;
+  margin-bottom: 6vh;
+}
+
+.myskills h1{
+  font-size: 8vw;
+  font-weight: 500;
+
+}
+
+.skill-item {
+  width: 10vh;
+  height: 10vh;
+}
+
+
+
+.Ourservices{
+  width: 100%;
+  margin-top: 5vh;
+  padding: 0 3vw;
+}
+.Ourservices h1{
+  font-size: 6vw;
+  margin-bottom: 4vw;
+
+}
+
+.Designs{
+  padding: 2vw 1vw;
+  }
+  
+.Designs h3{
+  font-size: 5vw;
+  color: rgb(25, 24, 24);
+
+}
+.Designs ul{
+  padding: 1vw 2vw;
+  margin: 3vw 0;
+  font-size: 4vw;
+ 
+ }
+ 
+
+ .WorkCollection{
+  width: 100%;
+  margin-bottom: 2vw;
+}
+
+.WorkCollection h2{
+  font-size: 6vw;
+  margin: 3vw 0;
+
+}
+
+.WorkCollection h5{
+  font-size: 3.3vw;
+
+}
+.Card {
+  width: 100%;
+
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  gap: 4vw; 
+  width: 100%;
+
+}
+
+
+
+.image {
+  width:100%;
+  height: 46vh;
+  }
+
+  .cards h4 {
+    font-size: 3.5vw;
+    padding: 2vw 3vw;
+  }
+  
+  .CertifiedCard {
+    margin-top: 6vw;
+    margin-bottom: 8vw;
+  
+  }
+  
+
+.CertifiedCard h2{
+  font-size: 3.8vw;
+  text-align: center;
+
+}
+
+
+
+
+
+.Certifiedcardsimage {
+  width:100%;
+  height: 45vh;
+  margin-bottom: 5vw;
+}
+
+.CertifiedCard h4 {
+  font-size: 5vw;
+}
+
+.faqs-container {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Title */
+.faq-title {
+  margin-bottom: 5vh;
+  font-size: 5vw;
+  
+}
+
+
+/* FAQ Items */
+.faq-item {
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 13px;
+}
+
+
+.contact{
+  width: 100%;
+  padding: 3vw 2vw;
+}
+.contactadresss{
+  width: 100%;
+
+
+
+}
+
+
+.contactadresss h2{
+  font-size: 10vw;
+
+
+}
+.contactadresss h3{
+  font-size: 3vw;
+
+}
+
+
+.Footer{
+  width: 100%;
+  padding: 2vw 2vw;
+  margin-top: 6vh;
+}
+.Footer H2{
+  font-size: 11vw;
+}
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px){
+  
+.cursor {
+  height: 4.7vh;
+  width: 2.7vw;
+  z-index: 9999;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.navbar {
+  opacity: 1;
+  height: 10vh;
+  width: 45%;
+  border-radius: 30vw;
+  
+
+}
+
+ .bottom {
+  gap: 2.2vw;
+  padding: 1.2vw 3vw;
+  border-radius: 4vw;
+}
+
+.bottom h2{
+  font-size: 1.2vw;
+}
+
+.bottom h2:nth-child(1){
+ background-color: #F94106;
+ padding: 1.2vw 1.8vw;
+
+}
+
+.Home{
+  width: 100%;
+  margin-top: 8vw;
+   
+  }
+  
+  .Fronttext{
+    height: 20vh;
+    width: 100%;
+  
+  }
+  .Fronttext h1{
+    font-size: 4vw;
+    padding: 0.2vw 0;
+
+  }
+  .Fronttext h4{
+    font-size: 2.4vw;
+  
+  
+  }
+  
+  .Marquee {
+    height: 49vh;
+    margin: 3vh auto;
+  
+  }
+  .Marquee h1 {
+    font-size: 17vw;
+  
+  }
+  .imageupper {
+    height: 45vh;
+    width: 27vw;
+  
+  }
+  
+.Client{
+  height: 10vh;
+  width: 100%;
+  margin-top: 3vw;
+  
+}
+
+.selectives{
+  gap: 0.5vw;
+  
+}
+.selectives img{
+  height: 6vh;
+}
+.selectives h2{
+  font-size: 2.5vw;
+ }
+ .Button{
+  height: 12vh;
+  width: 100%;
+  
+}
+
+button{
+  padding: 2.5vw 3.2vw;
+  font-size: 1.7vw;
+}
+
+
+.Aboutus{
+  width: 100%;
+  margin-top: 1vw;
+  }
+
+  
+.Aboutme{
+  width: 95%  !important;
+  margin-bottom: 4vw;
+  }
+  
+  .Aboutme h2{
+    font-size: 3.7vw !important;
+   }
+   
+  .Aboutme h4{
+    font-size: 3vh !important;
+  
+   }
+   
+ .AboutClient{
+  margin-top: 6vh;
+ }
+ 
+ .AboutClient h4{
+
+  font-size: 3vw;
+  margin-bottom: 1vw;
+  }
+  
+ .AboutClients img{
+
+  height: 19vh;
+  margin: 2vw 0;
+  margin-bottom: 2vw;
+
+ }
+ 
+ .AboutClients h3{
+  font-size: 3vw;
+
+
+  
+ }
+ .AboutClients h5{
+  
+  font-size: 2.9vw;
+  
+ }
+ 
+ .AboutClients h6{
+  
+  font-size: 2vw;
+
+  
+ }
+ 
+ .Impactfulldesign {
+  margin-top: 9vh;
+  line-height: 22vw;
+  
+}
+.mans {
+  height: 75vh;
+  width: 50%;
+}
+.text-content h2,
+.text-content h1 {
+  font-size: 30vw;
+}
+
+.myskills{
+  margin-top: 13vh;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+.myskills h1{
+  font-size: 3.5vw;
+  font-weight: 500;
+
+}
+
+.skill-item {
+  width: 15vh;
+  height: 15vh;
+}
+
+
+
+
+.Ourservices{
+  width: 100%;
+  margin-top: 5vh;
+  padding: 0 3vw;
+}
+.Ourservices h1{
+  font-size: 4vw;
+  margin-bottom: 1vw;
+
+}
+
+.Designs{
+  padding: 2vw 1vw;
+  }
+
+  .Designs h3{
+    font-size: 2.5vw;
+    color: rgb(25, 24, 24);
+  
+  }
+  .Designs ul{
+    padding: 1vw 2vw;
+    margin: 1vw 0;
+    font-size: 2.2vw;
+   
+   }
+   
+
+   .WorkCollection{
+    width: 100%;
+    margin-bottom: 2vw;
+    padding: 0 3vw;
+  }
+  .WorkCollection h2{
+    font-size: 3vw;
+    margin: 2vw 0;
+  
+  }
+  
+  .WorkCollection h5{
+    font-size: 2vw;
+  
+  }
+
+
+  
+.Card {
+  width: 100%;
+
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 7vw; 
+  width: 100%;
+
+}
+
+.image {
+  width:100%;
+  height: 54vh;
+  }
+
+  .cards h4 {
+    font-size: 2vw;
+    padding: 1vw 0;
+  }
+
+  .CertifiedCard {
+    margin-top: 6vw;
+  
+  }
+  
+.CertifiedCard h2{
+  font-size: 3vw;
+
+}
+
+.CertifiedCard {
+  margin-top: 6vw;
+
+}
+
+.Certifiedcardsimage {
+  width:100%;
+  height: 63vh;
+  margin-bottom: 5vw;
+}
+
+.faqs-container {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Title */
+.faq-title {
+  margin-bottom: 5vh;
+  font-size: 2.9vw;
+  
+}
+
+
+.contact{
+  width: 100%;
+  padding: 3vw 2vw;
+}
+.contactadresss{
+  width: 100%;
+
+
+
+}
+
+
+.contactadresss h2{
+  font-size: 7.3vw;
+
+
+}
+.contactadresss h3{
+  font-size: 2.6vw;
+
+}
+
+
+.Footer{
+  width: 100%;
+  padding: 2vw 2vw;
+  margin-top: 6vh;
+}
+.Footer H2{
+  font-size: 7vw;
+}
+
+}
+
+
+
+
+
+
+
+
+
+

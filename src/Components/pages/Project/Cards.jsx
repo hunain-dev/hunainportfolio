@@ -9,34 +9,28 @@ const Cards = () => {
             cardh4: 'Specialist in Animated Websites | Creator of Rejouice Design',
             link: 'https://myrejoucie.netlify.app/' 
         },
+       
         {
-            cardimg: '/Assets/images/twogood.jpeg',
+            cardimg: '/Assets/images/Web 1920 – 1.png',
             cardh4: 'Creator of Two Good Company Website',
             link: 'https://twogoodcompany.netlify.app/'
         },
         {
-            cardimg: '/Assets/images/elastic.png',
+            cardimg: '/public/assets/images/we.png',
             cardh4: 'Creator of We Think Elastic Website',
             link: 'https://wethinkelastic.netlify.app/'
         },
+     
+       
         {
-            cardimg: '/Assets/images/rban.jpg',
-            cardh4: 'Shey.Co Project Specialist',
-        },
-        {
-            cardimg: '/Assets/images/king.jpg',
-            cardh4: ' ORG Chango',
-        },
-        // Modified Ochi card with video
-        {
-            isVideo: true,
-            videoSrc: '/Assets/images/ochi.mp4', // Path to the video
             cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',
-            cardimg: '/Assets/images/ochi.png',
+            cardimg: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/0daa4d145487469.62d94b40df0af.png',
+            link: 'https://ochi-design-production.netlify.app/'
+
 
         },
         {
-            cardimg: 'https://mir-s3-cdn-cf.behance.net/projects/404/27ec6f201055899.Y3JvcCwxMjU5LDk4NCwxMDIsNTk.png    ',
+            cardimg: '/public/assets/images/coing.png    ',
             cardh4: ' CROING | Creative agency',
             isVideo: true,
             videoSrc: '/Assets/images/croing.mp4', // Path to the video

@@ -1,6 +1,5 @@
-
+import Mans from "./Mans";
 const Impactfulldesign = () => {
-
     const design = [
         {
             h1: 'IMPACTFUL',
@@ -13,6 +12,8 @@ const Impactfulldesign = () => {
 
   return (
     <div className="Impactfulldesign">
+<Mans/>
+
         {
             design.map((elem, index) => {
                 return (
@@ -29,6 +30,7 @@ const Impactfulldesign = () => {
                     </div>
                 );
             })}
+
     </div>
   );
 };
