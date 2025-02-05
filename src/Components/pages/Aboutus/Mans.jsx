@@ -1,11 +1,9 @@
-
 const Mans = () => {
   return (
     <div className='mans'>
-        <img src="/public/Assets/images/girta.png" alt="" />
-      
+        <img src="/Assets/images/girta.png" alt="Mans" />
     </div>
-  )
-}
+  );
+};
 
-export default Mans
+export default Mans;
