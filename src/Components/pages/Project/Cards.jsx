@@ -30,6 +30,10 @@ const Cards = () => {
             isVideo: true,
             videoSrc: '/Assets/images/croing.mp4', // Path to the video
         },
+        {
+            cardimg: '/Assets/images/thritysix.png',  // Corrected the path here
+            cardh4: 'THIRTY-SIX-STUDIO | (Comming soon)',
+        },
     ];
 
     const openLink = (url) => {
