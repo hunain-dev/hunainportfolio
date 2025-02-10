@@ -5,25 +5,27 @@ const Cards = () => {
 
     const data = [
         {
-            cardimg: '/Assets/images/nature.jpg',
-            cardh4: 'Specialist in Animated Websites | Creator of Rejouice Design',
-            link: 'https://myrejoucie.netlify.app/' 
+            cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',
+            cardimg: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/0daa4d145487469.62d94b40df0af.png',
+            link: 'https://ochi-design-production.netlify.app/'
         },
+      
         {
             cardimg: '/Assets/images/Web 1920 – 1.png',
             cardh4: 'Creator of Two Good Company Website',
             link: 'https://twogoodcompany.netlify.app/'
+        },
+          {
+            cardimg: '/Assets/images/nature.jpg',
+            cardh4: 'Specialist in Animated Websites | Creator of Rejouice Design',
+            link: 'https://myrejoucie.netlify.app/' 
         },
         {
             cardimg: '/Assets/images/we.png', // Corrected the path here
             cardh4: 'Creator of We Think Elastic Website',
             link: 'https://wethinkelastic.netlify.app/'
         },
-        {
-            cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',
-            cardimg: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/0daa4d145487469.62d94b40df0af.png',
-            link: 'https://ochi-design-production.netlify.app/'
-        },
+      
         {
             cardimg: '/Assets/images/coing.png',  // Corrected the path here
             cardh4: 'CROING | Creative agency',
