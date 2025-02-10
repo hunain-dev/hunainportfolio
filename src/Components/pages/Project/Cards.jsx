@@ -32,7 +32,7 @@ const Cards = () => {
         },
         {
             cardimg: '/Assets/images/thritysix.png',  // Corrected the path here
-            cardh4: 'THIRTY-SIX-STUDIO | (Comming soon)',
+            cardh4: 'THIRTY-SIX-STUDIO Digital Agency | (Coming soon)',
         },
     ];
 

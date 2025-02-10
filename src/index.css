@@ -148,13 +148,17 @@ html,body{
  background-color: #F94106;
  padding: 0.8vw 1.8vw;
  border-radius: 2vw;
- color: white !important ;
+ color: white;
 
 }
 
 
-
-
+.bottom #Home{
+  background-color: #F94106;
+  border-radius: 2vw;
+  color: white;
+ 
+ }
 
 .Home{
   width: 100%;
@@ -916,6 +920,7 @@ width: 100%;
     width: 100%;
     position: relative;
     position: fixed;  
+    background-color: rebeccapurple;
     bottom: 0;  /* Places it at the very bottom of the screen */
     left: 50%;
     margin-top:91vh;
