@@ -36,6 +36,10 @@ const Cards = () => {
             cardimg: '/Assets/images/thritysix.png',  // Corrected the path here
             cardh4: 'THIRTY-SIX-STUDIO Digital Agency | (Coming soon)',
         },
+        {
+            cardimg: '/Assets/images/poppr.png',  // Corrected the path here
+            cardh4: 'Poppr AR, VR  Digital agency Website | (Coming soon)',
+        },
     ];
 
     const openLink = (url) => {
