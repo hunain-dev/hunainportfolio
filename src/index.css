@@ -110,7 +110,7 @@ html,body{
 
 .navbar {
   height:9vh;
-  width: 40%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -661,13 +661,12 @@ button{
 }
 
 .cards h4 {
-  font-family: "Actay", sans-serif;
+  font-family: Actay;
   font-size: 1.5vw;
   font-weight: 500;
   text-align: center;
   margin-top: 1vw;
   padding: 0 3vw;
-  color: rgb(26, 25, 25);
 }
 
 
@@ -913,6 +912,51 @@ width: 100%;
 }
 
 
+.Gitstatus{
+  width: 100%;
+  margin-bottom: 6vw;
+  margin-top: 2vw;
+}
+
+
+.gittop{
+  height: 24vh;
+  width: 100%;
+  padding: 1vw 3vw;
+}
+
+
+.gittop h1{
+  font-family: Actay;
+  font-size: 4vw;
+  color: #25520e;
+}
+.gittop h3{
+  font-family: Actay;
+  font-size: 2vw;
+}
+
+
+
+.gitbottom{
+  height: 53vh;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #25520e;
+}
+
+.gitbottom img{
+  border-radius: 1vw;
+  height: 35vh;
+  object-fit: cover;
+  object-position: center;
+  
+
+}
+
 @media (max-width: 768px) { 
   .cursor {
     height: 3.6vh;
@@ -921,6 +965,7 @@ width: 100%;
   }
   
   .navbar {
+    opacity: 1;
     height: 8vh;
     width: 100%;
     position: relative;
@@ -942,15 +987,15 @@ width: 100%;
     align-items: center;
     justify-content: center;
     font-family: 'Gilroy', sans-serif;  /* Added quotes and fallback font */
-    gap: 3.3vw;
-    padding: 3vw 4vw;
+    gap: 3vw;
+    padding: 3vw 1vw;
     box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5);  /* Added RGBA for transparency */
     border-radius: 4vw;
   }
   
   
 .bottom h2{
-  font-size: 3.4vw;
+  font-size: 2.5vw;
   font-weight: 500;
   color: #262525;
 }
@@ -1318,7 +1363,7 @@ padding: 0 4vw;
 
 
 .contactadresss h2{
-  font-size: 10vw;
+  font-size: 10vw;  
 
 
 }
@@ -1336,6 +1381,51 @@ padding: 0 4vw;
 .Footer H2{
   font-size: 11vw;
 }
+
+.Gitstatus{
+  width: 100%;
+  margin-bottom: 10vw;
+  margin-top: 2vw;
+
+}
+
+
+.gittop{
+  height: 17vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.gittop h1{
+  font-size: 12vw;
+}
+.gittop h3{
+  font-size: 4.6vw;
+}
+
+
+
+.gitbottom{
+  height: 20vh;
+  width: 93%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #25520e;
+}
+
+.gitbottom img{
+  height: 12vh;
+  
+
+}
+
+
 
 }
 
@@ -1371,14 +1461,13 @@ padding: 0 4vw;
       justify-content: center;
       font-family: 'Gilroy', sans-serif;  /* Added quotes and fallback font */
       gap: 3.3vw;
-      padding: 3vw 4vw;
-      box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5);  /* Added RGBA for transparency */
+      padding: 3vw 1vw;
       border-radius: 4vw;
     }
     
     
   .bottom h2{
-    font-size: 3.1vw;
+    font-size: 2.5vw;
     font-weight: 500;
     color: #262525;
   }
@@ -1714,6 +1803,54 @@ margin-bottom: 3vw;
 }
 
 
+.Gitstatus{
+  width: 100%;
+  margin-bottom: 10vw;
+  margin-top: 2vw;
+
+
+}
+
+
+.gittop{
+  height: 17vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.gittop h1{
+  font-size: 7vw;
+}
+.gittop h3{
+  font-size: 4vw;
+}
+
+
+
+.gitbottom{
+  height: 33vh;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #25520e;
+
+}
+
+.gitbottom img{
+  height: 21vh;
+  
+
+}
+
+
+
+
 .contact{
   width: 100%;
   padding: 3vw 2vw;
@@ -1737,6 +1874,7 @@ margin-bottom: 3vw;
 }
 
 
+
 .Footer{
   width: 100%;
   padding: 2vw 2vw;
@@ -1745,6 +1883,9 @@ margin-bottom: 3vw;
 .Footer H2{
   font-size: 11vw;
 }
+
+
+
 }
 
 
@@ -1759,9 +1900,7 @@ margin-bottom: 3vw;
 
 .navbar {
   height:8.5vh;
-  width: 48%;
-
-  top: 0; 
+  width: 60%;
   left: 50%; 
 
 
@@ -1777,14 +1916,14 @@ margin-bottom: 3vw;
   align-items: center;
   justify-content: center;
   font-family: 'Gilroy', sans-serif; 
-  gap: 2.8vw;
-  padding: 0.6vw 2vw;
+  gap: 2.2vw;
+  padding: 0.6vw 1vw;
   box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5); 
   border-radius: 6vw;
 }
 
 .bottom h2 {
-  font-size: 1.4vw;
+  font-size: 1.5vw;
   font-weight: 500;
   color: #262525;
   position: relative;  
@@ -2064,6 +2203,40 @@ button{
   margin-bottom: 5vh;
   font-size: 2.9vw;
   
+}
+
+
+.Gitstatus{
+  width: 100%;
+  margin-bottom: 6vw;
+  margin-top: 2vw;
+}
+
+
+.gittop{
+  height: 24vh;
+  width: 100%;
+}
+
+
+.gittop h1{
+  font-size: 5vw;
+}
+.gittop h3{
+  font-size: 2.5vw;
+}
+
+
+
+.gitbottom{
+  height: 58vh;
+  width: 90%;
+}
+
+.gitbottom img{
+  height: 40vh;
+  
+
 }
 
 

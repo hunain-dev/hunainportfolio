@@ -8,6 +8,7 @@ import Contact from "./Components/pages/Contact/Contact";
 import Footer from "./Components/Footer";
 import Cursor from "./Components/pages/Cursor/Cursor";
 import Loader from "./Components/Loader/Loader";
+import Gitstatus from "./Components/pages/Git-status/Gitstatus";
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
       <div id="stack"><Stack /></div>
       <div id="services"><Ourservices /></div>
       <div id="project"><Project /></div>
+      <div id="Gitstatus"><Gitstatus /></div>
       <div id="contact"><Contact /></div>
       
       <Footer />
