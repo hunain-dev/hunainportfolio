@@ -8,7 +8,7 @@ const Gitstatus = () => {
              </h3>
         </div>
             <div className="gitbottom">
-                <img src="/public/Assets/images/github.png" alt="" />
+            <img src="/Assets/images/github.png" alt="GitHub Stats" />
             
         </div>
       
