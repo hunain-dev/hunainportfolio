@@ -32,13 +32,15 @@ const Cards = () => {
             isVideo: true,
             videoSrc: '/Assets/images/croing.mp4', // Path to the video
         },
-        {
-            cardimg: '/Assets/images/thritysix.png',  // Corrected the path here
-            cardh4: 'THIRTY-SIX-STUDIO Digital Agency | (Coming soon)',
-        },
+      
         {
             cardimg: '/Assets/images/poppr.png',  // Corrected the path here
             cardh4: 'Poppr AR, VR  Digital agency Website | (Coming soon)',
+        },
+        
+        {
+            cardimg: '/Assets/images/ems.png',  // Corrected the path here
+            cardh4: 'Employee management system | ( Coming soon )',
         },
     ];
 
