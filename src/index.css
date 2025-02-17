@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+::-webkit-scrollbar {
+  width: 0px;
+  background: none;
+}
 @font-face {
   font-family: 'Actay';
   src: url('/public/Assets/Fonts/Actay-Regular.otf') 
@@ -110,7 +113,7 @@ html,body{
 
 .navbar {
   height:9vh;
-  width: 50%;
+  width: 53%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,6 +166,8 @@ html,body{
 .bottom h2:hover::after {
   width: 100%;
 }
+
+
 
 .Home{
   width: 100%;

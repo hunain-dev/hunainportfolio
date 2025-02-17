@@ -38,10 +38,7 @@ const Cards = () => {
             cardh4: 'Poppr AR, VR  Digital agency Website | (Coming soon)',
         },
         
-        {
-            cardimg: '/Assets/images/ems.png',  // Corrected the path here
-            cardh4: 'Employee management system | ( Coming soon )',
-        },
+      
     ];
 
     const openLink = (url) => {
