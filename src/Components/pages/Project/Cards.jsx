@@ -34,8 +34,8 @@ const Cards = () => {
         },
       
         {
-            cardimg: '/Assets/images/poppr.png',  // Corrected the path here
-            cardh4: 'Poppr AR, VR  Digital agency Website | (Coming soon)',
+            cardimg: '/Assets/images/spacer.png',  // Corrected the path here
+            cardh4: 'spencergabor.work Digital agency website | (Coming soon)',
         },
         
       
