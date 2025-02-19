@@ -113,7 +113,7 @@ html,body{
 
 .navbar {
   height:9vh;
-  width: 53%;
+  width: 43%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,7 +151,9 @@ html,body{
   position: relative;  
   padding-bottom: 5px;
 }
-
+.bottom .githubstate h2 {
+ 
+}
 .bottom h2::after {
   content: '';
   position: absolute;
@@ -968,7 +970,9 @@ width: 100%;
     width: 7vw;
     opacity: 0;
   }
-  
+  .Loader h1{
+    font-size: 7vw;
+    }
   .navbar {
     opacity: 1;
     height: 8vh;
@@ -984,7 +988,7 @@ width: 100%;
   }
     
   
-  
+ 
   .bottom {
     
 
@@ -1000,7 +1004,7 @@ width: 100%;
   
   
 .bottom h2{
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   font-weight: 500;
   color: #262525;
 }
@@ -1442,10 +1446,15 @@ padding: 0 4vw;
     width: 5.8vw;
     opacity: 0;
   }
-  
+  .Loader h1{
+    font-size: 6vw;
+    }
     .navbar {
-      height: 9vh;
-      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 8vh;
+      width: 88%;
       position: relative;
       position: fixed;  
       bottom: 0;  /* Places it at the very bottom of the screen */
@@ -1472,7 +1481,7 @@ padding: 0 4vw;
     
     
   .bottom h2{
-    font-size: 2.5vw;
+    font-size: 2.8vw;
     font-weight: 500;
     color: #262525;
   }
@@ -1897,15 +1906,17 @@ margin-bottom: 3vw;
 @media (min-width: 1025px) and (max-width: 1280px){
   
 .cursor {
-  height: 5vh;
-  width: 3vw;
+  height: 4vh;
+  width: 2.3vw;
 }
 
-
+.Loader h1{
+  font-size: 5vw;
+  }
 
 .navbar {
   height:8.5vh;
-  width: 60%;
+  width: 55%;
   left: 50%; 
 
 
@@ -1928,7 +1939,7 @@ margin-bottom: 3vw;
 }
 
 .bottom h2 {
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   font-weight: 500;
   color: #262525;
   position: relative;  
