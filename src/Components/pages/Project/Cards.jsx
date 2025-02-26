@@ -8,18 +8,18 @@ const Cards = () => {
             cardimg: '/Assets/images/spacer.png',  // Corrected the path here
             cardh4: 'spencergabor.work Digital agency website | (Coming soon)',
         },
-     
+        {
+            cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',
+            cardimg: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/0daa4d145487469.62d94b40df0af.png',
+            link: 'https://ochi-design-production.netlify.app/'
+        },
       
         {
             cardimg: '/Assets/images/Web 1920 – 1.png',
             cardh4: 'Creator of Two Good Company Website',
             link: 'https://twogoodcompany.netlify.app/'
         },
-        {
-            cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',
-            cardimg: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/0daa4d145487469.62d94b40df0af.png',
-            link: 'https://ochi-design-production.netlify.app/'
-        },
+      
           {
             cardimg: '/Assets/images/nature.jpg',
             cardh4: 'Specialist in Animated Websites | Creator of Rejouice Design',
@@ -52,7 +52,7 @@ const Cards = () => {
     };
 
     return (
-        <div className="Card">
+        <div className="Card"  >
             <div className="cards">
                 {data.map((elem, index) => (
                     <div 

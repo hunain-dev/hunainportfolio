@@ -1,4 +1,7 @@
+@import "tailwindcss";
+
 *{
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -113,17 +116,16 @@ html,body{
 
 .navbar {
   height:9vh;
-  width: 43%;
+  width: 93%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: fixed;
   top: 0; 
   left: 50%; 
   transform: translateX(-50%);
   z-index: 99099;
   margin-top: 1vw;
-  background-color: #F7F4F3;
   border-radius: 30vw;
 
   
@@ -132,8 +134,10 @@ html,body{
 
 
  .bottom {
+  background-color: #f7f4f3;
   height: 100%;
-  width: 100%;
+  border-radius: 3vw;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,7 +145,6 @@ html,body{
   gap: 2.2vw;
   padding: 0.6vw 2vw;
   box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5); 
-  border-radius: 2vw;
 }
 
 .bottom h2 {
@@ -151,8 +154,21 @@ html,body{
   position: relative;  
   padding-bottom: 5px;
 }
-.bottom .githubstate h2 {
- 
+.end{
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  align-items: right  ;
+  justify-content: flex-end;
+}
+.end button{
+  padding: 1.1vw 3.2vw;
+  border: none;
+  background-color: #212020;
+  color: white;
+  font-size: 1.2vw;
+  font-family: actay;
+
 }
 .bottom h2::after {
   content: '';
@@ -336,7 +352,7 @@ html,body{
 
 button{
   border: none;
-  padding: 1.5vw 3.2vw;
+  padding: 1.5vw 3vw;
   background-color:#242627;
   color: white;
   font-family: Actay;
@@ -990,8 +1006,7 @@ width: 100%;
   
  
   .bottom {
-    
-
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1000,6 +1015,7 @@ width: 100%;
     padding: 3vw 1vw;
     box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5);  /* Added RGBA for transparency */
     border-radius: 4vw;
+    width: 96%;
   }
   
   
@@ -1025,6 +1041,23 @@ width: 100%;
   width: 100%;
 }
 
+.end{
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  align-items: right  ;
+  justify-content: flex-end;
+}
+.end button{
+  padding: 1.1vw 3.2vw;
+  border: none;
+  background-color: #212020;
+  color: white;
+  font-size: 1.2vw;
+  font-family: actay;
+  opacity: 0;
+
+}
 
   .animated-button {
     padding: 6vw 2vw;
@@ -1466,18 +1499,20 @@ padding: 0 4vw;
     }
       
     
-    
     .bottom {
-      
-  
+      position: absolute;
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: 'Gilroy', sans-serif;  /* Added quotes and fallback font */
-      gap: 3.3vw;
+      gap: 3vw;
       padding: 3vw 1vw;
+      box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5);  /* Added RGBA for transparency */
       border-radius: 4vw;
+      width: 96%;
     }
+    
+    
     
     
   .bottom h2{
@@ -1502,7 +1537,23 @@ padding: 0 4vw;
     width: 100%;
   }
 
-
+  .end{
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    align-items: right  ;
+    justify-content: flex-end;
+  }
+  .end button{
+    padding: 1.1vw 3.2vw;
+    border: none;
+    background-color: #212020;
+    color: white;
+    font-size: 1.2vw;
+    font-family: actay;
+    opacity: 0;
+  
+  }
   .Home{
     width: 100%;
     margin-top: -1vw;
@@ -1914,37 +1965,45 @@ margin-bottom: 3vw;
   font-size: 5vw;
   }
 
-.navbar {
-  height:8.5vh;
-  width: 55%;
-  left: 50%; 
-
-
+  .navbar {
+    height:9vh;
+    width: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 99099;
+    margin-top: 1vw;
+    border-radius: 30vw;
   
+    
+  
+  }
 
-}
+  .bottom {
+    background-color: #f7f4f3;
+    height: 100%;
+    border-radius: 3vw;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gilroy', sans-serif; 
+    gap: 2.2vw;
+    padding: 0.6vw 2vw;
+    box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5); 
+  }
+  .bottom h2 {
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #262525;
+    position: relative;  
+    padding-bottom: 5px;
+  }
 
-
- .bottom {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Gilroy', sans-serif; 
-  gap: 2.2vw;
-  padding: 0.6vw 1vw;
-  box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5); 
-  border-radius: 6vw;
-}
-
-.bottom h2 {
-  font-size: 1.7vw;
-  font-weight: 500;
-  color: #262525;
-  position: relative;  
-  padding-bottom: 5px;
-}
 
 .bottom h2::after {
   content: '';
@@ -1960,10 +2019,25 @@ margin-bottom: 3vw;
 .bottom h2:hover::after {
   width: 100%;
 }
+.end{
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  align-items: right  ;
+  justify-content: flex-end;
+}
+.end button{
+  padding: 1.4vw 4vw;
+  border: none;
+  background-color: #212020;
+  color: white;
+  font-size: 1.2vw;
+  font-family: actay;
 
+}
 .Home{
   width: 100%;
-  margin-top: 8vw;
+  margin-top: 5vw;
    
   }
   
@@ -1993,8 +2067,8 @@ margin-bottom: 3vw;
   
   }
   .imageupper {
-    height: 45vh;
-    width: 27vw;
+    height: 41vh;
+    width: 22vw;
   
   }
   
@@ -2016,14 +2090,14 @@ margin-bottom: 3vw;
   font-size: 2.5vw;
  }
  .Button{
-  height: 12vh;
+  height: 10vh;
   width: 100%;
   
 }
 
 button{
-  padding: 2.5vw 3.2vw;
-  font-size: 1.7vw;
+  padding: 2vw 3vw;
+  font-size: 1.3vw;
 }
 
 
@@ -2086,16 +2160,17 @@ button{
  
  .Impactfulldesign {
   margin-top: 9vh;
-  line-height: 22vw;
+  line-height: 24vw;
   
 }
 .mans {
-  height: 75vh;
-  width: 50%;
+
+  height: 85vh;
+  width: 52%;
 }
 .text-content h2,
 .text-content h1 {
-  font-size: 30vw;
+  font-size: 33vw;
 }
 
 .myskills{
@@ -2111,8 +2186,8 @@ button{
 }
 
 .skill-item {
-  width: 15vh;
-  height: 15vh;
+  width: 12vh;
+  height: 12vh;
 }
 
 
@@ -2250,7 +2325,7 @@ button{
 }
 
 .gitbottom img{
-  height: 40vh;
+  height: 33vh;
   
 
 }
@@ -2269,12 +2344,12 @@ button{
 
 
 .contactadresss h2{
-  font-size: 7.3vw;
+  font-size: 7vw;
 
 
 }
 .contactadresss h3{
-  font-size: 2.6vw;
+  font-size: 2.2vw;
 
 }
 
