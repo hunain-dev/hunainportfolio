@@ -1,13 +1,11 @@
 
 const Header = () => {
   const downloadResume = () => {
-    // Create a temporary <a> element
     const link = document.createElement("a");
-    link.href = "/public/Assets/images/Muhammad Hunain khan Resume.pdf";  // Path to your resume inside the public folder
-    link.download = "Muhammad Hunain khan Resume.pdf"; // Suggested file name
-    document.body.appendChild(link); // Append it to the body
-    link.click(); // Simulate click to download
-    document.body.removeChild(link); // Clean up
+    link.href = "/public/Assets/images/Muhammad Hunain khan Resume.pdf"; 
+    link.download = "Muhammad Hunain khan Resume.pdf"; 
+    document.body.appendChild(link); 
+    document.body.removeChild(link);
   };
 
   return (
