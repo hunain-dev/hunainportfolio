@@ -1,10 +1,10 @@
-
 const Header = () => {
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/public/Assets/images/Muhammad Hunain khan Resume.pdf"; 
-    link.download = "Muhammad Hunain khan Resume.pdf"; 
-    document.body.appendChild(link); 
+    link.href = "/Assets/images/Muhammad Hunain khan Resume.pdf"; // Correct path
+    link.download = "Muhammad Hunain khan Resume.pdf";
+    document.body.appendChild(link);
+    link.click(); // Trigger the download
     document.body.removeChild(link);
   };
 
@@ -21,8 +21,6 @@ const Header = () => {
       <div className="end">
         <button onClick={downloadResume}>Resume</button>
       </div>
-
-    
     </div>
   );
 };

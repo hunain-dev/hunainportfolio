@@ -6,7 +6,12 @@ const Cards = () => {
     const data = [
         {
             cardimg: '/Assets/images/spacer.png',  // Corrected the path here
-            cardh4: 'spencergabor.work Digital agency website | (Coming soon)',
+            cardh4: 'spencergabor.work Digital agency (Coming soon)',
+        },
+
+        {
+            cardimg: '/Assets/images/lumos.png',  // Corrected the path here
+            cardh4: 'Breaking Down the Lumos Marketing Website – An Awwwards-Winning Masterpiece! 🚀',
         },
         {
             cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',

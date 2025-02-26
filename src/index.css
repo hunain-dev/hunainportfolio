@@ -124,7 +124,7 @@ html,body{
   top: 0; 
   left: 50%; 
   transform: translateX(-50%);
-  z-index: 99099;
+  z-index: 9999;
   margin-top: 1vw;
   border-radius: 30vw;
 
