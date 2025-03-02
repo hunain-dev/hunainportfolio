@@ -11,7 +11,7 @@ const Cards = () => {
 
         {
             cardimg: '/Assets/images/lumos.png',  // Corrected the path here
-            cardh4: 'Breaking Down the Lumos Marketing Website – An Awwwards-Winning Masterpiece! 🚀',
+            cardh4: 'Breaking Down the Lumos Marketing Website – An Awwwards-Winning Masterpiece! (Coming soon) 🚀',
         },
         {
             cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',

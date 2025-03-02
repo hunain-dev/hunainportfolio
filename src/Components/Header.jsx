@@ -16,7 +16,7 @@ const Header = () => {
         <h2><a href="#stack">Stack</a></h2>
         <h2><a href="#services">Services</a></h2>
         <h2><a href="#project">Project</a></h2>
-        <h2><a href="#contact">Contact</a></h2>
+        <h2><a href="#Footer">Contact</a></h2>
       </div>
       <div className="end">
         <button onClick={downloadResume}>Resume</button>

@@ -18,6 +18,10 @@
   font-family: 'ActayCondensed';
   src: url('/public/Assets/Fonts/ActayCondensed-ThinItalic.otf') 
 }
+@font-face {
+  font-family: 'ppneuemontreal';
+  src: url('/public/Assets/Fonts/ppneuemontreal-bold.otf') 
+}
 
 @font-face {
   font-family: 'MarvinVisions';
@@ -33,6 +37,11 @@
   src: url('/public/Assets/Fonts/sigana-condensed.otf') 
 }
 @font-face {
+  font-family: 'impact';
+  src: url('/public/Assets/Fonts/impact.ttf') 
+}
+
+@font-face {
   font-family: 'Stadium';
   src: url('/public/Assets/Fonts/Stadium.ttf') 
 }
@@ -47,6 +56,11 @@
 @font-face {
   font-family: 'Morganite';
   src: url('/public/Assets/Fonts/Morganite-Black.ttf') 
+}
+
+@font-face {
+  font-family: 'Impacted';
+  src: url('/public/Assets/Fonts/Impacted.ttf') 
 }
 @font-face {
   font-family: 'rejouice';
@@ -102,7 +116,7 @@ html,body{
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
-  background-color: #f7f4f3;
+  background-color: #f5efef;
 
 }
 .smooth-scroll {
@@ -655,6 +669,8 @@ button{
   display: flex;
   justify-content: center;
   cursor: pointer;
+  
+
 
 }
 
@@ -840,62 +856,6 @@ width: 100%;
   transform: rotate(180deg);
 }
 
-
-.contact{
-  width: 100%;
-  padding: 2vw 2vw;
-}
-
-.contactadresss{
-  width: 60%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-
-}
-
-
-.contactadresss h2{
-  font-family:ThatAppeal ;
-  font-weight: 500;
-  font-size: 4vw;
-  margin: 1vw 0;
-  color: #242627;
-
-
-
-}
-.contactadresss a{
-  color: #242627;
- text-decoration: none;
-
-}
-.contactadresss h3{
-  font-family:Actay ;
-  font-weight: 500;
-  font-size: 1.5vw;
-
-}
-
-.Footer{
-  width: 100%;
-  padding: 2vw 2vw;
-  margin-top: 13vh;
-}
-
-.Footer H2{
-  font-family:ActayCondensed ;
-  font-weight: 500;
-  font-size: 7.3vw;
-  text-align: center;
-  color: #242627;
-  
-}
-
-
-
 .video-thumbnail {
   position: relative;
   width: 100%;
@@ -935,10 +895,76 @@ width: 100%;
 }
 
 
+
+.Checkmates{
+  height: 155vh;
+  width: 100%;
+
+}
+
+.back{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.back h4{
+ font-family: Impact;
+ text-transform: uppercase;
+ font-size: 8vw;
+ line-height: 7.8vw;
+ text-align: center;
+ color: #c5c0c0;
+
+}
+.back h4 span{
+  
+ color: #181818;
+
+ 
+ }
+
+.front{
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  margin-top: 60vh;
+
+}
+.front img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.fronttop {
+  padding: 0 1vw;
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  justify-content: space-between; /* Horizontally center the text */
+  height: 10vh; /* Height of the container */
+  width: 100%; /* Full width */
+}
+
+.fronttop h5 {
+  font-family: rejouice;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #212020;
+  font-size: 1vw;
+
+}
 .Gitstatus{
   width: 100%;
-  margin-bottom: 6vw;
+  margin-bottom: 1vw;
   margin-top: 2vw;
+
 }
 
 
@@ -979,6 +1005,62 @@ width: 100%;
   
 
 }
+
+.contact{
+  width: 100%;
+  padding: 2vw 2vw;
+}
+
+.contactadresss{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
+}
+
+
+.contactadresss h2{
+  font-family:ThatAppeal ;
+  font-weight: 500;
+  font-size: 4vw;
+  margin: 1vw 0;
+  color: #242627;
+
+
+
+}
+.contactadresss a{
+  color: #242627;
+ text-decoration: none;
+
+}
+.contactadresss h3{
+  font-family:Actay ;
+  font-weight: 500;
+  font-size: 1.5vw;
+
+}
+
+
+
+.Footer{
+  width: 100%;
+  padding: 2vw 2vw;
+  margin-top: 13vh;
+}
+
+.Footer H2{
+  font-family:ActayCondensed ;
+  font-weight: 500;
+  font-size: 7.3vw;
+  text-align: center;
+  color: #242627;
+  
+}
+
 
 @media (max-width: 768px) { 
   .cursor {
@@ -1260,7 +1342,6 @@ padding: 0 4vw;
 
 }
 
-
 .Designs{
   padding: 2vw 1vw;
   }
@@ -1392,46 +1473,56 @@ padding: 0 4vw;
   transition: max-height 0.3s ease-in-out;
 }
 
-.contact{
+
+
+.Checkmates{
+  height: 83vh;
   width: 100%;
-  padding: 3vw 2vw;
-}
-.contactadresss{
-  width: 100%;
-
-
 
 }
 
 
-.contactadresss h2{
-  font-size: 10vw;  
-
-
-}
-.contactadresss h3{
-  font-size: 3vw;
+.back{
+  display: flex;
+  align-items: flex-start;
+  height: 46vh;
 
 }
 
-
-.Footer{
-  width: 100%;
-  padding: 2vw 2vw;
-  margin-top: 6vh;
-}
-.Footer H2{
+.back h4{
   font-size: 11vw;
+  line-height: 12vw;
+ 
+ }
+ .front{
+  margin-top: 9vh;
+
 }
+.fronttop {
+  padding: 2vw 1vw;
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  justify-content: center;
+  flex-direction: column;
+  height: 30vh; /* Height of the container */
+  margin-bottom: 7vh;
+  width: 100%; /* Full width */
+}
+
+.fronttop h5 {
+  margin: 2vw 0;
+  color: #212020;
+  font-size: 4.1vw;
+
+}
+
+
 
 .Gitstatus{
+  height: 40vh;
   width: 100%;
-  margin-bottom: 10vw;
-  margin-top: 2vw;
 
 }
-
-
 .gittop{
   height: 17vh;
   width: 100%;
@@ -1469,10 +1560,45 @@ padding: 0 4vw;
 
 
 
+.contact{
+  width: 100%;
+  padding: 3vw 2vw;
+}
+.contactadresss{
+  width: 100%;
+
+
+
+}
+
+
+.contactadresss h2{
+  font-size: 10vw;  
+
+
+}
+.contactadresss h3{
+  font-size: 3vw;
+
+}
+
+
+.Footer{
+  width: 100%;
+  padding: 2vw 2vw;
+  margin-top: 6vh;
+}
+.Footer H2{
+  font-size: 11vw;
+}
+
+
+
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px){
+ 
 
   .cursor {
     height: 5vh;
@@ -1894,8 +2020,6 @@ margin-bottom: 3vw;
   font-size: 4vw;
 }
 
-
-
 .gitbottom{
   height: 33vh;
   width: 95%;
@@ -1909,10 +2033,51 @@ margin-bottom: 3vw;
 
 .gitbottom img{
   height: 21vh;
+
   
 
 }
 
+.Checkmates{
+  height: 100vh;
+  width: 100%;
+
+}
+
+
+.back{
+  display: flex;
+  align-items: flex-start;
+  height: 60vh;
+
+
+}
+
+.back h4{
+  font-size: 11vw;
+  line-height: 12vw;
+ 
+ }
+ .front{
+  margin-top: 12vh;
+
+}
+.fronttop {
+  padding: 2vw 1vw;
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  justify-content: center;
+  flex-direction: column;
+  height: 35vh; /* Height of the container */
+  margin-bottom: 2vh;
+}
+
+.fronttop h5 {
+  margin: 2vw 0;
+  color: #212020;
+  font-size: 3.3vw;
+
+}
 
 
 
@@ -1923,10 +2088,7 @@ margin-bottom: 3vw;
 .contactadresss{
   width: 100%;
 
-
-
 }
-
 
 .contactadresss h2{
   font-size: 10vw;
@@ -1939,15 +2101,17 @@ margin-bottom: 3vw;
 }
 
 
-
 .Footer{
   width: 100%;
   padding: 2vw 2vw;
-  margin-top: 6vh;
+  margin-top: 4vh;
 }
 .Footer H2{
   font-size: 11vw;
+  line-height: 10vw;
 }
+
+
 
 
 
@@ -1955,6 +2119,7 @@ margin-bottom: 3vw;
 
 
 @media (min-width: 1025px) and (max-width: 1280px){
+
   
 .cursor {
   height: 4vh;
@@ -1988,13 +2153,6 @@ margin-bottom: 3vw;
     height: 100%;
     border-radius: 3vw;
     width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Gilroy', sans-serif; 
-    gap: 2.2vw;
-    padding: 0.6vw 2vw;
-    box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5); 
   }
   .bottom h2 {
     font-size: 1.3vw;
@@ -2005,33 +2163,17 @@ margin-bottom: 3vw;
   }
 
 
-.bottom h2::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 4px;
-  left: 0;
-  bottom: 0;  
-  background-color: #ee8d2c;
-  transition: width 0.3s ease-in-out; /* Smooth animation */
-}
 
-.bottom h2:hover::after {
-  width: 100%;
-}
 .end{
   height: 100%;
   width: 20vw;
-  display: flex;
-  align-items: right  ;
-  justify-content: flex-end;
 }
 .end button{
   padding: 1.4vw 4vw;
   border: none;
   background-color: #212020;
   color: white;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   font-family: actay;
 
 }
@@ -2299,8 +2441,8 @@ button{
 
 .Gitstatus{
   width: 100%;
-  margin-bottom: 6vw;
-  margin-top: 2vw;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
 }
 
 
@@ -2331,6 +2473,34 @@ button{
 }
 
 
+.Checkmates{
+  height: 135vh;
+  width: 100%;
+
+}
+
+.back{
+  height: 85vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.front{
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  margin-top: 35vh;
+
+}
+
+
+.fronttop h5 {
+  font-size: 1.1vw;
+
+}
 .contact{
   width: 100%;
   padding: 3vw 2vw;
@@ -2353,7 +2523,6 @@ button{
 
 }
 
-
 .Footer{
   width: 100%;
   padding: 2vw 2vw;
@@ -2363,7 +2532,22 @@ button{
   font-size: 7vw;
 }
 
+.contactadresss h2{
+  font-size: 7vw;
+
+
 }
+.contactadresss h3{
+  font-size: 2.2vw;
+
+}
+
+
+
+
+}
+
+
 
 
 
