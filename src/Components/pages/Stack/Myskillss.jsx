@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Myskillss = () => {
+const   Myskillss = () => {
     const skillsimg = [
         { img: "Assets/images/html.png" },
         { img: "Assets/images/css.png" },

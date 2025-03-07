@@ -8,7 +8,6 @@ import Footer from "./Components/Footer";
 import Cursor from "./Components/pages/Cursor/Cursor";
 import Loader from "./Components/Loader/Loader";
 import Gitstatus from "./Components/pages/Git-status/Gitstatus";
-import Checkmates from "./Components/pages/Checkmates/Checkmates";
 import Contact from "./Components/pages/Contact/Contact";
 const App = () => {
   return (
@@ -23,7 +22,6 @@ const App = () => {
       <div id="stack"><Stack /></div>
       <div id="services"><Ourservices /></div>
       <div id="project"><Project /></div>
-      <Checkmates />
       <div id="Gitstatus"><Gitstatus /></div>
       <div id="Footer"><Contact /></div>
       <Footer />
