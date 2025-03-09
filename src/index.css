@@ -299,8 +299,7 @@ html,body{
 }
 
 .imageupper {
-  height: 41vh;
-  width: 18vw;
+  height: 35vh;
   background-color:#B3CDFF;  
   position: absolute;
   z-index: 9999;
@@ -1063,6 +1062,7 @@ width: 100%;
 
 
 @media (max-width: 768px) { 
+
   .cursor {
     height: 3.6vh;
     width: 7vw;
@@ -1597,8 +1597,8 @@ padding: 0 4vw;
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px){
- 
+@media (min-width: 768px) and (max-width: 1024px){  
+
 
   .cursor {
     height: 5vh;
@@ -2119,6 +2119,7 @@ margin-bottom: 3vw;
 
 
 @media (min-width: 1025px) and (max-width: 1280px){
+
 
   
 .cursor {
