@@ -24,7 +24,13 @@ const Cards = () => {
             cardh4: 'Creator of Two Good Company Website',
             link: 'https://twogoodcompany.netlify.app/'
         },
-      
+           
+        {
+            cardimg: '/Assets/images/furni (2).png',
+            cardh4: 'furni-modern-interior-design-studios ',
+            link: 'https://furni-modern-interior-design-studios.netlify.app/',
+
+        },
           {
             cardimg: '/Assets/images/nature.jpg',
             cardh4: 'Specialist in Animated Websites | Creator of Rejouice Design',
@@ -71,7 +77,7 @@ const Cards = () => {
                                     {playingVideo === elem.videoSrc ? (
                                         <video width="100%" height="100%" controls autoPlay>
                                             <source src={elem.videoSrc} type="video/mp4" />
-                                            Your browser does not support the video tag.
+                                           
                                         </video>
                                     ) : (
                                         <img src={elem.cardimg} alt="Card Thumbnail" width="100%" height="100%" />
@@ -81,7 +87,7 @@ const Cards = () => {
                                 <img src={elem.cardimg} alt="Card Image" width="100%" height="100%" />
                             )}
                         </div>
-                        <h4>{elem.cardh4}</h4>
+                        <h4>{elem.cardh4}</h4> 
                     </div>
                 ))}
             </div>
