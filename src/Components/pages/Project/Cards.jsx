@@ -18,7 +18,12 @@ const Cards = () => {
             cardimg: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/0daa4d145487469.62d94b40df0af.png',
             link: 'https://ochi-design-production.netlify.app/'
         },
-      
+        {
+            cardimg: '/Assets/images/weather (2).jpg',
+            cardh4: 'Weather App - Real-time Weather Updates',
+            link: 'https://macro-weather-app.netlify.app/'
+        },
+           
         {
             cardimg: '/Assets/images/Web 1920 – 1.png',
             cardh4: 'Creator of Two Good Company Website',
