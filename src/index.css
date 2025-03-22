@@ -418,8 +418,6 @@ button{
 
 
 
-
-
 .Aboutus{
   width: 100%;
   margin-top: 2vw;
@@ -431,11 +429,10 @@ button{
 }
 
 .Aboutme h2{
- font-family: rejouice;
+ font-family: actay;
  font-weight: 500;
  font-size: 3vw;
  margin: 4vw 0;
- text-transform: uppercase;
  color: #242627;
 
 }
@@ -468,10 +465,9 @@ button{
  }
  .AboutClient h4{
 
- font-family: rejouice;
+ font-family: Actay;
  margin: 1vw 0;
  font-size: 2vw;
- text-transform: uppercase;
  font-weight: 500;
  color: #242627;
 
@@ -634,10 +630,9 @@ button{
 }
 
 .Ourservices h1{
-  font-family: rejouice;
+  font-family: actay;
   font-weight: 500;
   font-size: 3vw;
-  text-transform: uppercase;
   text-align: center;
   color: #242627;
 
@@ -684,7 +679,7 @@ button{
 }
 
 .WorkCollection h2{
-  font-family: rejouice;
+  font-family: actay;
   font-weight: 500;
   font-size: 3vw;
   text-align: center;
@@ -993,7 +988,7 @@ width: 100%;
 }
 
 .fronttop h5 {
-  font-family: rejouice;
+  font-family: actay;
   font-weight: 500;
   text-transform: uppercase;
   color: #212020;
@@ -1063,10 +1058,9 @@ width: 100%;
 
 
 .contactadresss h2{
-  font-family:ThatAppeal ;
+  font-family:actay ;
   font-weight: 500;
-  font-size: 4vw;
-  margin: 1vw 0;
+  font-size: 3vw;
   color: #242627;
 
 
@@ -1078,7 +1072,7 @@ width: 100%;
 
 }
 .contactadresss h3{
-  font-family:Actay ;
+  font-family:actay ;
   font-weight: 500;
   font-size: 1.5vw;
 

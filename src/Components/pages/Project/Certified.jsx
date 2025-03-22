@@ -7,7 +7,7 @@ const Certified = () => {
   
     return (
       <div className="CertifiedCard">
-        <h2>1st Runner-Up in Web Design | Techwiz Pakistan Web Design Competition</h2> {/* ✅ Upar fix */}
+        <h2>1st Runner-Up in Web Design | Techwiz Pakistan Web Design Competition</h2>
   
         <div className="Certifiedcards">
           {data.map((elem, index) => (
