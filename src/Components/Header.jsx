@@ -19,7 +19,9 @@ const Header = () => {
         <h2><a href="#Footer">Contact</a></h2>
       </div>
       <div className="end">
-        <button onClick={downloadResume}>Resume</button>
+      <button onClick={downloadResume} class="btn glitch">
+  <span>Resume</span>
+</button>
       </div>
     </div>
   );
