@@ -13,6 +13,7 @@ const Loader = () => {
       tl.from('.Loader h1 span', {
         opacity: 1,
         duration: 1.2,
+
         stagger: 0.3, 
         y: 1000, 
     });
