@@ -1,8 +1,8 @@
 const Header = () => {
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Assets/images/Muhammad Hunain Resume.pdf"; // Correct path
-    link.download = "Muhammad Hunain Resume.pdf";
+    link.href = "/Assets/images/Hunii.pdf"; // Correct path
+    link.download = "Muhammad hunain Resume.pdf";
     document.body.appendChild(link);
     link.click(); // Trigger the download
     document.body.removeChild(link);
