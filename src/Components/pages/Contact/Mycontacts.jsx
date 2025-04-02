@@ -10,8 +10,8 @@ const Mycontacts = () => {
     <div className="right">
 <h2>Social</h2>
  <a href="https://www.linkedin.com/in/muhammad-hunain-khan/"> <h3>Linkedin</h3></a>  
-   <a href="https://www.upwork.com/freelancers/~017e29fdfdbef06da6"><h3>Upwwork</h3></a>
-   <a href="https://github.com/PEWDIPIES"><h3>Github</h3></a>
+    
+   <a href="https://github.com/hunain-dev"><h3>Github</h3></a>
     </div>
    </div>
   
