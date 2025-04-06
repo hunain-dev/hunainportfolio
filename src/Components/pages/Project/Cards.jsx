@@ -6,7 +6,8 @@ const Cards = () => {
     const data = [
         {
             cardimg: '/Assets/images/spacer.png',  // Corrected the path here
-            cardh4: 'spencergabor.work Digital agency (Coming soon)',
+            cardh4: 'spencergabor.work Digital agency',
+            link:'https://spancer-gabor.netlify.app/'
         },
 
         {

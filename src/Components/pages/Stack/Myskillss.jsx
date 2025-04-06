@@ -17,10 +17,7 @@ const   Myskillss = () => {
                     <motion.div
                         key={index}
                         className="skill-item"
-                        drag
-                        dragConstraints={{ left: -50, right: 50, top: -50, bottom: 50 }} // Smooth Dragging
-                        whileHover={{ scale: 1.1 }} // Hover Animation
-                        whileTap={{ scale: 0.9 }} // Click Animation
+                     
                     >
                         <img src={elem.img} alt={`Skill ${index + 1}`} />
                     </motion.div>
