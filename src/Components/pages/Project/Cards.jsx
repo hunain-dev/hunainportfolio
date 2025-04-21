@@ -5,7 +5,12 @@ const Cards = () => {
 
     const data = [
         {
-            cardimg: '/Assets/images/spacer.png',  // Corrected the path here
+            cardimg: '/Assets/images/Christmas image.png',  // Corrected the path here
+            cardh4: 'Santa’s Companion | Gifts, Decor & More',
+            link:'https://santas-store.netlify.app/'
+        },
+        {
+            cardimg: '/Assets/images/3d spancer gabor.png',  // Corrected the path here
             cardh4: 'spencergabor.work Digital agency',
             link:'https://spancer-gabor.netlify.app/'
         },
