@@ -16,45 +16,45 @@ const Cards = () => {
         },
 
         {
-            cardimg: '/Assets/images/lumos.png',  // Corrected the path here
-            cardh4: 'Breaking Down the Lumos Marketing Website – An Awwwards-Winning Masterpiece! (Coming soon) 🚀',
+            cardimg: '/Assets/images/Future.png',  // Corrected the path here
+            cardh4: 'Future of private Quity– An Awwwards-Winning Masterpiece! (Coming soon) 🚀',
         },
         {
             cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',
-            cardimg: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/0daa4d145487469.62d94b40df0af.png',
+            cardimg: 'https://b4a73b976f719911399d-66f2e4e8cca57960c5d14fdedb6b9bad.ssl.cf2.rackcdn.com/Original/IqGts_temp_76641756_148325_$2020_05_21_01_27_07_1509.jpeg',
             link: 'https://ochi-design-production.netlify.app/'
         },
         {
-            cardimg: '/Assets/images/weather (2).jpg',
+            cardimg: 'https://wallpapers.com/images/hd/fine-weather-landscape-iq9k6ubn8w9yhhkc.jpg',
             cardh4: 'Weather App - Real-time Weather Updates',
             link: 'https://macro-weather-app.netlify.app/'
         },
            
         {
-            cardimg: '/Assets/images/Web 1920 – 1.png',
+            cardimg: '/Assets/images/TwoGoodGoodSave.jpg',
             cardh4: 'Creator of Two Good Company Website',
             link: 'https://twogoodcompany.netlify.app/'
         },
            
         {
-            cardimg: '/Assets/images/furni (2).png',
+            cardimg: 'https://plus.unsplash.com/premium_photo-1681046751108-a516bea00570?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c29mYXxlbnwwfHwwfHx8MA%3D%3D',
             cardh4: 'furni-modern-interior-design-studios ',
             link: 'https://furni-modern-interior-design-studios.netlify.app/',
 
         },
           {
-            cardimg: '/Assets/images/nature.jpg',
+            cardimg: 'https://images.prismic.io/rejouice-2024/Z0SmXq8jQArT1SWV_og.jpg?auto=format,compress',
             cardh4: 'Specialist in Animated Websites | Creator of Rejouice Design',
             link: 'https://myrejoucie.netlify.app/' 
         },
         {
-            cardimg: '/Assets/images/we.png', // Corrected the path here
+            cardimg: 'https://www.cssdesignawards.com/cdasites/2023/202303/20230306095557.jpg', // Corrected the path here
             cardh4: 'Creator of We Think Elastic Website',
             link: 'https://wethinkelastic.netlify.app/'
         },
       
         {
-            cardimg: '/Assets/images/coing.png',  // Corrected the path here
+            cardimg: 'https://www.acrossagency.se/wp-content/uploads/2019/07/Across-logo-svart.jpg',  // Corrected the path here
             cardh4: 'CROING | Creative agency',
             isVideo: true,
             videoSrc: '/Assets/images/croing.mp4', // Path to the video
