@@ -1,8 +1,9 @@
 import { useState } from "react";
 
 const Cards = () => {
+ 
+  
     const [playingVideo, setPlayingVideo] = useState(null);
-
     const data = [
         {
             cardimg: '/Assets/images/Christmas image.png',  // Corrected the path here
@@ -17,7 +18,7 @@ const Cards = () => {
 
         {
             cardimg: '/Assets/images/Future.png',  // Corrected the path here
-            cardh4: 'Future of private Quity– An Awwwards-Winning Masterpiece! (Coming soon) 🚀',
+            cardh4: 'Future of private Quity– An Awwwards-Winning Masterpiece! (Comming soon)',
         },
         {
             cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',
@@ -48,23 +49,26 @@ const Cards = () => {
             link: 'https://myrejoucie.netlify.app/' 
         },
         {
-            cardimg: 'https://www.cssdesignawards.com/cdasites/2023/202303/20230306095557.jpg', // Corrected the path here
+            cardimg: 'https://www.cssdesignawards.com/cdasites/2023/202303/20230306095557.jpg', 
             cardh4: 'Creator of We Think Elastic Website',
             link: 'https://wethinkelastic.netlify.app/'
         },
       
+
         {
-            cardimg: 'https://www.acrossagency.se/wp-content/uploads/2019/07/Across-logo-svart.jpg',  // Corrected the path here
+            cardimg: 'https://www.acrossagency.se/wp-content/uploads/2019/07/Across-logo-svart.jpg', 
             cardh4: 'CROING | Creative agency',
             isVideo: true,
-            videoSrc: '/Assets/images/croing.mp4', // Path to the video
+            videoSrc: '/Assets/images/croing.mp4',
         },
       
         
         
       
     ];
+ 
 
+      
     const openLink = (url) => {
         window.open(url, '_blank');
     };
@@ -75,7 +79,7 @@ const Cards = () => {
 
     return (
         <div className="Card"  >
-            <div className="cards">
+            <div className="cards" >
                 {data.map((elem, index) => (
                     <div 
                         key={index} 

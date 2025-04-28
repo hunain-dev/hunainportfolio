@@ -579,10 +579,9 @@ button{
 }
 
 .myskills h1{
-  font-family: rejouice;
+  font-family: actay;
   font-weight: 500;
-  font-size: 3.2vw;
-  text-transform: uppercase;
+  font-size: 3vw;
   text-align: center;
   color: #242627;
 
@@ -600,7 +599,9 @@ button{
   align-items: center;
   gap: 3.5vw; 
   padding: 2vh;
-  height: 29vh;
+  height: 30vh;
+  width: 70%;
+  margin: 0 auto;
   margin-top: 1vw;
 }
 
@@ -608,25 +609,23 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 13vh;
   height: 13vh;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: grab; /* Dragging cursor */
+cursor: pointer;
+  border-radius: 10vw;
 }
 
 .skill-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 2vw;
 }
 
 
 
 .Ourservices{
   width: 100%;
-  margin-top: 15vh;
+  margin-top: 16vh;
 
 
 }
@@ -649,7 +648,7 @@ button{
 
 
 .Designs h3{
-  font-family: MarvinVisions;
+  font-family: actay;
   font-weight: 500;
   font-size: 3vw;
   color: #242627;
