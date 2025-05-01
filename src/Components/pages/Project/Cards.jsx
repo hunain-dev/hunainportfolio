@@ -6,6 +6,10 @@ const Cards = () => {
     const [playingVideo, setPlayingVideo] = useState(null);
     const data = [
         {
+            cardimg: '/Assets/images/chatgptdigital.png',  // Corrected the path here
+            cardh4: 'Future of Digital agency An Awwwards Winning Masterpiece! (Comming soon)',
+        },
+        {
             cardimg: '/Assets/images/Christmas image.png',  // Corrected the path here
             cardh4: 'Santa’s Companion | Gifts, Decor & More',
             link:'https://santas-store.netlify.app/'
@@ -16,10 +20,7 @@ const Cards = () => {
             link:'https://spancer-gabor.netlify.app/'
         },
 
-        {
-            cardimg: '/Assets/images/Future.png',  // Corrected the path here
-            cardh4: 'Future of private Quity– An Awwwards-Winning Masterpiece! (Comming soon)',
-        },
+      
         {
             cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',
             cardimg: 'https://b4a73b976f719911399d-66f2e4e8cca57960c5d14fdedb6b9bad.ssl.cf2.rackcdn.com/Original/IqGts_temp_76641756_148325_$2020_05_21_01_27_07_1509.jpeg',

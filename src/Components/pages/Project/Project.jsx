@@ -1,7 +1,6 @@
 import WorkCollection from "./WorkCollection";
 import Cards from "./Cards";
 import Certified from "./Certified";
-import Faqs from "./Faqs";
 import Checkmates from "../Checkmates/Checkmates";
 const Project = () => {
   return (
@@ -10,7 +9,6 @@ const Project = () => {
       <Cards />
       <Checkmates />
       <Certified />
-      <Faqs />
     </div>
   );
 };

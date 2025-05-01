@@ -87,6 +87,23 @@
   font-family: 'FaqroExtendedWideTrial';
   src: url('/public/Assets/Fonts/FaqroExtendedWideTrial-Regular.ttf') 
 }
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/public/Assets/Fonts/Satoshi.ttf') 
+}
+
+
+@font-face {
+  font-family: 'Satoshi-black';
+  src: url('/public/Assets/Fonts/Satoshi-Black.otf') 
+}
+
+
+@font-face {
+  font-family: 'Queen';
+  src: url('/public/Assets/Fonts/Queen.ttf') 
+}
 ::selection{
   background-color: black;
   color: white;
@@ -157,7 +174,7 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Gilroy', sans-serif; 
+  font-family:'Satoshi'; 
   gap: 2.2vw;
   padding: 0.6vw 2vw;
   box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5); 
@@ -186,7 +203,7 @@ html{
   font-weight: 300;
   color: white;
   background-color: #181818;
-  font-family: actay;
+  font-family: Satoshi;
   border-radius: 8px;
   cursor: pointer;
   overflow: hidden;
@@ -339,11 +356,12 @@ html{
 }
 
 .imageupper {
-  height: 35vh;
+  height: 42vh;
   position: absolute;
   z-index: 9999;
   border-radius: 3vw;
   display: flex;
+  width: 18%;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -387,7 +405,7 @@ html{
   height: 6vh;
 }
 .selectives h2{
- font-family: Actay;
+ font-family: 'Satoshi';
  font-weight: 500;
  font-size: 1.6vw;
  margin-left: 0.6vw;
@@ -422,29 +440,26 @@ button{
 
 .Aboutus{
   width: 100%;
-  margin-top: 2vw;
+  margin-top: 7vw;
 }
 
 .Aboutme{
     margin: 0 auto;
-  width: 75%;
+  width: 80%;
 }
 
 .Aboutme h2{
- font-family: actay;
- font-weight: 500;
+ font-family: Satoshi;
  font-size: 3vw;
- margin: 4vw 0;
+ margin: 2vw 0;
  color: #242627;
 
 }
 
 .Aboutme h4{
-  font-family: Actay;
-  font-weight: 500;
+  font-family: Satoshi;
   font-size: 1.6vw;
   text-align: center;
-  color: #242627;
 
  }
 
@@ -467,11 +482,9 @@ button{
  }
  .AboutClient h4{
 
- font-family: Actay;
- margin: 1vw 0;
+  font-family: Satoshi;
+  margin: 1vw 0;
  font-size: 2vw;
- font-weight: 500;
- color: #242627;
 
  }
  
@@ -483,7 +496,7 @@ button{
  }
 
  .AboutClients h3{
-  font-family: Actay;
+ font-family: Satoshi;
   font-size: 2vw;
   font-weight: 500;
   color: #242627;
@@ -495,7 +508,7 @@ button{
 
  .AboutClients h5{
   
-  font-family: ActayCondensed;
+  font-family: 'Satoshi';
   font-size: 2vw;
   font-weight: 500;
   margin: 1vw 0;
@@ -506,7 +519,7 @@ button{
   
  } .AboutClients h6{
   
-  font-family: Actay;
+  font-family: 'Satoshi';
   font-size: 1.5vw;
   text-align: center;
   font-weight: 500;
@@ -579,7 +592,7 @@ button{
 }
 
 .myskills h1{
-  font-family: actay;
+  font-family: Satoshi;
   font-weight: 500;
   font-size: 3vw;
   text-align: center;
@@ -599,7 +612,6 @@ button{
   align-items: center;
   gap: 3.5vw; 
   padding: 2vh;
-  height: 30vh;
   width: 70%;
   margin: 0 auto;
   margin-top: 1vw;
@@ -626,46 +638,70 @@ cursor: pointer;
 .Ourservices{
   width: 100%;
   margin-top: 16vh;
-
-
-}
-
-.Ourservices h1{
-  font-family: actay;
-  font-weight: 500;
-  font-size: 3vw;
-  text-align: center;
-  color: #242627;
-
-
-}
-
-.Designs{
-  width: 100%;
   height: 100%;
-  padding: 2vw 2vw;
-}
+  background-color: #689D48;
+  position: relative;
 
-
-.Designs h3{
-  font-family: actay;
-  font-weight: 500;
-  font-size: 3vw;
-  color: #242627;
 
 }
 
-.Designs ul{
- padding: 1vw 2vw;
- font-family: Actay;
- margin: 1.7vw 0;
- font-size: 1.7vw;
- color: rgb(25, 24, 24);
+.ourservicestop{
+  width: 100%;
+  padding: 0 1vw;
 
 }
-.Designs li{
- padding: 1.1vw 1vw;
+.ourservicestop h2{ 
+  font-family: 'Impacted';
+ font-weight: 500;
+ font-size:13vw;
+ line-height: 12vw;
+ text-align: center;
+ text-transform: uppercase;
+ color: white;
+
 }
+
+.ourservicesbottom{
+  width: 100%;
+  margin-top: -2vw;
+}
+
+.ourserivesimagepart{
+  height: 100%;
+  width:90%;
+  background-color: #e0e05f;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid black;
+
+}
+.ourserivesimagepart .images{
+  height: 170vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: -10vw;
+
+ 
+}
+.ourserivesimagepart .images img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+ 
+}
+
+.ourservicesfaqs{
+  width: 90%;
+  margin: 0 auto;
+}
+
 
 .project{
   width: 100%;
@@ -680,18 +716,18 @@ cursor: pointer;
 }
 
 .WorkCollection h2{
-  font-family: actay;
+  font-family: Satoshi;
   font-weight: 500;
   font-size: 3vw;
   text-align: center;
-  margin: 3vw 0;
+  margin: 2vw 0;
   color: #242627;
 
 
 }
 
 .WorkCollection h5{
-  font-family: Actay;
+  font-family: Satoshi;
   font-weight: 500;
   font-size: 1.7vw;
   text-align: center;
@@ -736,7 +772,7 @@ cursor: pointer;
 }
 
 .cards h4 {
-  font-family: Actay;
+  font-family: Satoshi;
   font-size: 1.5vw;
   font-weight: 500;
   text-align: center;
@@ -775,7 +811,7 @@ width: 100%;
 .CertifiedCard h2 {
   text-align: center;
   font-size: 2.5vw;
-  font-family: rejouice ;
+  font-family: Satoshi ;
   margin-bottom: 5vw;
   color: #242627;
 
@@ -789,7 +825,9 @@ width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
+
   justify-content: center;
+
 }
 
 .Certifiedcardsimage {
@@ -815,6 +853,7 @@ width: 100%;
   margin-top: 1vw;
   padding: 0 3vw;
   color: #242627;
+
 }
 
 /* FAQ Container */
@@ -822,8 +861,6 @@ width: 100%;
   max-width: 100%;
   margin: 50px auto;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Title */
@@ -832,7 +869,7 @@ width: 100%;
   text-align: center;
   color: #333;
   margin-bottom: 7vh;
-  font-family:rejouice ;
+  font-family:Satoshi ;
   text-transform: uppercase;
   font-size: 2.6vw;
   color: #242627;
@@ -843,12 +880,13 @@ width: 100%;
 /* FAQ Items */
 .faq-item {
   background: #fff;
-  border-radius: 8px;
+  border-radius: 3vw;
   margin-bottom: 10px;
   padding: 15px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  font-family: Actay;
+  margin: 2vw 0;
+  font-family: Satoshi;
   font-weight: 500;
 }
 
@@ -861,7 +899,7 @@ width: 100%;
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease-in-out;
-  font-family: Actay;
+  font-family: Satoshi;
   font-weight: 500;
   color: #242627;
 
@@ -869,7 +907,7 @@ width: 100%;
 
 /* Answer Section */
 .faq-answer {
-  font-size: 1.3vw;
+  font-size: 1.4vw;
   color: rgb(52, 50, 50);
   max-height: 0;
   overflow: hidden;
@@ -877,7 +915,7 @@ width: 100%;
 }
 
 .faq-item.open .faq-answer {
-  max-height: 100px;
+  max-height: 120px;
   margin-top: 10px;
 }
 
@@ -989,7 +1027,7 @@ width: 100%;
 }
 
 .fronttop h5 {
-  font-family: actay;
+  font-family: Satoshi;
   font-weight: 500;
   text-transform: uppercase;
   color: #212020;
@@ -1005,19 +1043,18 @@ width: 100%;
 
 
 .gittop{
-  height: 24vh;
   width: 100%;
   padding: 1vw 3vw;
 }
 
 
 .gittop h1{
-  font-family: Actay;
+  font-family: Satoshi;
   font-size: 4vw;
   color: #25520e;
 }
 .gittop h3{
-  font-family: Actay;
+  font-family: Satoshi;
   font-size: 2vw;
 }
 
@@ -1044,22 +1081,23 @@ width: 100%;
 
 .contact{
   width: 100%;
-  padding: 2vw 2vw;
+  padding: 2vw 3vw;
+  margin-top: 5vw;
 }
 
 .contactadresss{
-  width: 60%;
+  width: 97%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
 
 }
 
 
 .contactadresss h2{
-  font-family:actay ;
+  font-family:Satoshi ;
   font-weight: 500;
   font-size: 3vw;
   color: #242627;
@@ -1073,7 +1111,7 @@ width: 100%;
 
 }
 .contactadresss h3{
-  font-family:actay ;
+  font-family:Satoshi ;
   font-weight: 500;
   font-size: 1.5vw;
 
@@ -1081,15 +1119,17 @@ width: 100%;
 
 .Footer{
   width: 100%;
-  padding: 2vw 2vw;
-  margin-top: 13vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 4vw;
+
 }
 
-.Footer H2{
-  font-family:ActayCondensed ;
+.Footer h2{
+  font-family:Queen ;
   font-weight: 500;
-  font-size: 7.3vw;
-  text-align: center;
+  font-size: 30vw;
   color: #242627;
   
 }
@@ -1107,16 +1147,16 @@ width: 100%;
     }
   .navbar {
     opacity: 1;
-    height: 8vh;
+    height: 7vh;
     width: 100%;
     position: relative;
     position: fixed;  
-    bottom: 0;  /* Places it at the very bottom of the screen */
+    bottom: 0;  
     left: 50%;
-    margin-top:91vh;
-    transform: translateX(-50%); /* Centers the navbar horizontally */
+    margin-top:92vh;
+    transform: translateX(-50%); 
     padding: 0 2vw;
-      z-index: 999;  /* Ensures the navbar appears on top of other content */
+      z-index: 999; 
   }
     
   
@@ -1126,19 +1166,20 @@ width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Gilroy', sans-serif;  /* Added quotes and fallback font */
+    font-family: 'Gilroy', sans-serif;  
     gap: 3vw;
     padding: 3vw 1vw;
-    box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5);  /* Added RGBA for transparency */
+    box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5); 
     border-radius: 4vw;
     width: 96%;
   }
   
   
 .bottom h2{
-  font-size: 3.5vw;
+  font-size: 3.7vw;
   font-weight: 500;
   color: #262525;
+  font-family: 'Satoshi';
 }
 
 
@@ -1215,8 +1256,8 @@ width: 100%;
   }
 
   .Marquee {
-    height: 31vh;
-    margin: 3vh auto;
+    height: 35vh;
+    margin: 1vh auto;
     padding: 1vw 0;
   
   }
@@ -1225,9 +1266,9 @@ width: 100%;
   
   }
   .imageupper {
-    height: 30vh;
-    width: 55vw;
-    border-radius: 20%;
+    height: 31vh;
+    width: 52vw;
+    border-radius: 12vw;
   
   }
   
@@ -1235,6 +1276,7 @@ width: 100%;
 .Client{
   height: 6vh;
   width: 100%;
+  margin-top: 5vw;
   
 }
 
@@ -1255,8 +1297,8 @@ width: 100%;
   
 }
 button{
-  padding: 5vw 5.6vw;
-  font-size: 3.8vw;
+  padding: 4.5vw 5.6vw;
+  font-size: 3.2vw;
 }
 
 .Aboutus{
@@ -1352,46 +1394,71 @@ padding: 0 4vw;
  .myskills{
   margin-top: 9vh;
   width: 100%;
-  margin-bottom: 9vh;
+  margin-bottom: 1vh;
 }
 
 .myskills h1{
-  font-size: 7vw;
+  font-size: 9vw;
 
+}
+.skills {
+  gap: 3.5vw; 
+  width: 100%;
 }
 
 .skill-item {
-  width: 10vh;
-  height:10vh;
+  width: 8vh;
+  height:8vh;
 }
 
 .Ourservices{
   width: 100%;
-  margin-top: 5vh;
-  padding: 0 3vw;
-}
-.Ourservices h1{
-  font-size: 7vw;
-  margin-bottom: 5vw;
+  margin-top: 12vh;
+  height: 100%;
+  background-color: #689D48;
+  position: relative;
+
 
 }
 
-.Designs{
-  padding: 2vw 1vw;
-  }
-  
-.Designs h3{
-  font-size: 6vw;
-  color: rgb(25, 24, 24);
+.ourservicestop h2{ 
+ font-size:13vw;
+ line-height: 15vw;
 
 }
-.Designs ul{
-  padding: 1vw 2vw;
-  margin: 3vw 0;
-  font-size: 4.3vw;
+.ourservicesbottom{
+  width: 100%;
+  margin-top: -2vw;
+  background-color: orangered;
+}
+
+.ourserivesimagepart{
+  width:100%;
+
+}
+
+.ourserivesimagepart .images{
+  height: 51vh;
+  width: 100%;
+  padding: 2vw 10vw;
  
- }
+}
+
+.ourserivesimagepart .images img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
  
+}
+
+
+.ourservicesfaqs{
+  width: 100%;
+  margin: 0 auto;
+}
+
+
 .project{
   width: 100%;
   margin-top: 5vh;
@@ -1498,13 +1565,8 @@ padding: 0 4vw;
 
 }
 
-/* Answer Section */
 .faq-answer {
-  font-size: 3.4vw;
-  color: rgb(52, 50, 50);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+  font-size: 4vw;
 }
 
 
@@ -1622,7 +1684,7 @@ padding: 0 4vw;
   margin-top: 6vh;
 }
 .Footer H2{
-  font-size: 11vw;
+  font-size: 28vw;
 }
 
 
@@ -1634,9 +1696,9 @@ padding: 0 4vw;
 
 
 
+
   .cursor {
-    height: 5vh;
-    width: 5.8vw;
+
     opacity: 0;
   }
   .Loader h1{
@@ -1696,7 +1758,10 @@ padding: 0 4vw;
   .bottom h2:hover::after {
     width: 100%;
   }
-
+  .btn {
+opacity: 0;
+  }
+  
 
   .Home{
     width: 100%;
@@ -1713,14 +1778,14 @@ padding: 0 4vw;
   
   }
   .Fronttext h1{
-    font-size: 7vw;
-    padding: 1.6vw 0;
+    font-size: 6vw;
+    padding: 1.1vw 0;
     font-weight: 500;
 
   
   }
   .Fronttext h4{
-    font-size: 5vw;
+    font-size: 4.5vw;
     text-align: center  ;
     font-weight: 600;
   
@@ -1739,7 +1804,7 @@ padding: 0 4vw;
   }
   .imageupper {
     height: 35vh;
-    width: 37vw;
+    width: 44vw;
     border-radius: 20%;
   
   }
@@ -1748,7 +1813,7 @@ padding: 0 4vw;
 .Client{
   height: 10vh;
   width: 100%;
-  margin-top: 7vw;
+  margin-top: 6vw;
   
 }
 
@@ -1757,20 +1822,22 @@ padding: 0 4vw;
   
 }
 .selectives img{
-  height: 6vh;
+  height: 5.6vh;
 }
 .selectives h2{
   font-size: 5vw;
+  font-weight: 500;
+  font-family: 'Satoshi';
  }
  .Button{
-  height: 12vh;
+  height: 8vh;
   width: 100%;
   
 }
 
 button{
-  padding: 3vw 5vw;
-  font-size: 3.5vw;
+  padding: 3vw 4.2vw;
+  font-size: 3.4vw;
 }
 
 
@@ -1803,7 +1870,7 @@ margin-bottom: 3vw;
 
  .AboutClient h4{
 
-  font-size: 5vw;
+  font-size: 4.3vw;
   margin-bottom: 2vw;
   text-transform: uppercase;
   font-weight: 500;
@@ -1834,6 +1901,7 @@ margin-bottom: 3vw;
  .AboutClients h6{
   
   font-size: 4vw;
+  font-family:'Satoshi' ;
 
   
  }
@@ -1862,50 +1930,101 @@ margin-bottom: 3vw;
 .myskills{
   margin-top: 11vh;
   width: 100%;
-  margin-bottom: 6vh;
+  margin-bottom: 8vh;
 }
 
 .myskills h1{
-  font-size: 8vw;
+  font-size: 9vw;
   font-weight: 500;
 
 }
 
 .skill-item {
-  width: 10vh;
-  height: 10vh;
+  width: 9vh;
+  height: 9vh;
 }
+
 
 
 
 .Ourservices{
   width: 100%;
-  margin-top: 5vh;
-  padding: 0 3vw;
-}
+  margin-top: 12vh;
+  height: 100%;
+  background-color: #689D48;
+  position: relative;
 
-.Ourservices h1{
-  font-size: 6vw;
-  margin-bottom: 4vw;
 
 }
 
-.Designs{
-  padding: 2vw 1vw;
-  }
+.ourservicestop h2{ 
+ font-size:13vw;
+ line-height: 13vw;
+
+}
+
+.faqs-container {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Title */
+.faq-title {
+  margin-bottom: 5vh;
+  font-size: 5vw;
   
-.Designs h3{
-  font-size: 6vw;
-  color: rgb(25, 24, 24);
+}
+
+
+/* FAQ Items */
+.faq-item {
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 13px;
+}
+
+.faq-question {
+  font-size: 3vw;
+
 
 }
-.Designs ul{
-  padding: 1vw 2vw;
-  margin: 3vw 0;
-  font-size: 3.2vw;
-  font-weight: 500;
+
+.faq-answer {
+  font-size: 3vw;
+}
+
+
+.ourservicesbottom{
+  width: 100%;
+  margin-top: -2vw;
+}
+
+.ourserivesimagepart{
+  width:100%;
+
+}
+
+.ourserivesimagepart .images{
+  height: 55vh;
+  width: 100%;
+  padding: 2vw 10vw;
  
- }
+}
+
+.ourserivesimagepart .images img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+ 
+}
+
+
+.ourservicesfaqs{
+  width: 100%;
+  margin: 0 auto;
+}
  
 
  .WorkCollection{
@@ -1985,35 +2104,10 @@ margin-bottom: 3vw;
   padding: 20px;
 }
 
-/* Title */
-.faq-title {
-  margin-bottom: 5vh;
-  font-size: 4.5vw;
-  font-weight: 500;
-  
-}
 
 
-/* FAQ Items */
-.faq-item {
-  border-radius: 8px;
-  margin-bottom: 12px;
-  padding: 13px;
-}
-.faq-question {
-  font-size: 1.5rem;
 
 
-}
-
-/* Answer Section */
-.faq-answer {
-  font-size: 2vw;
-  color: rgb(52, 50, 50);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-}
 
 
 .Gitstatus{
@@ -2125,11 +2219,10 @@ margin-bottom: 3vw;
 .Footer{
   width: 100%;
   padding: 2vw 2vw;
-  margin-top: 4vh;
+  margin-top: 6vh;
 }
 .Footer H2{
-  font-size: 11vw;
-  line-height: 10vw;
+  font-size: 28vw;
 }
 
 
@@ -2227,10 +2320,11 @@ margin-bottom: 3vw;
   
   }
   .imageupper {
-    height: 35vh;
+    height: 47vh;
+    width: 24vw;
+    border-radius: 25%;
   
   }
-  
 .Client{
   height: 10vh;
   width: 100%;
@@ -2335,7 +2429,7 @@ button{
 .myskills{
   margin-top: 13vh;
   width: 100%;
-  margin-bottom: 2vh;
+  margin-bottom: 10vh;
 }
 
 .myskills h1{
@@ -2352,33 +2446,69 @@ button{
 
 
 
+
 .Ourservices{
   width: 100%;
-  margin-top: 5vh;
-  padding: 0 3vw;
-}
-.Ourservices h1{
-  font-size: 3.5vw;
-  margin-bottom: 1vw;
-  font-family: 500;
+  margin-top: 16vh;
+  height: 100%;
+  background-color: #689D48;
+  position: relative;
+
 
 }
 
-.Designs{
-  padding: 2vw 1vw;
-  }
+.ourservicestop{
+  width: 100%;
+  padding: 0 1vw;
 
-  .Designs h3{
-    font-size: 3vw;
-    color: rgb(25, 24, 24);
-  
-  }
-  .Designs ul{
-    padding: 1vw 2vw;
-    margin: 1vw 0;
-    font-size: 2vw;
-   
-   }
+}
+.ourservicestop h2{ 
+  font-family: 'Impacted';
+ font-weight: 500;
+ font-size:13vw;
+ line-height: 13.5vw;
+ text-align: center;
+ text-transform: uppercase;
+ color: white;
+
+}
+
+.ourservicesbottom{
+  width: 100%;
+  margin-top: -2vw;
+}
+
+.ourserivesimagepart{
+  height: 100%;
+  width:95%;
+  background-color: #e0e05f;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid black;
+
+}
+.ourserivesimagepart .images{
+  height: 150vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: -10vw;
+
+ 
+}
+.ourserivesimagepart .images img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+ 
+}
+
    
 
    .WorkCollection{
@@ -2450,13 +2580,23 @@ button{
   padding: 20px;
 }
 
-/* Title */
 .faq-title {
   margin-bottom: 5vh;
   font-size: 2.9vw;
   
 }
 
+.faq-question {
+  font-size: 1.5rem;
+
+
+}
+
+/* Answer Section */
+.faq-answer {
+  font-size: 1.7vw;
+
+}
 
 .Gitstatus{
   width: 100%;
@@ -2493,7 +2633,7 @@ button{
 
 
 .Checkmates{
-  height: 135vh;
+  height: 130vh;
   width: 100%;
 
 }
@@ -2523,6 +2663,7 @@ button{
 .contact{
   width: 100%;
   padding: 3vw 2vw;
+  
 }
 .contactadresss{
   width: 100%;
@@ -2544,12 +2685,21 @@ button{
 
 .Footer{
   width: 100%;
-  padding: 2vw 2vw;
-  margin-top: 6vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 4vw;
+
 }
-.Footer H2{
-  font-size: 7vw;
+
+.Footer h2{
+  font-family:Queen ;
+  font-weight: 500;
+  font-size: 30vw;
+  color: #242627;
+  
 }
+
 
 .contactadresss h2{
   font-size: 4.5vw;
