@@ -6,8 +6,8 @@ const Cards = () => {
     const [playingVideo, setPlayingVideo] = useState(null);
     const data = [
         {
-            cardimg: '/Assets/images/chatgptdigital.png',  // Corrected the path here
-            cardh4: 'Future of Digital agency An Awwwards Winning Masterpiece! (Comming soon)',
+            cardimg: '/Assets/images/capsule.png',  // Corrected the path here
+            cardh4: 'A Digital Sanctuary of the Future — Capsule Hospitality, Redefined. An Awwwards Winning Masterpiece! (Comming soon)'
         },
         {
             cardimg: '/Assets/images/Christmas image.png',  // Corrected the path here
