@@ -24,7 +24,7 @@ const Cards = () => {
         {
             cardh4: 'Ultimate Tic-Tac-Toe — Built with React.js',
             cardimg: '/Assets/images/tictac.png',
-            link: 'https://ochi-design-production.netlify.app/'
+            link: 'https://reactxogame.netlify.app/'
         },
         {
             cardimg: '/Assets/images/3d spancer gabor.png',  // Corrected the path here
