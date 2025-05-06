@@ -9,10 +9,22 @@ const Cards = () => {
             cardimg: '/Assets/images/capsule.png',  // Corrected the path here
             cardh4: 'A Digital Sanctuary of the Future — Capsule Hospitality, Redefined. An Awwwards Winning Masterpiece! (Comming soon)'
         },
+
+        {
+            cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',
+            cardimg: 'https://www.mvtimes.com/mvt/uploads/2025/03/1_MVFC_Legend_of-Ochi.jpg',
+            link: 'https://ochi-design-production.netlify.app/'
+        },
         {
             cardimg: '/Assets/images/Christmas image.png',  // Corrected the path here
             cardh4: 'Santa’s Companion | Gifts, Decor & More',
             link:'https://santas-store.netlify.app/'
+        },
+
+        {
+            cardh4: 'Ultimate Tic-Tac-Toe — Built with React.js',
+            cardimg: '/Assets/images/tictac.png',
+            link: 'https://ochi-design-production.netlify.app/'
         },
         {
             cardimg: '/Assets/images/3d spancer gabor.png',  // Corrected the path here
@@ -21,11 +33,7 @@ const Cards = () => {
         },
 
       
-        {
-            cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',
-            cardimg: 'https://b4a73b976f719911399d-66f2e4e8cca57960c5d14fdedb6b9bad.ssl.cf2.rackcdn.com/Original/IqGts_temp_76641756_148325_$2020_05_21_01_27_07_1509.jpeg',
-            link: 'https://ochi-design-production.netlify.app/'
-        },
+    
         {
             cardimg: 'https://wallpapers.com/images/hd/fine-weather-landscape-iq9k6ubn8w9yhhkc.jpg',
             cardh4: 'Weather App - Real-time Weather Updates',
