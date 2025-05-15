@@ -104,6 +104,12 @@
   font-family: 'Queen';
   src: url('/public/Assets/Fonts/Queen.ttf') 
 }
+
+
+@font-face {
+  font-family: 'Fontspring';
+  src: url('/public/Assets/Fonts/Fontspring.otf') 
+}
 ::selection{
   background-color: black;
   color: white;
@@ -284,7 +290,7 @@ html{
 
 .Home{
   width: 100%;
-  margin-top: 8vw;
+  margin-top: 7vw;
   position: relative;
   overflow: hidden;
   position: relative;
@@ -327,31 +333,33 @@ html{
 }
 
 .Fronttext h1{
-  font-family: ActayCondensed;
+  font-family: Fontspring;
   font-weight: 500;
-  font-size: 3vw;
-  padding: 0.3VW 0;
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  color: rgb(47, 45, 45);
+  line-height: 4.5vw;
+
 
 }
 
 .Fronttext h4{
   font-family: ActayCondensed;
-  font-size: 1.6vw;
+  font-size: 1.8vw;
   font-weight: 500;
-  color: rgb(33, 32, 32);
+  color: rgb(47, 45, 45);
 
 
 
 }
 
 .Marquee {
-  height: 45vh;
+  height: 58vh;
   width: 100%;
   margin: 8vh auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   position: relative;
   gap: 3vw;
   padding: 2vw 0;
@@ -360,7 +368,7 @@ html{
 
 .track {
   display: flex;
-  width: 200%;
+  width: 100%;
   position: absolute;
 }
 
@@ -368,6 +376,7 @@ html{
   display: inline-block;
   padding-right: 3vw; 
   white-space: nowrap;
+  
 }
 
 .Marquee h1 {
@@ -378,31 +387,26 @@ html{
   color: #343333;
  
 }
-
 .imageupper {
-  height: 42vh;
+  height: 100%; 
+  width: 35%;   
   position: absolute;
   z-index: 9999;
-  border-radius: 3vw;
   display: flex;
-  width: 18%;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  backdrop-filter: blur(8px); 
-  box-shadow:  0 2px 4px rgba(0, 0, 0, 0.2),
-  0 6px 10px rgba(0, 0, 0, 0.15),
-  0 10px 20px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
- 
+  background: none;
+
 }
 
+.Modelview {
+  height: 100%;
+  width: 100%;
+}
 
-.imageupper img {
+model-viewer {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 
@@ -464,7 +468,7 @@ button{
 
 .Aboutus{
   width: 100%;
-  margin-top: 7vw;
+  margin-top: 5vw;
 }
 
 .Aboutme{
@@ -475,7 +479,7 @@ button{
 .Aboutme h2{
  font-family: Satoshi;
  font-size: 3vw;
- margin: 2vw 0;
+ margin: 1vw 0;
  color: #242627;
 
 }
@@ -489,7 +493,7 @@ button{
 
  .AboutClient{
   margin: 0 auto;
-  margin-top: 10vw;
+  margin-top:9vw;
   width: 75%;
   display: flex;
   align-items: center;
@@ -1266,8 +1270,8 @@ width: 100%;
   
   }
   .Fronttext h1{
-    font-size: 7vw;
-    padding: 1.6vw 0;
+    font-size: 8vw;
+    padding: 6vw 0;
     font-weight: 500;
 
   
@@ -1281,21 +1285,34 @@ width: 100%;
   }
 
   .Marquee {
-    height: 35vh;
-    margin: 1vh auto;
-    padding: 1vw 0;
+    height: 40vh;
   
   }
   .Marquee h1 {
     font-size: 40vw;
   
   }
-  .imageupper {
-    height: 31vh;
-    width: 52vw;
-    border-radius: 12vw;
-  
-  }
+.imageupper {
+  height: 100%; 
+  width: 60%;   
+  position: absolute;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+
+}
+
+.Modelview {
+  height: 100%;
+  width: 100%;
+}
+
+model-viewer {
+  width: 100%;
+  height: 100%;
+}
   
 
 .Client{
@@ -1719,9 +1736,6 @@ padding: 0 4vw;
 
 @media (min-width: 768px) and (max-width: 1024px){  
 
-
-
-
   .cursor {
 
     opacity: 0;
@@ -1791,7 +1805,7 @@ padding: 0 4vw;
   .Home{
     width: 100%;
     margin-top: -1vw;
-    margin-bottom: 13vw;
+    margin-bottom: 12vw;
      
     }
    
@@ -1800,17 +1814,18 @@ padding: 0 4vw;
   .Fronttext{
     height: 22vh;
     width: 100%;
+
   
   }
   .Fronttext h1{
-    font-size: 6vw;
-    padding: 1.1vw 0;
+    font-size:7vw;
+    padding: 4vw 0;
     font-weight: 500;
 
   
   }
   .Fronttext h4{
-    font-size: 4.5vw;
+    font-size: 4.3vw;
     text-align: center  ;
     font-weight: 600;
   
@@ -1818,22 +1833,35 @@ padding: 0 4vw;
   }
 
   .Marquee {
-    height: 36vh;
-    margin: 3vh auto;
-    padding: 1vw 0;
+    height: 40vh;
   
   }
   .Marquee h1 {
     font-size: 27vw;
   
   }
-  .imageupper {
-    height: 35vh;
-    width: 44vw;
-    border-radius: 20%;
-  
-  }
-  
+.imageupper {
+  height: 100%; 
+  width: 50%;   
+  position: absolute;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+
+}
+
+.Modelview {
+  height: 100%;
+  width: 100%;
+}
+
+model-viewer {
+  width: 100%;
+  height: 100%;
+}
+
   
 .Client{
   height: 10vh;
@@ -2316,7 +2344,7 @@ margin-bottom: 3vw;
 
 .Home{
   width: 100%;
-  margin-top: 5vw;
+  margin-top: 7vw;
    
   }
   
@@ -2326,8 +2354,8 @@ margin-bottom: 3vw;
   
   }
   .Fronttext h1{
-    font-size: 3.5vw;
-    padding: 0.2vw 0;
+    font-size: 4.5vw;
+    padding: 1.1vw 0;
 
   }
   .Fronttext h4{
@@ -2337,20 +2365,35 @@ margin-bottom: 3vw;
   }
   
   .Marquee {
-    height: 49vh;
-    margin: 3vh auto;
+    height: 50vh;
   
   }
   .Marquee h1 {
     font-size: 17vw;
   
   }
-  .imageupper {
-    height: 47vh;
-    width: 24vw;
-    border-radius: 25%;
-  
-  }
+.imageupper {
+  height: 100%; 
+  width: 40%;   
+  position: absolute;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+
+}
+
+.Modelview {
+  height: 100%;
+  width: 100%;
+}
+
+model-viewer {
+  width: 100%;
+  height: 100%;
+}
+
 .Client{
   height: 10vh;
   width: 100%;
@@ -2742,6 +2785,45 @@ button{
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.parallax-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax-background {
+  position: absolute;
+  width: 110%; /* Slightly larger to accommodate movement */
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  background-image: url('/public/Assets/images/practice.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.1s ease-out;
+  z-index: 1;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 2;
+  /* Additional styling for your content */
+}
 
 
 

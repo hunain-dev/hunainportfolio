@@ -6,15 +6,16 @@ const Cards = () => {
     const [playingVideo, setPlayingVideo] = useState(null);
     const data = [
         {
-            cardimg: '/Assets/images/capsule.png',  // Corrected the path here
-            cardh4: 'A Digital Sanctuary of the Future — Capsule Hospitality, Redefined. An Awwwards Winning Masterpiece! (Comming soon)'
+            cardimg: 'https://tobacco.nl/wp-content/uploads/2025/05/Camille-Bas-1200x908.png',  // Corrected the path here
+            cardh4: 'A Digital tobacco.nl— An Awwwards Winning Masterpiece! (coming Soon)'
         },
 
         {
             cardh4: 'Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion',
-            cardimg: 'https://www.mvtimes.com/mvt/uploads/2025/03/1_MVFC_Legend_of-Ochi.jpg',
+            cardimg: '/Assets/images/desktopochi.png',
             link: 'https://ochi-design-production.netlify.app/'
         },
+
         {
             cardimg: '/Assets/images/Christmas image.png',  // Corrected the path here
             cardh4: 'Santa’s Companion | Gifts, Decor & More',
