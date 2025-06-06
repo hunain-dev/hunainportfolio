@@ -402,6 +402,7 @@ html{
 .Modelview {
   height: 100%;
   width: 100%;
+
 }
 
 model-viewer {
@@ -1837,6 +1838,7 @@ padding: 0 4vw;
 
   .Marquee {
     height: 36vh;
+    
   
   }
   .Marquee h1 {

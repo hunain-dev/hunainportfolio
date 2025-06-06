@@ -10,7 +10,6 @@ const Marqueepic = () => {
             alt="3D Cube"
             auto-rotate
             camera-controls
-      
             disable-zoom
           ></model-viewer>
         </div>
