@@ -7,10 +7,17 @@ const Cards = () => {
       cardimg:
         "https://tobacco.nl/wp-content/uploads/2025/05/Camille-Bas-1200x908.png", // Corrected the path here
       cardh4:
-        "A Digital tobacco.nl— An Awwwards Winning Masterpiece! (coming Soon)",
+        "A Digital tobacco.nl— An Awwwards Winning Masterpiece!",
       link: "https://tabaccino.netlify.app/",
     },
-
+   {
+      cardimg:
+        "https://i.pinimg.com/736x/64/81/db/6481db1d1f5fd2ebd505d522b97f2f85.jpg", // Corrected the path here
+      cardh4:
+        "Career Hunt – Global Jobs, One Click Away (coming Soon)",
+        alert:"Just hold on, 2 more days! "
+      
+    },
     {
       cardh4:
         "Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion",
@@ -86,14 +93,22 @@ const Cards = () => {
 
   return (
     <div className="Card">
-      <div className="cards">
+      <div className="cards" >
         {data.map((elem, index) => (
           <div
             key={index}
-            className="card-item"
-            onClick={() =>
-              elem.link ? openLink(elem.link) : playVideo(elem.videoSrc)
-            }
+            className="card-item" 
+          onClick={() => {
+  if (elem.alert) {
+    alert(elem.alert);
+  }
+  if (elem.link) {
+    openLink(elem.link);
+  } else if (elem.videoSrc) {
+    playVideo(elem.videoSrc);
+  }
+}}
+
           >
             <div className="image">
               {elem.isVideo ? (
