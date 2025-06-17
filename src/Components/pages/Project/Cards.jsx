@@ -15,7 +15,8 @@ const Cards = () => {
         "https://i.pinimg.com/736x/64/81/db/6481db1d1f5fd2ebd505d522b97f2f85.jpg", // Corrected the path here
       cardh4:
         "Career Hunt – Global Jobs, One Click Away (coming Soon)",
-        alert:"Just hold on, 2 more days! "
+  alert: "Only available on GitHub live for a short time.",
+        link:"https://github.com/hunain-dev/Job-board-app"
       
     },
     {
