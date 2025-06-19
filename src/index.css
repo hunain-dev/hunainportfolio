@@ -482,6 +482,7 @@ button{
  font-size: 3vw;
  margin: 1vw 0;
  color: #242627;
+ 
 
 }
 
@@ -491,6 +492,8 @@ button{
   text-align: center;
 
  }
+
+
 
  .AboutClient{
   margin: 0 auto;
@@ -503,7 +506,6 @@ button{
  }
 
  .AboutClients{
-
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -2789,13 +2791,6 @@ button{
 
 
 }
-
-
-
-
-
-
-
 
 
 
