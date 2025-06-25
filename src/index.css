@@ -110,13 +110,16 @@
   font-family: 'Fontspring';
   src: url('/public/Assets/Fonts/Fontspring.otf') 
 }
+
+
 ::selection{
-  background-color: black;
+  background-color:red;
   color: white;
 }
 .Loader {
   height: 100vh;
   width: 100%;
+  
   position: fixed;  
   top: 0;  
   left: 0; 
