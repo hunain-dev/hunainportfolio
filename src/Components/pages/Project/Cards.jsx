@@ -10,7 +10,7 @@
 
           {
           cardimg:
-            "/public/Assets/images/Foundation.png", // Corrected the path here
+            "/Assets/images/Foundation.png", // Corrected the path here
           cardh4:
             "Foundation® – Unlocking Smart Capital",
             Alert:"Comming Soon"
