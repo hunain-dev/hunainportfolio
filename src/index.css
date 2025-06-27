@@ -113,7 +113,7 @@
 
 
 ::selection{
-  background-color:red;
+  background-color:#242627;
   color: white;
 }
 .Loader {
@@ -142,7 +142,7 @@ body{
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
-    background-color: whitesmoke;
+    background-color: #F8FCFF;
 }
 html{
   scroll-behavior: smooth;
@@ -168,7 +168,6 @@ html{
   transform: translateX(-50%);
   z-index: 99999;
   margin-top: 1vw;
-  border-radius: 30vw;
 
   
 
@@ -199,7 +198,6 @@ html{
 
 .end{
   height: 100%;
-  width: 20vw;
   display: flex;
   align-items: right  ;
   justify-content: flex-end;
@@ -890,7 +888,6 @@ width: 100%;
 
 }
 
-/* FAQ Container */
 .faqs-container {
   max-width: 100%;
   margin: 50px auto;
@@ -1006,13 +1003,12 @@ width: 100%;
 
 
 .Checkmates{
-  height: 155vh;
+  height: 134vh;
   width: 100%;
 
 }
 
 .back{
-  height: 100vh;
   width: 100%;
   position: relative;
   display: flex;
@@ -1041,7 +1037,7 @@ width: 100%;
   position: absolute;
   z-index: 999;
   width: 100%;
-  margin-top: 60vh;
+  margin-top: 55vh;
 
 }
 .front img{
@@ -1052,32 +1048,18 @@ width: 100%;
 
 }
 
-.fronttop {
-  padding: 0 1vw;
-  display: flex;
-  align-items: center; /* Vertically center the text */
-  justify-content: space-between; /* Horizontally center the text */
-  height: 10vh; /* Height of the container */
-  width: 100%; /* Full width */
-}
 
-.fronttop h5 {
-  font-family: Satoshi;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #212020;
-  font-size: 1vw;
 
-}
 .Gitstatus{
   width: 100%;
-  margin-bottom: 1vw;
+  margin-bottom: 3vw;
   margin-top: 2vw;
 
 }
 
 
 .gittop{
+
   width: 100%;
   padding: 1vw 3vw;
 }
@@ -1095,9 +1077,9 @@ width: 100%;
 
 
 
-.gitbottom{
-  height: 53vh;
-  width: 70%;
+.gitbottom{ 
+  width: 95%;
+  padding: 4vw 2vw;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -1106,8 +1088,8 @@ width: 100%;
 }
 
 .gitbottom img{
+  height: 29vh;
   border-radius: 1vw;
-  height: 35vh;
   object-fit: cover;
   object-position: center;
   
@@ -1154,17 +1136,14 @@ width: 100%;
 
 .Footer{
   width: 100%;
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  margin-top: 4vw;
+  margin-top: 1vw;
 
 }
 
 .Footer h2{
   font-family:Queen ;
   font-weight: 500;
-  font-size: 30vw;
+  font-size: 20vw;
   color: #242627;
   
 }
@@ -1623,8 +1602,12 @@ padding: 0 4vw;
 
 
 .Checkmates{
-  height: 83vh;
   width: 100%;
+  height: 45vh;
+  margin-top: 11vw;
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
 
 }
 
@@ -1632,7 +1615,6 @@ padding: 0 4vw;
 .back{
   display: flex;
   align-items: flex-start;
-  height: 46vh;
 
 }
 
@@ -1645,33 +1627,19 @@ padding: 0 4vw;
   margin-top: 9vh;
 
 }
-.fronttop {
-  padding: 2vw 0;
-  display: flex;
-  align-items: center; /* Vertically center the text */
-  justify-content: center;
-  flex-direction: column;
-  height: 30vh; /* Height of the container */
-  margin-bottom: 2vh;
-  width: 100%; /* Full width */
-}
 
-.fronttop h5 {
-  margin: 2vw 0;
-  color: #212020;
-  font-size: 3.9vw;
-  text-align: center;
 
-}
+
 
 
 
 .Gitstatus{
-  height: 40vh;
+  margin-bottom: 12vw;
   width: 100%;
 
 }
 .gittop{
+  margin-top: 2vw;
   height: 17vh;
   width: 100%;
   display: flex;
@@ -1691,8 +1659,8 @@ padding: 0 4vw;
 
 
 .gitbottom{
-  height: 20vh;
-  width: 93%;
+  
+    width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -1701,7 +1669,7 @@ padding: 0 4vw;
 }
 
 .gitbottom img{
-  height: 12vh;
+  height: 7vh;
   
 
 }
@@ -1729,15 +1697,18 @@ padding: 0 4vw;
 }
 
 
+
 .Footer{
   width: 100%;
-  padding: 2vw 2vw;
-  margin-top: 6vh;
-}
-.Footer H2{
-  font-size: 28vw;
+  margin-top: 1vw;
+
 }
 
+.Footer h2{
+  font-weight: 500;
+  font-size: 20vw;
+  
+}
 
 
 }
@@ -1821,7 +1792,7 @@ padding: 0 4vw;
 
  
   .Fronttext{
-    height: 22vh;
+
     width: 100%;
 
   
@@ -1843,7 +1814,6 @@ padding: 0 4vw;
 
   .Marquee {
     height: 36vh;
-    
   
   }
   .Marquee h1 {
@@ -1876,7 +1846,7 @@ model-viewer {
 .Client{
   height: 10vh;
   width: 100%;
-  margin-top: 6vw;
+  margin-top: 1vw;
   
 }
 
@@ -2133,6 +2103,8 @@ margin-bottom: 3vw;
     font-weight: 500;
     padding: 2vw 3vw;
   }
+
+
   
   .CertifiedCard {
     margin-top: 6vw;
@@ -2174,52 +2146,55 @@ margin-bottom: 3vw;
 
 
 .Gitstatus{
+  margin-bottom: 12vw;
   width: 100%;
-  margin-bottom: 10vw;
-  margin-top: 2vw;
-
 
 }
-
-
 .gittop{
+  margin-top: 2vw;
   height: 17vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 7vw;
 }
 
 
 .gittop h1{
-  font-size: 7vw;
+  font-size: 12vw;
 }
 .gittop h3{
-  font-size: 4vw;
+  font-size: 4.6vw;
 }
 
+
+
 .gitbottom{
-  height: 33vh;
-  width: 95%;
+  
+    width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   border-left: 1px solid #25520e;
-
 }
 
 .gitbottom img{
-  height: 21vh;
-
+  height: 10vh;
   
 
 }
 
+
 .Checkmates{
-  height: 100vh;
   width: 100%;
+  height: 60vh;
+  margin-top: 11vw;
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
 
 }
 
@@ -2228,34 +2203,21 @@ margin-bottom: 3vw;
   display: flex;
   align-items: flex-start;
 
-
 }
 
 .back h4{
-  font-size: 10vw;
+  font-size: 11vw;
   line-height: 12vw;
  
  }
  .front{
-  margin-top: 12vh;
+  margin-top: 9vh;
 
 }
-.fronttop {
-  padding: 2vw 1vw;
-  display: flex;
-  align-items: center; /* Vertically center the text */
-  justify-content: center;
-  flex-direction: column;
-  height: 35vh; /* Height of the container */
-  margin-bottom: 2vh;
-}
 
-.fronttop h5 {
-  margin: 1.6vw 0;
-  color: #212020;
-  font-size: 3vw;
 
-}
+
+
 
 
 
@@ -2281,11 +2243,14 @@ margin-bottom: 3vw;
 
 .Footer{
   width: 100%;
-  padding: 2vw 2vw;
-  margin-top: 6vh;
+  margin-top: 1vw;
+
 }
-.Footer H2{
-  font-size: 28vw;
+
+.Footer h2{
+  font-weight: 500;
+  font-size: 21vw;
+  
 }
 
 
@@ -2296,6 +2261,7 @@ margin-bottom: 3vw;
 
 
 @media (min-width: 1025px) and (max-width: 1280px){
+ 
 
 
 .cursor {
@@ -2677,6 +2643,7 @@ button{
 
 }
 
+
 .Gitstatus{
   width: 100%;
   margin-bottom: 1vw;
@@ -2687,6 +2654,7 @@ button{
 .gittop{
   height: 24vh;
   width: 100%;
+  margin-bottom: 2vw;
 }
 
 
@@ -2700,19 +2668,25 @@ button{
 
 
 .gitbottom{
-  height: 58vh;
-  width: 90%;
+  
+    width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #25520e;
 }
 
 .gitbottom img{
-  height: 33vh;
+  height: 21vh;
   
 
 }
 
 
+
 .Checkmates{
-  height: 130vh;
+  height: 110vh;
   width: 100%;
 
 }
@@ -2761,23 +2735,20 @@ button{
   font-size: 2.2vw;
 
 }
-
 .Footer{
   width: 100%;
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  margin-top: 4vw;
+  margin-top: 1vw;
 
 }
 
 .Footer h2{
   font-family:Queen ;
   font-weight: 500;
-  font-size: 30vw;
+  font-size: 20vw;
   color: #242627;
   
 }
+
 
 
 .contactadresss h2{
@@ -2794,42 +2765,6 @@ button{
 
 
 }
-
-
-
-
-
-
-
-
-.parallax-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.parallax-background {
-  position: absolute;
-  width: 110%; /* Slightly larger to accommodate movement */
-  height: 110%;
-  top: -5%;
-  left: -5%;
-  background-image: url('/public/Assets/images/practice.png'); /* Replace with your image path */
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.1s ease-out;
-  z-index: 1;
-}
-
-.parallax-content {
-  position: relative;
-  z-index: 2;
-  /* Additional styling for your content */
-}
-
-
-
 
 
 

@@ -6,7 +6,7 @@ const Mycontacts = () => {
     <div className="left">
         <h2>Contact Me</h2>
        <a href="https://mail.google.com/mail/u/0/#inbox"><h3>Huniiali1122@gmail.com</h3></a> 
-       <a href="tel:03252991455"><h3>0325-2991455</h3></a>
+       <a href="tel:0316-2523911"><h3>0316-2523911</h3></a>
        </div>
     <div className="right">
 <h2>Social</h2>

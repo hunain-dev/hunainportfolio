@@ -8,7 +8,7 @@ const Gitstatus = () => {
              </h3>
         </div>
             <div className="gitbottom">
-            <img src="/Assets/images/github.png" alt="GitHub Stats" />
+  <img src="https://ghchart.rshah.org/hunain-dev" alt="Muhammad Hunain GitHub chart" />
             
         </div>
       
