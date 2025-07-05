@@ -700,7 +700,7 @@ cursor: pointer;
 
 .ourserivesimagepart{
   height: 100%;
-  width:90%;
+  width:100%;
   background-color: #e0e05f;
   margin: 0 auto;
   display: flex;
@@ -2315,7 +2315,7 @@ margin-bottom: 3vw;
 .button2 {
   padding: 1.5vw 2.5vw;
   font-size: 1.3vw;
-  height: 8vh;
+  height: 7vh;
 }
 
 .Home{
@@ -2461,11 +2461,7 @@ button{
   line-height: 24vw;
   
 }
-.mans {
 
-  height: 85vh;
-  width: 52%;
-}
 .text-content h2,
 .text-content h1 {
   font-size: 33vw;
@@ -2525,7 +2521,7 @@ button{
 
 .ourserivesimagepart{
   height: 100%;
-  width:95%;
+  width:100%;
   background-color: #e0e05f;
   margin: 0 auto;
   display: flex;
@@ -2536,12 +2532,8 @@ button{
 
 }
 .ourserivesimagepart .images{
-  height: 150vh;
+  height: 155vh;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
   margin-top: -10vw;
 
  
