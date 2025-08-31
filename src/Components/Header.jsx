@@ -8,12 +8,11 @@ const Header = () => {
     link.click();
     document.body.removeChild(link);
   };
-
   return (
     <div className="navbar">
       <div className="bottom">
         <h2>
-          <a id="Home" href="#">
+          <a id="Home" href="#home">
             Home
           </a>
         </h2>
@@ -30,14 +29,17 @@ const Header = () => {
           <a href="#project">Project</a>
         </h2>
         <h2>
-          <a href="#Footer">Contact</a>
+          <a href="#contact">Contact</a>
         </h2>
       </div>
       <div className="end">
-    
-        <button onClick={downloadResume} class="button2">
-          Resume
-        </button>
+
+      
+        <div className="w-full flex">
+                 <button onClick={downloadResume} id="btnheader">Resume</button>
+      
+
+        </div>
       </div>
     </div>
   );

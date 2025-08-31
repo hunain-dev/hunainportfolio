@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
 
 *{
 
@@ -82,7 +84,6 @@
   src: url('/public/Assets/Fonts/GeoplaceSC-Bold.ttf') 
 }
 
-
 @font-face {
   font-family: 'FaqroExtendedWideTrial';
   src: url('/public/Assets/Fonts/FaqroExtendedWideTrial-Regular.ttf') 
@@ -93,22 +94,29 @@
   src: url('/public/Assets/Fonts/Satoshi.ttf') 
 }
 
-
 @font-face {
   font-family: 'Satoshi-black';
   src: url('/public/Assets/Fonts/Satoshi-Black.otf') 
 }
-
 
 @font-face {
   font-family: 'Queen';
   src: url('/public/Assets/Fonts/Queen.ttf') 
 }
 
-
 @font-face {
   font-family: 'Fontspring';
   src: url('/public/Assets/Fonts/Fontspring.otf') 
+}
+
+@font-face {
+  font-family: 'playwrite';
+  src: url('/public/Assets/Fonts/plauwrite.ttf') 
+}
+
+@font-face {
+  font-family: 'Garelin';
+  src: url('/public/Assets/Fonts/GarelinaBold-rgZ0p.ttf') 
 }
 
 
@@ -116,10 +124,75 @@
   background-color:#242627;
   color: white;
 }
+/* 
+.Updateing {
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  position: absolute;   
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ flex-direction: column;
+  z-index: 99999999;
+} */
+
+
+
+.backupdateing{
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  display: flex;
+align-items: center;
+justify-content: center;
+
+
+  
+}
+.plane3d{
+  height: 20vh;
+  width: 27vw;
+  margin-top: -13vw;
+  display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.plane3d img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+.frontupdating{
+ 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.frontupdating h2{
+ font-family: rejouice;
+ font-weight: 400;
+ font-size: 2vw;
+}
+.wrapicon{
+font-family: actay;
+font-weight: 400;
+font-size: 1vw;
+}
 .Loader {
   height: 100vh;
   width: 100%;
-  
+
   position: fixed;  
   top: 0;  
   left: 0; 
@@ -136,13 +209,13 @@ text-transform: uppercase;
 color: white;
 font-family: FaqroExtendedWideTrial;
 text-align: center;
-  
+
 }
 body{
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
-    background-color: #F8FCFF;
+    background-color: #F0F0F0;
 }
 html{
   scroll-behavior: smooth;
@@ -166,13 +239,10 @@ html{
   top: 0; 
   left: 50%; 
   transform: translateX(-50%);
-  z-index: 99999;
+  z-index: 99;
   margin-top: 1vw;
 
-  
-
 }
-
 
  .bottom {
   background-color: #f7f4f3;
@@ -199,78 +269,50 @@ html{
 .end{
   height: 100%;
   display: flex;
-  align-items: right  ;
-  justify-content: flex-end;
+  align-items: center  ;
+  justify-content: right;
 }
 
-.button2 {
-  display: inline-block;
-  transition: all 0.2s ease-in;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  color: #090909;
-  padding: 1vw 2.3vw;
+#btnheader {
+  padding: 2.4vh 2.4vw;
+  font-size: 1vw;
+  outline: none;
+  border: none;
+  font-family: actay;
+  border-radius: 10px;
+  transition: 0.5s;
+  background: #1e1e1e;
   cursor: pointer;
-  font-size: 1.1vw;
-  border-radius: 0.5em;
-  height: 7vh;
-  background: #e8e8e8;
-  border: 1px solid #e8e8e8;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  color: whitesmoke;
+  box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
 }
 
-.button2:active {
-  color: #666;
-  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+#btnheader:hover {
+  animation: a 0.5s 1 linear;
 }
 
-.button2:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.25);
-  top: 100%;
-  width: 140%;
-  height: 180%;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: -1;
+@keyframes a {
+  0% {
+    transform: scale(0.7, 1.3);
+  }
+
+  25% {
+    transform: scale(1.3, 0.7);
+  }
+
+  50% {
+    transform: scale(0.7, 1.3);
+  }
+
+  75% {
+    transform: scale(1.3, 0.7);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
-.button2:after {
-  content: "";
-  position: absolute;
-  left: 55%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.45);
-  top: 180%;
-  width: 160%;
-  height: 190%;
-  background-color: #009087;
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: -1;
-}
-
-.button2:hover {
-  color: #ffffff;
-  border: 1px solid #009087;
-}
-
-.button2:hover:before {
-  top: -35%;
-  background-color: #009087;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-.button2:hover:after {
-  top: -45%;
-  background-color: #009087;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
 
 .bottom h2::after {
   content: '';
@@ -287,15 +329,13 @@ html{
   width: 100%;
 }
 
-
-
 .Home{
   width: 100%;
   margin-top: 7vw;
   position: relative;
   overflow: hidden;
   position: relative;
-   
+
   }
 .Homeicon{
   height: 100vh;
@@ -306,7 +346,6 @@ html{
   align-items:center;
   justify-content: space-between;
 }
-
 
 .Homeicons{
   height: 80vh;
@@ -341,7 +380,6 @@ html{
   color: rgb(47, 45, 45);
   line-height: 4.5vw;
 
-
 }
 
 .Fronttext h4{
@@ -349,8 +387,6 @@ html{
   font-size: 1.8vw;
   font-weight: 500;
   color: rgb(47, 45, 45);
-
-
 
 }
 
@@ -377,7 +413,7 @@ html{
   display: inline-block;
   padding-right: 3vw; 
   white-space: nowrap;
-  
+
 }
 
 .Marquee h1 {
@@ -386,7 +422,7 @@ html{
   font-size: 15.5vw;
   text-transform: uppercase;
   color: #343333;
- 
+
 }
 .imageupper {
   height: 100%; 
@@ -411,7 +447,6 @@ model-viewer {
   height: 100%;
 }
 
-
 .Client{
   height: 10vh;
   width: 40%;
@@ -420,16 +455,15 @@ model-viewer {
   align-items: center;
   justify-content: center;
   position: relative;
-  
+
 }
 
 .selectives{
   gap: 0.2vw;
   display: flex;
   align-items: center;
-  
-}
 
+}
 
 .selectives img{
   height: 6vh;
@@ -451,7 +485,7 @@ model-viewer {
   justify-content: center;
   position: relative;
   gap: 3vw;
-  
+
 }
 
 button{
@@ -464,9 +498,6 @@ button{
   font-size: 1vw;
   cursor: pointer;
 }
-
-
-
 
 .Aboutus{
   width: 100%;
@@ -483,7 +514,6 @@ button{
  font-size: 3vw;
  margin: 1vw 0;
  color: #242627;
- 
 
 }
 
@@ -493,8 +523,6 @@ button{
   text-align: center;
 
  }
-
-
 
  .AboutClient{
   margin: 0 auto;
@@ -519,7 +547,7 @@ button{
  font-size: 2vw;
 
  }
- 
+
  .AboutClients img{
 
   height: 15vh;
@@ -533,24 +561,18 @@ button{
   font-weight: 500;
   color: #242627;
 
-
-
-  
  }
 
  .AboutClients h5{
-  
+
   font-family: 'Satoshi';
   font-size: 2vw;
   font-weight: 500;
   margin: 1vw 0;
   color: #242627;
 
-
-
-  
  } .AboutClients h6{
-  
+
   font-family: 'Satoshi';
   font-size: 1.5vw;
   text-align: center;
@@ -559,11 +581,8 @@ button{
   padding: 0 3vw;
   color: #242627;
 
-
-
-  
  }
- 
+
  .Impactfulldesign {
   width: 100%;
   margin-top: 19vh;
@@ -607,15 +626,11 @@ button{
   }
 }
 
-
-
-
 .text-content h2,
 .text-content h1 {
     font-size: 28vw;
     font-family: Morganite;
-  
-   
+
 }
 .myskills{
   margin-top: 20vh;
@@ -629,8 +644,6 @@ button{
   font-size: 3vw;
   text-align: center;
   color: #242627;
-
-  
 
 }
 .myskills {
@@ -665,15 +678,12 @@ cursor: pointer;
   border-radius: 2vw;
 }
 
-
-
 .Ourservices{
   width: 100%;
   margin-top: 16vh;
   height: 100%;
   background-color: #689D48;
   position: relative;
-
 
 }
 
@@ -711,7 +721,7 @@ cursor: pointer;
 
 }
 .ourserivesimagepart .images{
-  height: 170vh;
+  height: 183vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -719,14 +729,13 @@ cursor: pointer;
   overflow: hidden;
   margin-top: -10vw;
 
- 
 }
 .ourserivesimagepart .images img{
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
- 
+
 }
 
 .ourservicesfaqs{
@@ -734,11 +743,9 @@ cursor: pointer;
   margin: 0 auto;
 }
 
-
 .project{
   width: 100%;
   margin-top: 5vh;
-  padding: 2vw 2vw;
 }
 
 .WorkCollection{
@@ -755,7 +762,6 @@ cursor: pointer;
   margin: 2vw 0;
   color: #242627;
 
-
 }
 
 .WorkCollection h5{
@@ -766,55 +772,109 @@ cursor: pointer;
   color: #242627;
 
 }
-
-.Card {
+.projectarea{
+  
   width: 100%;
-  padding: 3vw;
+ height: 100vh;  
+  overflow-x: hidden;
+}
+
+.backtextarea{
+  height: 100%;
+  width: 100%;
+  position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
-  cursor: pointer;
+  
+}
+
+.backtextarea h2{
+font-family: Garelin;
+font-weight: 400;
+font-size: 14vw;
+text-transform: uppercase;
+
+  
+}
+
+.frontprojectshowcase{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14vw;
+
+
+}
+
+.cardscollection{
+
+  padding: 0.4vw 0.4vw;
+  min-width: 21vw;
+  box-sizing: border-box;
+  display: flex;
+  height: 62vh;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+   width:21vw,
   
 
 
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 2vw; 
-  width: 90%;
-  padding: 2vw 2vw;
+.carcollectionimage{
+  height: 47%;
+  width:100%;
+  border-radius: 0.7vw;
+
+}
+.carcollectionimage img{
+  height:100%;
+  width:100%;
+object-fit: cover;
+object-position: center;
 }
 
 
-
-.image {
-  width:90%;
-  height: 53vh;
-  margin: 3vw auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.image img {
+.information{
+  height:37vh;
   width: 100%;
+  padding: 1.4vw 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap:5vw;
+}
+
+
+.information h2{
+font-family: actay;
+font-size: 1.2vw;
+color: whitesmoke;
+
+}
+.informationdesc{
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  width: 100%;
+  padding: 1vh 0;
+  border-top: 1px solid rgb(93, 92, 92);
+
 }
 
-.cards h4 {
-  font-family: Satoshi;
-  font-size: 1.5vw;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 1vw;
-  padding: 0 3vw;
+.informationdesc p{
+  font-family: actay;
+  font-size: 2vh;
+  font-weight: 400;
+  color: whitesmoke;
+
 }
-
-
-
-
 .Certified{
 margin-top: 10vh;
 width: 100%;
@@ -827,7 +887,6 @@ width: 100%;
   text-align: center;
 
 }
-
 
 .CertifiedCard {
   width: 100%;
@@ -905,7 +964,6 @@ width: 100%;
   font-size: 2.6vw;
   color: #242627;
 
-  
 }
 
 /* FAQ Items */
@@ -920,7 +978,6 @@ width: 100%;
   font-family: Satoshi;
   font-weight: 500;
 }
-
 
 /* Question Section */
 .faq-question {
@@ -1000,8 +1057,6 @@ width: 100%;
   transition: 0.2s;
 }
 
-
-
 .Checkmates{
   height: 134vh;
   width: 100%;
@@ -1027,10 +1082,9 @@ width: 100%;
 
 }
 .back h4 span{
-  
+
  color: #181818;
 
- 
  }
 
 .front{
@@ -1048,8 +1102,6 @@ width: 100%;
 
 }
 
-
-
 .Gitstatus{
   width: 100%;
   margin-bottom: 3vw;
@@ -1057,13 +1109,11 @@ width: 100%;
 
 }
 
-
 .gittop{
 
   width: 100%;
   padding: 1vw 3vw;
 }
-
 
 .gittop h1{
   font-family: Satoshi;
@@ -1074,8 +1124,6 @@ width: 100%;
   font-family: Satoshi;
   font-size: 2vw;
 }
-
-
 
 .gitbottom{ 
   width: 95%;
@@ -1092,7 +1140,6 @@ width: 100%;
   border-radius: 1vw;
   object-fit: cover;
   object-position: center;
-  
 
 }
 
@@ -1109,17 +1156,13 @@ width: 100%;
   align-items: center;
   justify-content: space-between;
 
-
 }
-
 
 .contactadresss h2{
   font-family:Satoshi ;
   font-weight: 500;
   font-size: 3vw;
   color: #242627;
-
-
 
 }
 .contactadresss a{
@@ -1145,11 +1188,14 @@ width: 100%;
   font-weight: 500;
   font-size: 20vw;
   color: #242627;
-  
+
 }
 
-
 @media (max-width: 768px) { 
+  .chilliman{
+  opacity: 0;
+}
+
 
   .cursor {
     height: 3.6vh;
@@ -1172,9 +1218,7 @@ width: 100%;
     padding: 0 2vw;
       z-index: 999; 
   }
-    
-  
- 
+
   .bottom {
     position: absolute;
     display: flex;
@@ -1187,15 +1231,13 @@ width: 100%;
     border-radius: 4vw;
     width: 96%;
   }
-  
-  
+
 .bottom h2{
   font-size: 3.7vw;
   font-weight: 500;
   color: #262525;
   font-family: 'Satoshi';
 }
-
 
 .bottom h2::after {
   content: '';
@@ -1234,50 +1276,46 @@ width: 100%;
     padding: 6vw 2vw;
     font-size: 3.1vw;
   }
-  
+
   .animated-button:hover {
     transform: scale(1); 
   }
-  
+
 .Home{
   width: 100%;
   margin-top: -5vw;
   margin-bottom: 12vw;
 
-   
   }
- 
+
   .Homeicons img{
     opacity: 0;
   }
   .Fronttext{
     height: 15vh;
     width: 100%;
-  
+
   }
   .Fronttext h1{
     font-size: 8vw;
     padding: 6vw 0;
     font-weight: 500;
 
-
-  
   }
   .Fronttext h4{
     font-size: 5vw;
     text-align: center  ;
     font-weight: 600;
-  
-  
+
   }
 
   .Marquee {
     height: 30vh;
-  
+
   }
   .Marquee h1 {
     font-size: 40vw;
-  
+
   }
 .imageupper {
   height: 100%; 
@@ -1300,19 +1338,18 @@ model-viewer {
   width: 100%;
   height: 100%;
 }
-  
 
 .Client{
   height: 6vh;
   width: 100%;
   margin-top: 5vw;
   margin-bottom: 2vw;
-  
+
 }
 
 .selectives{
   gap: 1.2vw;
-  
+
 }
 .selectives img{
   height: 4.7vh;
@@ -1323,8 +1360,7 @@ model-viewer {
  .Button{
   height: 6vh;
   width: 100%;
- 
-  
+
 }
 button{
   padding: 4.5vw 5.6vw;
@@ -1346,7 +1382,7 @@ padding: 0 4vw;
   text-align: center;
   font-size: 8vw !important;
  }
- 
+
 .Aboutme h4{
   font-size: 1.8vh !important;
   text-align: center;
@@ -1358,7 +1394,6 @@ padding: 0 4vw;
   width: 100%  !important ;
  }
 
-
  .AboutClient h4{
 
   font-size: 5vw;
@@ -1366,7 +1401,7 @@ padding: 0 4vw;
   text-transform: uppercase;
   font-weight: 500;
   }
-  
+
  .AboutClients img{
 
   height: 10vh;
@@ -1375,32 +1410,27 @@ padding: 0 4vw;
 
  }
 
-
-
  .AboutClients h3{
   font-size: 6.5vw;
 
-
-  
  }
  .AboutClients h5{
-  
+
   font-size: 7vw;
-  
+
  }
 
  .AboutClients h6{
-  
+
   font-size: 4.5vw;
 
-  
  }
 
  .Impactfulldesign {
   margin-top: 5vh;
   line-height: 31vw;
   padding: 5vw 1vw;
-  
+
 }
 
 .mans {
@@ -1419,7 +1449,6 @@ padding: 0 4vw;
   font-size: 40vw;
   color: #262525;
 }
-
 
  .myskills{
   margin-top: 9vh;
@@ -1448,7 +1477,6 @@ padding: 0 4vw;
   background-color: #689D48;
   position: relative;
 
-
 }
 
 .ourservicestop h2{ 
@@ -1471,7 +1499,7 @@ padding: 0 4vw;
   height: 51vh;
   width: 100%;
   padding: 2vw 10vw;
- 
+
 }
 
 .ourserivesimagepart .images img{
@@ -1479,67 +1507,71 @@ padding: 0 4vw;
   width: 100%;
   object-fit: cover;
   object-position: center;
- 
-}
 
+}
 
 .ourservicesfaqs{
   width: 100%;
   margin: 0 auto;
 }
 
-
-.project{
+ .WorkCollection{
   width: 100%;
-  margin-top: 5vh;
-  padding: 2vw 2vw;
-  margin-bottom: 3vw;
+  margin-bottom: 2vw;
 
 }
 
-
-.WorkCollection{
-  width: 100%;
-  margin-bottom: 5vw;
-}
 .WorkCollection h2{
-  font-size: 7vw;
+  font-size: 6vw;
   margin: 3vw 0;
 
 }
 
 .WorkCollection h5{
-  font-size: 3.5vw;
+  font-size: 3vw;
 
 }
-.Card {
+
+.projectarea{
+  height:51vh;
   width: 100%;
+}
 
+.backtextarea h2{
+
+font-size: 19vw;
+  
 }
 
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr); 
-  gap: 4vw; 
-  width: 100%;
-
-}
-
-
-
-.image {
-  width:100%;
-  height: 39vh;
-  }
-
-  .cards h4 {
-    font-size: 4vw;
-    padding: 2vw 3vw;
-  }
+.cardscollection{
+  min-width: 59vw;
+  height: 43vh;
+   width:47vw,
   
 
-  
+
+}
+.information{
+  height:43vh;
+  width: 100%;
+  gap: 14vw;
+
+}
+
+.information h2{
+font-family: actay;
+font-size: 2.2vh;
+color: whitesmoke;
+}
+
+.informationdesc p{
+  font-family: actay;
+  font-size: 1.5vh;
+  font-weight: 400;
+  color: whitesmoke;
+
+}
 
 .CertifiedCard h2{
   font-size: 4.8vw;
@@ -1555,8 +1587,6 @@ padding: 0 4vw;
   grid-template-columns: repeat(1, 1fr);
   width: 100%;
 }
-
-
 
 .Certifiedcardsimage {
   width:100%;
@@ -1578,9 +1608,8 @@ padding: 0 4vw;
 .faq-title {
   margin-bottom: 5vh;
   font-size: 5vw;
-  
-}
 
+}
 
 /* FAQ Items */
 .faq-item {
@@ -1592,14 +1621,11 @@ padding: 0 4vw;
 .faq-question {
   font-size: 1.1rem;
 
-
 }
 
 .faq-answer {
   font-size: 4vw;
 }
-
-
 
 .Checkmates{
   width: 100%;
@@ -1611,7 +1637,6 @@ padding: 0 4vw;
 
 }
 
-
 .back{
   display: flex;
   align-items: flex-start;
@@ -1621,17 +1646,12 @@ padding: 0 4vw;
 .back h4{
   font-size: 11vw;
   line-height: 12vw;
- 
+
  }
  .front{
   margin-top: 9vh;
 
 }
-
-
-
-
-
 
 .Gitstatus{
   margin-bottom: 12vw;
@@ -1646,8 +1666,8 @@ padding: 0 4vw;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 7vw;
 }
-
 
 .gittop h1{
   font-size: 12vw;
@@ -1656,10 +1676,8 @@ padding: 0 4vw;
   font-size: 4.6vw;
 }
 
-
-
 .gitbottom{
-  
+
     width: 90%;
   margin: 0 auto;
   display: flex;
@@ -1670,7 +1688,6 @@ padding: 0 4vw;
 
 .gitbottom img{
   height: 7vh;
-  
 
 }
 
@@ -1681,22 +1698,16 @@ padding: 0 4vw;
 .contactadresss{
   width: 100%;
 
-
-
 }
 
-
 .contactadresss h2{
-  font-size: 7vw;  
-
+  font-size: 6vw;
 
 }
 .contactadresss h3{
-  font-size: 4vw;
+  font-size: 3.1vw;
 
 }
-
-
 
 .Footer{
   width: 100%;
@@ -1707,14 +1718,13 @@ padding: 0 4vw;
 .Footer h2{
   font-weight: 500;
   font-size: 20vw;
-  
-}
-
 
 }
 
+}
 
-@media (min-width: 768px) and (max-width: 1024px){  
+@media (min-width: 768px) and (max-width: 1024px){
+
 
   .cursor {
 
@@ -1738,8 +1748,7 @@ padding: 0 4vw;
       padding: 0 2vw;
         z-index: 999;  /* Ensures the navbar appears on top of other content */
     }
-      
-    
+
     .bottom {
       position: absolute;
       display: flex;
@@ -1752,17 +1761,13 @@ padding: 0 4vw;
       border-radius: 4vw;
       width: 96%;
     }
-    
-    
-    
-    
+
   .bottom h2{
     font-size: 2.8vw;
     font-weight: 500;
     color: #262525;
   }
-  
-  
+
   .bottom h2::after {
     content: '';
     position: absolute;
@@ -1773,7 +1778,7 @@ padding: 0 4vw;
     background-color: #ee8d2c;
     transition: width 0.3s ease-in-out; /* Smooth animation */
   }
-  
+
   .bottom h2:hover::after {
     width: 100%;
   }
@@ -1786,39 +1791,34 @@ padding: 0 4vw;
     width: 100%;
     margin-top: -1vw;
     margin-bottom: 12vw;
-     
-    }
-   
 
- 
+    }
+
   .Fronttext{
 
     width: 100%;
 
-  
   }
   .Fronttext h1{
     font-size:7vw;
     padding: 4vw 0;
     font-weight: 500;
 
-  
   }
   .Fronttext h4{
     font-size: 4.3vw;
     text-align: center  ;
     font-weight: 600;
-  
-  
+
   }
 
   .Marquee {
     height: 36vh;
-  
+
   }
   .Marquee h1 {
     font-size: 27vw;
-  
+
   }
 .imageupper {
   height: 100%; 
@@ -1842,17 +1842,16 @@ model-viewer {
   height: 100%;
 }
 
-  
 .Client{
   height: 10vh;
   width: 100%;
   margin-top: 1vw;
-  
+
 }
 
 .selectives{
   gap: 1.5vw;
-  
+
 }
 .selectives img{
   height: 5.6vh;
@@ -1865,14 +1864,13 @@ model-viewer {
  .Button{
   height: 8vh;
   width: 100%;
-  
+
 }
 
 button{
   padding: 3vw 4.2vw;
   font-size: 3.4vw;
 }
-
 
 .Aboutus{
   width: 100%;
@@ -1888,7 +1886,7 @@ margin-bottom: 3vw;
   text-align: center;
   font-size: 8vw !important;
  }
- 
+
 .Aboutme h4{
   font-size: 2.5vh !important;
   text-align: center;
@@ -1897,9 +1895,7 @@ margin-bottom: 3vw;
 
  .AboutClient{
   margin-top: 6vh;
-  width: 100%  !important ;
  }
-
 
  .AboutClient h4{
 
@@ -1908,7 +1904,7 @@ margin-bottom: 3vw;
   text-transform: uppercase;
   font-weight: 500;
   }
-  
+
  .AboutClients img{
 
   height: 9vh;
@@ -1917,32 +1913,27 @@ margin-bottom: 3vw;
 
  }
 
-
-
  .AboutClients h3{
   font-size: 5vw;
 
-
-  
  }
  .AboutClients h5{
-  
+
   font-size: 6vw;
-  
+
  }
 
  .AboutClients h6{
-  
+
   font-size: 4vw;
   font-family:'Satoshi' ;
 
-  
  }
 
  .Impactfulldesign {
   margin-top: 9vh;
   line-height: 27vw;
-  
+
 }
 .mans {
   height: 60vh;
@@ -1977,16 +1968,12 @@ margin-bottom: 3vw;
   height: 9vh;
 }
 
-
-
-
 .Ourservices{
   width: 100%;
   margin-top: 12vh;
   height: 100%;
   background-color: #689D48;
   position: relative;
-
 
 }
 
@@ -2006,9 +1993,8 @@ margin-bottom: 3vw;
 .faq-title {
   margin-bottom: 5vh;
   font-size: 5vw;
-  
-}
 
+}
 
 /* FAQ Items */
 .faq-item {
@@ -2020,13 +2006,11 @@ margin-bottom: 3vw;
 .faq-question {
   font-size: 3vw;
 
-
 }
 
 .faq-answer {
   font-size: 3vw;
 }
-
 
 .ourservicesbottom{
   width: 100%;
@@ -2042,7 +2026,7 @@ margin-bottom: 3vw;
   height: 55vh;
   width: 100%;
   padding: 2vw 10vw;
- 
+
 }
 
 .ourserivesimagepart .images img{
@@ -2050,15 +2034,13 @@ margin-bottom: 3vw;
   width: 100%;
   object-fit: cover;
   object-position: center;
- 
-}
 
+}
 
 .ourservicesfaqs{
   width: 100%;
   margin: 0 auto;
 }
- 
 
  .WorkCollection{
   width: 100%;
@@ -2076,525 +2058,56 @@ margin-bottom: 3vw;
   font-size: 3vw;
 
 }
-.Card {
-  width: 100%;
-  margin-bottom: 3vw;
 
+.projectarea{
+  height:70vh;
+  width: 100%;
 }
 
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr); 
-  gap: 4vw; 
-  width: 100%;
+.backtextarea h2{
 
-}
-
-
-
-.image {
-  width:100%;
-  height: 46vh;
-  }
-
-  .cards h4 {
-    font-size: 3.1vw;
-    font-weight: 500;
-    padding: 2vw 3vw;
-  }
-
-
-  
-  .CertifiedCard {
-    margin-top: 6vw;
-    margin-bottom: 8vw;
-  
+  font-size: 19vw;
+    
   }
   
-
-.CertifiedCard h2{
-  font-size: 3.4vw;
-  text-align: center;
-
-}
-
-
-
-
-
-.Certifiedcardsimage {
-  width:100%;
-  height: 45vh;
-  margin-bottom: 5vw;
-}
-
-.CertifiedCard h4 {
-  font-size: 5vw;
-}
-
-.faqs-container {
-  max-width: 100%;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-
-
-
-
-
-
-.Gitstatus{
-  margin-bottom: 12vw;
-  width: 100%;
-
-}
-.gittop{
-  margin-top: 2vw;
-  height: 17vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 7vw;
-}
-
-
-.gittop h1{
-  font-size: 12vw;
-}
-.gittop h3{
-  font-size: 4.6vw;
-}
-
-
-
-.gitbottom{
   
-    width: 90%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-left: 1px solid #25520e;
-}
-
-.gitbottom img{
-  height: 10vh;
-  
-
-}
-
-
-.Checkmates{
-  width: 100%;
-  height: 60vh;
-  margin-top: 11vw;
-  display:flex;
-  align-items: flex-start;
-  justify-content: center;
-
-}
-
-
-.back{
-  display: flex;
-  align-items: flex-start;
-
-}
-
-.back h4{
-  font-size: 11vw;
-  line-height: 12vw;
- 
- }
- .front{
-  margin-top: 9vh;
-
-}
-
-
-
-
-
-
-
-.contact{
-  width: 100%;
-  padding: 3vw 2vw;
-}
-.contactadresss{
-  width: 100%;
-
-}
-
-.contactadresss h2{
-  font-size: 6vw;
-
-
-}
-.contactadresss h3{
-  font-size: 3.1vw;
-
-}
-
-
-.Footer{
-  width: 100%;
-  margin-top: 1vw;
-
-}
-
-.Footer h2{
-  font-weight: 500;
-  font-size: 21vw;
-  
-}
-
-
-
-
-
-}
-
-
-@media (min-width: 1025px) and (max-width: 1280px){
- 
-
-
-.cursor {
-  height: 3.7vh;
-  width: 2vw;
-}
-
-.Loader h1{
-  font-size: 5vw;
-  }
-
-  .navbar {
-    height:9vh;
-    width: 93%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0; 
-    left: 50%; 
-    transform: translateX(-50%);
-    z-index: 99099;
-    margin-top: 1vw;
-    border-radius: 30vw;
-  
+  .cardscollection{
+    min-width: 59vw;
+    height: 59vh;
+     width:40vw,
     
   
-  }
-
-  .bottom {
-    background-color: #f7f4f3;
-    height: 100%;
-    border-radius: 3vw;
-    width: 50%;
-  }
-  .bottom h2 {
-    font-size: 1.3vw;
-    font-weight: 500;
-    color: #262525;
-    position: relative;  
-    padding-bottom: 5px;
-  }
-
-
-
-.end{
-  height: 100%;
-  width: 20vw;
-}
-
-.button2 {
-  padding: 1.5vw 2.5vw;
-  font-size: 1.3vw;
-  height: 7vh;
-}
-
-.Home{
-  width: 100%;
-  margin-top: 7vw;
-   
-  }
   
-  .Fronttext{
-    height: 20vh;
+  }
+  .information{
+    height:43vh;
     width: 100%;
-  
-  }
-  .Fronttext h1{
-    font-size: 4.5vw;
-    padding: 1.1vw 0;
-
-  }
-  .Fronttext h4{
-    font-size: 2.5vw;
-  
+    gap: 14vw;
   
   }
   
-  .Marquee {
-    height: 50vh;
-  
-  }
-  .Marquee h1 {
-    font-size: 17vw;
-  
-  }
-.imageupper {
-  height: 100%; 
-  width: 40%;   
-  position: absolute;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
-
-}
-
-.Modelview {
-  height: 100%;
-  width: 100%;
-}
-
-model-viewer {
-  width: 100%;
-  height: 100%;
-}
-
-.Client{
-  height: 10vh;
-  width: 100%;
-  margin-top: 3vw;
-  
-}
-
-.selectives{
-  gap: 0.5vw;
-  
-}
-.selectives img{
-  height: 6vh;
-}
-.selectives h2{
-  font-size: 2.5vw;
- }
- .Button{
-  height: 10vh;
-  width: 100%;
-  
-}
-
-button{
-  padding: 2vw 3vw;
-  font-size: 1.3vw;
-}
-
-
-.Aboutus{
-  width: 100%;
-  margin-top: 1vw;
-  }
-
-  
-.Aboutme{
-  width: 95%  !important;
-  margin-bottom: 4vw;
+  .information h2{
+  font-family: actay;
+  font-size: 2.7vh;
+  color: whitesmoke;
   }
   
-  .Aboutme h2{
-    font-size: 3.7vw !important;
-   }
-   
-  .Aboutme h4{
-    font-size: 3vh !important;
-  
-   }
-   
- .AboutClient{
-  margin-top: 6vh;
- }
- 
- .AboutClient h4{
-
-  font-size: 3vw;
-  margin-bottom: 1vw;
-  }
-  
- .AboutClients img{
-
-  height: 19vh;
-  margin: 2vw 0;
-  margin-bottom: 2vw;
-
- }
- 
- .AboutClients h3{
-  font-size: 3vw;
-
-
-  
- }
- .AboutClients h5{
-  
-  font-size: 2.9vw;
-  
- }
- 
- .AboutClients h6{
-  
-  font-size: 2vw;
-
-  
- }
- 
- .Impactfulldesign {
-  margin-top: 9vh;
-  line-height: 24vw;
-  
-}
-
-.text-content h2,
-.text-content h1 {
-  font-size: 33vw;
-}
-
-.myskills{
-  margin-top: 13vh;
-  width: 100%;
-  margin-bottom: 10vh;
-}
-
-.myskills h1{
-  font-size: 3.5vw;
-  font-weight: 500;
-
-}
-
-.skill-item {
-  width: 12vh;
-  height: 12vh;
-}
-
-
-
-
-
-.Ourservices{
-  width: 100%;
-  margin-top: 16vh;
-  height: 100%;
-  background-color: #689D48;
-  position: relative;
-
-
-}
-
-.ourservicestop{
-  width: 100%;
-  padding: 0 1vw;
-
-}
-.ourservicestop h2{ 
-  font-family: 'Impacted';
- font-weight: 500;
- font-size:13vw;
- line-height: 13.5vw;
- text-align: center;
- text-transform: uppercase;
- color: white;
-
-}
-
-.ourservicesbottom{
-  width: 100%;
-  margin-top: -2vw;
-}
-
-.ourserivesimagepart{
-  height: 100%;
-  width:100%;
-  background-color: #e0e05f;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border: 1px solid black;
-
-}
-.ourserivesimagepart .images{
-  height: 155vh;
-  width: 100%;
-  margin-top: -10vw;
-
- 
-}
-.ourserivesimagepart .images img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
- 
-}
-
-   
-
-   .WorkCollection{
-    width: 100%;
-    margin-bottom: 2vw;
-    padding: 0 3vw;
-  }
-  .WorkCollection h2{
-    font-size: 3vw;
-    margin: 2vw 0;
-  
-  }
-  
-  .WorkCollection h5{
-    font-size: 2vw;
+  .informationdesc p{
+    font-family: actay;
+    font-size: 2.1vh;
+    font-weight: 400;
+    color: whitesmoke;
   
   }
 
 
-  
-.Card {
-  width: 100%;
-
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 7vw; 
-  width: 100%;
-
-}
-
-.image {
-  width:100%;
-  height: 54vh;
-  }
-
-  .cards h4 {
-    font-size: 1.7vw;
-    padding: 1vw 0;
-    font-weight: 500;
-  }
 
   .CertifiedCard {
-    margin-top: 6vw;
-  
+    margin-top: 1vw;
+
   }
-  
+
 .CertifiedCard h2{
   font-size: 3vw;
 
@@ -2607,8 +2120,8 @@ button{
 
 .Certifiedcardsimage {
   width:100%;
-  height: 63vh;
-  margin-bottom: 5vw;
+  height: 44vh;
+  margin-bottom: 1vw;
 }
 
 .faqs-container {
@@ -2620,12 +2133,11 @@ button{
 .faq-title {
   margin-bottom: 5vh;
   font-size: 2.9vw;
-  
+
 }
 
 .faq-question {
   font-size: 1.5rem;
-
 
 }
 
@@ -2635,20 +2147,17 @@ button{
 
 }
 
-
 .Gitstatus{
   width: 100%;
   margin-bottom: 1vw;
   margin-top: 1vw;
 }
 
-
 .gittop{
   height: 24vh;
   width: 100%;
   margin-bottom: 2vw;
 }
-
 
 .gittop h1{
   font-size: 5vw;
@@ -2657,10 +2166,8 @@ button{
   font-size: 2.5vw;
 }
 
-
-
 .gitbottom{
-  
+
     width: 90%;
   margin: 0 auto;
   display: flex;
@@ -2671,20 +2178,17 @@ button{
 
 .gitbottom img{
   height: 21vh;
-  
 
 }
 
-
-
 .Checkmates{
-  height: 110vh;
+  height: 64vh;
   width: 100%;
 
 }
 
 .back{
-  height: 85vh;
+  height: 44vh;
   width: 100%;
   position: relative;
   display: flex;
@@ -2696,10 +2200,10 @@ button{
   position: absolute;
   z-index: 999;
   width: 100%;
+  
   margin-top: 35vh;
 
 }
-
 
 .fronttop h5 {
   font-size: 1.1vw;
@@ -2708,19 +2212,15 @@ button{
 .contact{
   width: 100%;
   padding: 3vw 2vw;
-  
+
 }
 .contactadresss{
   width: 100%;
 
-
-
 }
-
 
 .contactadresss h2{
   font-size: 7vw;
-
 
 }
 .contactadresss h3{
@@ -2738,14 +2238,11 @@ button{
   font-weight: 500;
   font-size: 20vw;
   color: #242627;
-  
+
 }
-
-
 
 .contactadresss h2{
   font-size: 4.5vw;
-
 
 }
 .contactadresss h3{
@@ -2753,15 +2250,536 @@ button{
 
 }
 
-
-
-
 }
 
 
 
+@media (min-width: 1025px) and (max-width: 1280px){
+ 
 
 
+  .cursor {
+    height: 3.7vh;
+    width: 2vw;
+  }
+  
+  .Loader h1{
+    font-size: 5vw;
+    }
+  
+    .navbar {
+      height:7vh;
+      width: 93%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0; 
+      left: 50%; 
+      transform: translateX(-50%);
+      z-index: 99099;
+      margin-top: 1vw;
+      border-radius: 30vw;
+    
+      
+    
+    }
+  
+    .bottom {
+      background-color: #f7f4f3;
+      height: 100%;
+      border-radius: 3vw;
+      width: 48%;
+    }
+    .bottom h2 {
+      font-size: 1.3vw;
+      font-weight: 500;
+      color: #262525;
+      position: relative;  
+      padding-bottom: 5px;
+    }
+  
+  
+  
+  .end{
+    height: 100%;
+    width: 9vw;
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  #btnheader {
+    font-size: 1.2vw;
+    
+  }
+
+  
+  .Home{
+    width: 100%;
+    margin-top: 7vw;
+     
+    }
+    
+    .Fronttext{
+      height: 20vh;
+      width: 100%;
+    
+    }
+    .Fronttext h1{
+      font-size: 4.5vw;
+      padding: 1.1vw 0;
+  
+    }
+    .Fronttext h4{
+      font-size: 2.5vw;
+    
+    
+    }
+    
+    .Marquee {
+      height: 50vh;
+    
+    }
+    .Marquee h1 {
+      font-size: 17vw;
+    
+    }
+  .imageupper {
+    height: 100%; 
+    width: 40%;   
+    position: absolute;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+  
+  }
+  
+  .Modelview {
+    height: 100%;
+    width: 100%;
+  }
+  
+  model-viewer {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .Client{
+    height: 10vh;
+    width: 100%;
+    margin-top: 3vw;
+    
+  }
+  
+  .selectives{
+    gap: 0.5vw;
+    
+  }
+  .selectives img{
+    height: 6vh;
+  }
+  .selectives h2{
+    font-size: 2.5vw;
+   }
+   .Button{
+    height: 10vh;
+    width: 100%;
+    
+  }
+  
+  button{
+    padding: 2vw 3vw;
+    font-size: 1.3vw;
+  }
+  
+  
+  .Aboutus{
+    width: 100%;
+    margin-top: 1vw;
+    }
+  
+    
+  .Aboutme{
+    width: 95%  !important;
+    margin-bottom: 4vw;
+    }
+    
+    .Aboutme h2{
+      font-size: 3.7vw !important;
+     }
+     
+    .Aboutme h4{
+      font-size: 3vh !important;
+    
+     }
+     
+   .AboutClient{
+    margin-top: 6vh;
+   }
+   
+   .AboutClient h4{
+  
+    font-size: 3vw;
+    margin-bottom: 1vw;
+    }
+    
+   .AboutClients img{
+  
+    height: 19vh;
+    margin: 2vw 0;
+    margin-bottom: 2vw;
+  
+   }
+   
+   .AboutClients h3{
+    font-size: 3vw;
+  
+  
+    
+   }
+   .AboutClients h5{
+    
+    font-size: 2.9vw;
+    
+   }
+   
+   .AboutClients h6{
+    
+    font-size: 2vw;
+  
+    
+   }
+   
+   .Impactfulldesign {
+    margin-top: 9vh;
+    line-height: 24vw;
+    
+  }
+  
+  .text-content h2,
+  .text-content h1 {
+    font-size: 33vw;
+  }
+  
+  .myskills{
+    margin-top: 13vh;
+    width: 100%;
+    margin-bottom: 10vh;
+  }
+  
+  .myskills h1{
+    font-size: 3.5vw;
+    font-weight: 500;
+  
+  }
+  
+  .skill-item {
+    width: 12vh;
+    height: 12vh;
+  }
+  
+  
+  
+  
+  
+  .Ourservices{
+    width: 100%;
+    margin-top: 16vh;
+    height: 100%;
+    background-color: #689D48;
+    position: relative;
+  
+  
+  }
+  
+  .ourservicestop{
+    width: 100%;
+    padding: 0 1vw;
+  
+  }
+  .ourservicestop h2{ 
+    font-family: 'Impacted';
+   font-weight: 500;
+   font-size:13vw;
+   line-height: 13.5vw;
+   text-align: center;
+   text-transform: uppercase;
+   color: white;
+  
+  }
+  
+  .ourservicesbottom{
+    width: 100%;
+    margin-top: -2vw;
+  }
+  
+  .ourserivesimagepart{
+    height: 100%;
+    width:100%;
+    background-color: #e0e05f;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid black;
+  
+  }
+  .ourserivesimagepart .images{
+    height: 155vh;
+    width: 100%;
+    margin-top: -10vw;
+  
+   
+  }
+  .ourserivesimagepart .images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+   
+  }
+  
+     
+  
+     .WorkCollection{
+      width: 100%;
+      margin-bottom: 2vw;
+      padding: 0 3vw;
+    }
+    .WorkCollection h2{
+      font-size: 3vw;
+      margin: 2vw 0;
+    
+    }
+    
+    .WorkCollection h5{
+      font-size: 2vw;
+    
+    }
+  
+  
+    
+  .Card {
+    width: 100%;
+  
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 7vw; 
+    width: 100%;
+  
+  }
+  
+  .image {
+    width:100%;
+    height: 54vh;
+    }
+  
+    .cards h4 {
+      font-size: 1.7vw;
+      padding: 1vw 0;
+      font-weight: 500;
+    }
+  
+    .CertifiedCard {
+      margin-top: 6vw;
+    
+    }
+    
+  .CertifiedCard h2{
+    font-size: 3vw;
+  
+  }
+  
+  .CertifiedCard {
+    margin-top: 6vw;
+  
+  }
+  
+  .Certifiedcardsimage {
+    width:100%;
+    height: 63vh;
+    margin-bottom: 5vw;
+  }
+  
+  .faqs-container {
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .faq-title {
+    margin-bottom: 5vh;
+    font-size: 2.9vw;
+    
+  }
+  
+  .faq-question {
+    font-size: 1.5rem;
+  
+  
+  }
+  
+  /* Answer Section */
+  .faq-answer {
+    font-size: 1.7vw;
+  
+  }
+  
+  
+  .Gitstatus{
+    width: 100%;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+  }
+  
+  
+  .gittop{
+    height: 24vh;
+    width: 100%;
+    margin-bottom: 2vw;
+  }
+  
+  
+  .gittop h1{
+    font-size: 5vw;
+  }
+  .gittop h3{
+    font-size: 2.5vw;
+  }
+  
+  
+  
+  .gitbottom{
+    
+      width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #25520e;
+  }
+  
+  .gitbottom img{
+    height: 21vh;
+    
+  
+  }
 
 
+  .backtextarea h2{
+    font-size: 17vw;
+    
+      
+    }
+
+    .cardscollection{
+
+      min-width: 27vw;
+   
+      height: 63vh;
+
+       width:27vw,
+      
+    
+    
+    }
+  
+    
+.information h2{
+  font-size: 1.3vw;
+  
+  }
+
+  
+  .informationdesc p{
+    font-size: 2.2vh;
+  
+  }
+  
+  .Checkmates{
+    height: 110vh;
+    width: 100%;
+  
+  }
+  
+  .back{
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .front{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    margin-top: 35vh;
+  
+  }
+  
+  
+  .fronttop h5 {
+    font-size: 1.1vw;
+  
+  }
+  .contact{
+    width: 100%;
+    padding: 3vw 2vw;
+    
+  }
+  .contactadresss{
+    width: 100%;
+  
+  
+  
+  }
+  
+  
+  .contactadresss h2{
+    font-size: 7vw;
+  
+  
+  }
+  .contactadresss h3{
+    font-size: 2.2vw;
+  
+  }
+  .Footer{
+    width: 100%;
+    margin-top: 1vw;
+  
+  }
+  
+  .Footer h2{
+    font-family:Queen ;
+    font-weight: 500;
+    font-size: 20vw;
+    color: #242627;
+    
+  }
+  
+  
+  
+  .contactadresss h2{
+    font-size: 4.5vw;
+  
+  
+  }
+  .contactadresss h3{
+    font-size: 2.1vw;
+  
+  }
+  
+  
+  
+  
+  }
 

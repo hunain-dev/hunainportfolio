@@ -1,160 +1,249 @@
-    import { useState } from "react";
+import gsap from "gsap";
+import { useEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-    const Cards = () => {
-      const [playingVideo, setPlayingVideo] = useState(null);
+// Images
+import tobbaacoo from "../../../../public/Assets/images/Camille-Bas-1200x908.png";
+import jobs from "../../../../public/Assets/images/jobs.jpg";
+import ochi from "../../../../public/Assets/images/ochi (2).png";
+import christmasweb from "../../../../public/Assets/images/Christmas image.png";
+import tictacgame from "../../../../public/Assets/images/tictac.png";
+import spacergabor from "../../../../public/Assets/images/spacer.png";
+import weather from "../../../../public/Assets/images/weather.jpg";
+import TwoGoodGoodSave from "../../../../public/Assets/images/TwoGoodGoodSave.jpg";
+import furnitureweb from "../../../../public/Assets/images/furniture.jpeg";
+import hello from "../../../../public/Assets/images/hello.jpg";
+import rejouices from "../../../../public/Assets/images/rejouices.jpeg";
+import seventy from "../../../../public/Assets/images/seventy.jpeg";
 
+// Register plugin
+gsap.registerPlugin(ScrollTrigger);
 
+const Cards = () => {
+  const cardsWrapperRef = useRef(null);
 
-
-      const data = [
-
-          {
-          cardimg:
-            "/Assets/images/Foundation.png", // Corrected the path here
-          cardh4:
-            "Foundation® – Unlocking Smart Capital",
-            Alert:"Comming Soon"
-        },
-        {
-          cardimg:
-            "https://tobacco.nl/wp-content/uploads/2025/05/Camille-Bas-1200x908.png", // Corrected the path here
-          cardh4:
-            "A Digital tobacco.nl— An Awwwards Winning Masterpiece!",
-          link: "https://tabaccino.netlify.app/",
-        },
-      {
-          cardimg:
-            "https://i.pinimg.com/736x/64/81/db/6481db1d1f5fd2ebd505d522b97f2f85.jpg", // Corrected the path here
-          cardh4:
-            "Career Hunt – Global Jobs, One Click Away (coming Soon)",
-            link:"https://careerhant.netlify.app/"
-          
-        },
-        {
-          cardh4:
-            "Ochi Award-Winning Web Designer | Specialized in Animated Websites with ReactJS, GSAP, and Framer Motion",
-          cardimg: "/Assets/images/desktopochi.png",
-          link: "https://ochi-design-production.netlify.app/",
-        },
-
-        {
-          cardimg: "/Assets/images/Christmas image.png", // Corrected the path here
-          cardh4: "Santa’s Companion | Gifts, Decor & More",
-          link: "https://santas-store.netlify.app/",
-        },
-
-        {
-          cardh4: "Ultimate Tic-Tac-Toe — Built with React.js",
-          cardimg: "/Assets/images/tictac.png",
-          link: "https://reactxogame.netlify.app/",
-        },
-        {
-          cardimg: "/Assets/images/3d spancer gabor.png", // Corrected the path here
-          cardh4: "spencergabor.work Digital agency",
-          link: "https://spancer-gabor.netlify.app/",
-        },
-
-        {
-          cardimg:
-            "https://wallpapers.com/images/hd/fine-weather-landscape-iq9k6ubn8w9yhhkc.jpg",
-          cardh4: "Weather App - Real-time Weather Updates",
-          link: "https://macro-weather-app.netlify.app/",
-        },
-
-        {
-          cardimg: "/Assets/images/TwoGoodGoodSave.jpg",
-          cardh4: "Creator of Two Good Company Website",
-          link: "https://twogoodcompany.netlify.app/",
-        },
-
-        {
-          cardimg:
-            "https://plus.unsplash.com/premium_photo-1681046751108-a516bea00570?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c29mYXxlbnwwfHwwfHx8MA%3D%3D",
-          cardh4: "furni-modern-interior-design-studios ",
-          link: "https://furni-modern-interior-design-studios.netlify.app/",
-        },
-        {
-          cardimg:
-            "https://images.prismic.io/rejouice-2024/Z0SmXq8jQArT1SWV_og.jpg?auto=format,compress",
-          cardh4: "Specialist in Animated Websites | Creator of Rejouice Design",
-          link: "https://myrejoucie.netlify.app/",
-        },
-        {
-          cardimg:
-            "https://www.cssdesignawards.com/cdasites/2023/202303/20230306095557.jpg",
-          cardh4: "Creator of We Think Elastic Website",
-          link: "https://wethinkelastic.netlify.app/",
-        },
-
-        {
-          cardimg:
-            "https://www.acrossagency.se/wp-content/uploads/2019/07/Across-logo-svart.jpg",
-          cardh4: "CROING | Creative agency",
-          isVideo: true,
-          videoSrc: "/Assets/images/croing.mp4",
-        },
-      ];
-
-      const openLink = (url) => {
-        window.open(url, "_blank");
-      };
-
-      const playVideo = (videoSrc) => {
-        setPlayingVideo(videoSrc);
-      };
-
-      return (
-        <div className="Card">
-          <div className="cards" >
-            {data.map((elem, index) => (
-              <div
-                key={index}
-            
-                className="card-item" 
-    onClick={() => {
-  if (elem.Alert) {
-    alert(elem.Alert); 
-    return; 
-  }
-    if (elem.link) {
-      openLink(elem.link);
-    } else if (elem.videoSrc) {
-      playVideo(elem.videoSrc);
-    }
-  }}
-
-              >
-                <div className="image">
-                  {elem.isVideo ? (
-                    <div className="video-thumbnail">
-                      {playingVideo === elem.videoSrc ? (
-                        <video width="100%" height="100%" controls autoPlay>
-                          <source src={elem.videoSrc} type="video/mp4" />
-                        </video>
-                      ) : (
-                        <img
-                          src={elem.cardimg}
-                          alt="Card Thumbnail"
-                          width="100%"
-                          height="100%"
-                        />
-                      )}
-                    </div>
-                  ) : (
-                    <img
-                      src={elem.cardimg}
-                      alt="Card Image"
-                      width="100%"
-                      height="100%"
-                    />
-                  )}
-                </div>
-                <h4>{elem.cardh4}</h4>
-              </div>
-            ))}
-          </div>
-        </div>
-      );
+  useEffect(() => {
+    const width = window.innerWidth;
+  
+    const isMobile = width < 768;
+    const isTablet = width >= 768 && width <= 1024;
+    const isDesktop = width >= 1025 && width <= 1280;
+    const isLargeDesktop = width > 1280;
+  
+    // 💡 Horizontal offset logic
+    const offRight = () => {
+      if (isMobile) return width + 1400;
+      if (isTablet) return width + 3000;
+      if (isDesktop) return width + 2700;
+      if (isLargeDesktop) return width + 2700;
     };
+  
+    const offLeft = () => {
+      if (isMobile) return -width - 1300;
+      if (isTablet) return -width - 2940;
+      if (isDesktop) return -width - 2600;
+      if (isLargeDesktop) return -width - 2700;
+    };
+  
+    // 💡 Scroll distance (end) logic
+    const scrollEnd = () => {
+      if (isMobile) return "+=2000";
+      if (isTablet) return "+=3500";
+      if (isDesktop) return "+=4000";
+      if (isLargeDesktop) return "+=5000";
+    };
+  
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".projectarea",
+        start: "top top",
+        end: scrollEnd(),
+        scrub: 2,
+        pin: true,
+        markers: false,
+      },
+    });
+  
+    tl.fromTo(
+      cardsWrapperRef.current,
+      { x: offRight(), opacity: 1 },
+      {
+        x: offLeft(),
+        opacity: 1,
+        duration: 1,
+        ease: "power2.inOut",
+        stagger: 0.2,
+      }
+    );
+  
+    return () => {
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+      tl.kill();
+    };
+  }, []);
+  
+  
 
-    export default Cards;
+  // Project cards
+  const cardcollection = [
+    {
+      status: "coming-soon",
+      comingMessage: "🚧 Coming Soon! This website will be live in 2 weeks.",
+      cardbg: "#080808",
+      cardimagebg: "blue",
+      cardimg:
+        "https://assets.awwwards.com/awards/submissions/2025/08/68a2eddcb8d07435807694.png",
+      desctittle: "Klearmind Clinics",
+      carddesc:
+        "A modern website for a Ketamine & IV therapy clinic in California. Designed to reflect clarity, wellness, and trust.",
+      link: "",
+    },
+    {
+      status: "coming-soon",
+      comingMessage: "🚧 Coming Soon! This website will be live in 4 days.",
+      cardbg: "#080808",
+      cardimagebg: "blue",
+      cardimg: seventy,
+      desctittle: "K72-Awwwards SOTD",
+      carddesc:
+        "A faithful clone of the award-winning K72 digital experience. Packed with scroll effects & animations.",
+      link: "",
+    },
+    {
+      cardbg: "#080808",
+      cardimagebg: "blue",
+      cardimg: tobbaacoo,
+      desctittle: "A Digital tobacco.nl",
+      carddesc:
+        "Transforming traditional industry into digital excellence. Where innovation meets heritage.",
+      link: "https://tabaccino.netlify.app/",
+    },
+    {
+      cardbg: "#080808",
+      cardimagebg: "red",
+      cardimg: jobs,
+      desctittle: "Career Hunt – Global Jobs",
+      carddesc: "Your dream career is just one click away.",
+      link: "https://careerhant.netlify.app/",
+    },
+    {
+      cardbg: "#080808",
+      cardimagebg: "green",
+      cardimg: ochi,
+      desctittle: "Ochi Clone",
+      carddesc:
+        "Recreating digital excellence that earned global recognition.",
+      link: "https://ochi-design-production.netlify.app/",
+    },
+    {
+      cardbg: "#080808",
+      cardimagebg: "green",
+      cardimg: christmasweb,
+      desctittle: "Santa's Companion",
+      carddesc:
+        "Holiday magic in a digital store. Gifts, decor & more online.",
+      link: "https://santas-store.netlify.app/",
+    },
+    {
+      cardbg: "#080808",
+      cardimagebg: "green",
+      cardimg: tictacgame,
+      desctittle: "Tic-Tac-Toe Game",
+      carddesc: "Classic game reimagined. Strategy meets UI.",
+      link: "https://reactxogame.netlify.app/",
+    },
+    {
+      cardbg: "#080808",
+      cardimagebg: "green",
+      cardimg: spacergabor,
+      desctittle: "spencergabor.work",
+      carddesc: "Creative digital agency for brands.",
+      link: "https://spancer-gabor.netlify.app/",
+    },
+    {
+      cardbg: "#080808",
+      cardimagebg: "green",
+      cardimg: weather,
+      desctittle: "Weather App",
+      carddesc: "Real-time weather tracking with modern UI.",
+      link: "https://macro-weather-app.netlify.app/",
+    },
+    {
+      cardbg: "#080808",
+      cardimagebg: "green",
+      cardimg: TwoGoodGoodSave,
+      desctittle: "Two Good Company",
+      carddesc: "Empowering social change with strong branding.",
+      link: "https://twogoodcompany.netlify.app/",
+    },
+    {
+      cardbg: "#080808",
+      cardimagebg: "green",
+      cardimg: furnitureweb,
+      desctittle: "Furni – Interior Design",
+      carddesc: "Modern, immersive web experience for interior design.",
+      link: "https://furni-interior-design.netlify.app/",
+    },
+    {
+      cardbg: "#080808",
+      cardimagebg: "green",
+      cardimg: hello,
+      desctittle: "Rejouice Website Clone",
+      carddesc:
+        "Bringing animation and interaction to static websites beautifully.",
+      link: "https://myrejoucie.netlify.app/",
+    },
+    {
+      cardbg: "#080808",
+      cardimagebg: "green",
+      cardimg: rejouices,
+      desctittle: "We Think Elastic",
+      carddesc:
+        "Stretching web creativity. Elastic design for elastic minds.",
+      link: "https://wethinkelastic.netlify.app/",
+    },
+  ];
+
+  return (
+    <div className="projectarea">
+      <div className="backtextarea">
+        <h2>Projects</h2>
+
+        <div
+          className="frontprojectshowcase flex gap-5"
+          ref={cardsWrapperRef} // ✅ ref attached here
+        >
+          {cardcollection.map((elem, index) => (
+            <div
+              key={index}
+              className="cardscollection p-5 rounded-lg text-white cursor-pointer"
+              style={{ backgroundColor: elem.cardbg }}
+              onClick={() => {
+                if (elem.status === "coming-soon") {
+                  alert(elem.comingMessage || "🚧 Coming Soon!");
+                } else {
+                  window.open(elem.link, "_blank");
+                }
+              }}
+            >
+              <div
+                className="carcollectionimage"
+                style={{ backgroundColor: elem.cardimagebg }}
+              >
+                <img src={elem.cardimg} alt="" />
+              </div>
+              <div className="information">
+                <h2>{elem.desctittle}</h2>
+                <div className="informationdesc">
+                  <p>{elem.carddesc}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Cards;

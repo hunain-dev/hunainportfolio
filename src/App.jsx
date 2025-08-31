@@ -10,9 +10,11 @@ import Ourservices from "./Components/pages/Ourservices/Ourservices";
 import Project from "./Components/pages/Project/Project";
 import Footer from "./Components/Footer";
 import Cursor from "./Components/pages/Cursor/Cursor";
-import Loader from "./Components/Loader/Loader";
 import Gitstatus from "./Components/pages/Git-status/Gitstatus";
 import Contact from "./Components/pages/Contact/Contact";
+import Chilliman from "./Components/pages/Chilliman/Chilliman";
+import Loader from "./Components/Loader/Loader";
+// import Updating from "./Components/pages/Updating/Updating";
 
 const App = () => {
   const scrollRef = useRef(null);
@@ -32,7 +34,9 @@ const App = () => {
 
   return (
     <div data-scroll-container ref={scrollRef} className="smooth-scroll">
-      <Loader />
+{/* <Updating/> */}
+      <Loader/>
+      <Chilliman/>    
       <Header />
       <Cursor />
 

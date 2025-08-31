@@ -1,5 +1,4 @@
 
-import React from 'react'
 import image1 from '/public/Assets/images/Ourservicesimages (1).png';
 import image2 from '/public/Assets/images/Ourservicesimages (2).png';
 import Servicesfaqs from './Servicesfaqs/Servicesfaqs';
