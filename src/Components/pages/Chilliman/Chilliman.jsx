@@ -29,7 +29,7 @@ const Chilliman = () => {
         trigger: "body",
         start: "top top",
 end: "bottom+=4000",
-        scrub:13,
+        scrub:12,
       }
     });
     
