@@ -1,8 +1,7 @@
-
 const Header = () => {
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Assets/images/Muhammad hunain.pdf";
+    link.href = "/Assets/images/Muhammad Hunain Resume.pdf";
     link.download = "Muhammad hunain.pdf";
     document.body.appendChild(link);
     link.click();
@@ -33,12 +32,10 @@ const Header = () => {
         </h2>
       </div>
       <div className="end">
-
-      
         <div className="w-full flex">
-                 <button onClick={downloadResume} id="btnheader">Resume</button>
-      
-
+          <button onClick={downloadResume} id="btnheader">
+            Resume
+          </button>
         </div>
       </div>
     </div>
