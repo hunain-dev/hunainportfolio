@@ -14,7 +14,7 @@ import TwoGoodGoodSave from "../../../../public/Assets/images/TwoGoodGoodSave.jp
 import furnitureweb from "../../../../public/Assets/images/furniture.jpeg";
 import hello from "../../../../public/Assets/images/hello.jpg";
 import rejouices from "../../../../public/Assets/images/rejouices.jpeg";
-import seventy from "../../../../public/Assets/images/seventy.jpeg";
+import mamtooth from "../../../../public/Assets/Videos/comming soon.mp4"
 
 // Register plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -88,9 +88,18 @@ const Cards = () => {
   const cardcollection = [
     {
       status: "coming-soon",
+      comingMessage: "🚧 Coming Soon! This website will be live in 4 days.",
+      cardbg: "#080808",
+      cardvideo: mamtooth, // Changed from cardimg to cardvideo
+      desctittle: "mammothmurals",
+      carddesc:
+        "Mammoth Murals is a mural and sign painting agency based in Irondale, Alabama. They specialize in creating bold, hand-painted murals ",
+      link: "",
+    },
+    {
+      status: "coming-soon",
       comingMessage: "🚧 Coming Soon! This website will be live in 2 weeks.",
       cardbg: "#080808",
-      cardimagebg: "blue",
       cardimg:
         "https://assets.awwwards.com/awards/submissions/2025/08/68a2eddcb8d07435807694.png",
       desctittle: "Klearmind Clinics",
@@ -98,20 +107,9 @@ const Cards = () => {
         "A modern website for a Ketamine & IV therapy clinic in California. Designed to reflect clarity, wellness, and trust.",
       link: "",
     },
-    {
-      status: "coming-soon",
-      comingMessage: "🚧 Coming Soon! This website will be live in 4 days.",
-      cardbg: "#080808",
-      cardimagebg: "blue",
-      cardimg: seventy,
-      desctittle: "K72-Awwwards SOTD",
-      carddesc:
-        "A faithful clone of the award-winning K72 digital experience. Packed with scroll effects & animations.",
-      link: "",
-    },
+
     {
       cardbg: "#080808",
-      cardimagebg: "blue",
       cardimg: tobbaacoo,
       desctittle: "A Digital tobacco.nl",
       carddesc:
@@ -120,7 +118,6 @@ const Cards = () => {
     },
     {
       cardbg: "#080808",
-      cardimagebg: "red",
       cardimg: jobs,
       desctittle: "Career Hunt – Global Jobs",
       carddesc: "Your dream career is just one click away.",
@@ -128,7 +125,6 @@ const Cards = () => {
     },
     {
       cardbg: "#080808",
-      cardimagebg: "green",
       cardimg: ochi,
       desctittle: "Ochi Clone",
       carddesc:
@@ -137,7 +133,6 @@ const Cards = () => {
     },
     {
       cardbg: "#080808",
-      cardimagebg: "green",
       cardimg: christmasweb,
       desctittle: "Santa's Companion",
       carddesc:
@@ -146,7 +141,6 @@ const Cards = () => {
     },
     {
       cardbg: "#080808",
-      cardimagebg: "green",
       cardimg: tictacgame,
       desctittle: "Tic-Tac-Toe Game",
       carddesc: "Classic game reimagined. Strategy meets UI.",
@@ -154,7 +148,6 @@ const Cards = () => {
     },
     {
       cardbg: "#080808",
-      cardimagebg: "green",
       cardimg: spacergabor,
       desctittle: "spencergabor.work",
       carddesc: "Creative digital agency for brands.",
@@ -162,7 +155,6 @@ const Cards = () => {
     },
     {
       cardbg: "#080808",
-      cardimagebg: "green",
       cardimg: weather,
       desctittle: "Weather App",
       carddesc: "Real-time weather tracking with modern UI.",
@@ -170,7 +162,6 @@ const Cards = () => {
     },
     {
       cardbg: "#080808",
-      cardimagebg: "green",
       cardimg: TwoGoodGoodSave,
       desctittle: "Two Good Company",
       carddesc: "Empowering social change with strong branding.",
@@ -178,7 +169,6 @@ const Cards = () => {
     },
     {
       cardbg: "#080808",
-      cardimagebg: "green",
       cardimg: furnitureweb,
       desctittle: "Furni – Interior Design",
       carddesc: "Modern, immersive web experience for interior design.",
@@ -186,7 +176,6 @@ const Cards = () => {
     },
     {
       cardbg: "#080808",
-      cardimagebg: "green",
       cardimg: hello,
       desctittle: "Rejouice Website Clone",
       carddesc:
@@ -195,7 +184,6 @@ const Cards = () => {
     },
     {
       cardbg: "#080808",
-      cardimagebg: "green",
       cardimg: rejouices,
       desctittle: "We Think Elastic",
       carddesc:
@@ -230,7 +218,18 @@ const Cards = () => {
                 className="carcollectionimage"
                 style={{ backgroundColor: elem.cardimagebg }}
               >
-                <img src={elem.cardimg} alt="" />
+                {elem.cardvideo ? (
+                  <video
+                    src={elem.cardvideo}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="h-full w-full object-cover rounded-lg"
+                  ></video>
+                ) : (
+                  <img src={elem.cardimg} alt="" />
+                )}
               </div>
               <div className="information">
                 <h2>{elem.desctittle}</h2>

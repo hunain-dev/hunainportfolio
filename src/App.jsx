@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
-
+// import Chatbot from "./Components/pages/Chatbot/Chatbot";
 import Header from "./Components/Header";
 import Home from "./Components/pages/Home/Home";
 import Aboutus from "./Components/pages/Aboutus/Aboutus";
@@ -14,7 +14,6 @@ import Gitstatus from "./Components/pages/Git-status/Gitstatus";
 import Contact from "./Components/pages/Contact/Contact";
 import Chilliman from "./Components/pages/Chilliman/Chilliman";
 import Loader from "./Components/Loader/Loader";
-// import Updating from "./Components/pages/Updating/Updating";
 
 const App = () => {
   const scrollRef = useRef(null);
@@ -34,7 +33,6 @@ const App = () => {
 
   return (
     <div data-scroll-container ref={scrollRef} className="smooth-scroll">
-{/* <Updating/> */}
       <Loader/>
       <Chilliman/>    
       <Header />
@@ -49,6 +47,8 @@ const App = () => {
       <div id="Footer" data-scroll><Contact /></div>
 
       <Footer />
+
+      {/* <Chatbot/> */}
     </div>
   );
 };

@@ -1,35 +1,56 @@
 import gsap from "gsap";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const Loader = () => {
+  const textRef = useRef(null);
+
   useEffect(() => {
-    const tl = gsap.timeline();
+    const greetings = [
+      "HELLO.",
+      "HOLA.",
+      "नमस्ते.",
+      "سلام.",
+      "BONJOUR.",
+      "مرحبا."
+    ];
 
-    tl.to('.Loader h1 span', {
+    const el = textRef.current;
+
+
+    const tl = gsap.timeline(); // loop forever
+
+    greetings.forEach((greet,) => {
+      tl.to(el, {
         opacity: 0,
-        duration: 2,
-        stagger: 0.2, 
-      });
-      tl.from('.Loader h1 span', {
+        duration: 0.01,
+        onComplete: () => {
+          el.textContent = greet;
+        }
+      })
+      .to(el, {
         opacity: 1,
-        duration: 1.2,
-
-        stagger: 0.3, 
-        y: 1000, 
+        duration: 0.01
+      })
+      .to({}, { duration: 1 }); // pause before next
     });
-    tl.to('.Loader', {
-      y: -2000,
-      duration: 1, 
-      delay: 0.5,  
+
+    // Add a final fade-out for the text
+    tl.to(el, {
+      opacity: 0,
+      duration: 0.2, // Duration for the final text fade-out
+    });
+
+    // After some time, move loader up and hide (like your old code)
+    gsap.to(".Loader", {
+      y: 2000,
+      duration: 2,// Added back duration for smooth exit
+      delay: 6.80, // Calculated delay to disappear after text fade-out
     });
   }, []);
 
   return (
     <div className="Loader">
-      <h1>
-        <span>H</span><span>E</span><span>L</span><span>L</span><span>O.</span>
-        <br />
-      </h1>
+      <h1 ref={textRef}>.</h1>
     </div>
   );
 };

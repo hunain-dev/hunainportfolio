@@ -10,7 +10,7 @@ const Chilliman = () => {
   useEffect(() => {
     // Initial position - off screen to the right
     gsap.set(imgRef.current, {
-      x:1700,
+      x:1500,
       opacity: 0
     });
 
@@ -34,7 +34,7 @@ end: "bottom+=4000",
     });
     
     tl.to(imgRef.current, {
-      x:-1700,
+      x:-1500,
       rotate: 0,
     })
 
@@ -47,7 +47,7 @@ end: "bottom+=4000",
   }, [])    
 
   return (
-    <div className="chilliman fixed bottom-0 right-0 z-[9999] p-5 h-[20vh] w-[7%] sm:w-[10%] md:w-[14%] md:h-[20vh] flex items-end justify-end">
+    <div className="chilliman fixed bottom-0 right-0 z-[9999] h-[25vh] w-[7%] sm:w-[10%] md:w-[14%] md:h-[20vh] flex items-end justify-end">
     <img
       ref={imgRef}
       src="/Assets/images/chilliman.gif"

@@ -3,9 +3,6 @@
 
 
 *{
-
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 ::-webkit-scrollbar {
@@ -204,7 +201,7 @@ font-size: 1vw;
 }
 
 .Loader h1{
-font-size: 4vw;
+font-size: 2vw;
 text-transform: uppercase;
 color: white;
 font-family: FaqroExtendedWideTrial;
@@ -239,7 +236,7 @@ html{
   top: 0; 
   left: 50%; 
   transform: translateX(-50%);
-  z-index: 99;
+  z-index: 999999;
   margin-top: 1vw;
 
 }
@@ -248,13 +245,12 @@ html{
   background-color: #f7f4f3;
   height: 100%;
   border-radius: 3vw;
-  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family:'Satoshi'; 
   gap: 2.2vw;
-  padding: 0.6vw 2vw;
+  padding: 2vw 4vw;
   box-shadow: 1px 1px 14px rgba(29, 28, 28, 0.5); 
 }
 
@@ -263,7 +259,6 @@ html{
   font-weight: 500;
   color: #262525;
   position: relative;  
-  padding-bottom: 5px;
 }
 
 .end{
@@ -274,8 +269,8 @@ html{
 }
 
 #btnheader {
-  padding: 2.4vh 2.4vw;
-  font-size: 1vw;
+  padding: 2.2vh 2.2vw;
+  font-size: 1.1vw;
   outline: none;
   border: none;
   font-family: actay;
@@ -331,7 +326,6 @@ html{
 
 .Home{
   width: 100%;
-  margin-top: 7vw;
   position: relative;
   overflow: hidden;
   position: relative;
@@ -345,6 +339,7 @@ html{
   display: flex;
   align-items:center;
   justify-content: space-between;
+
 }
 
 .Homeicons{
@@ -364,11 +359,12 @@ html{
 .Fronttext{
   height: 15vh;
   width: 60%;
-  margin: 6vh auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 9vw;
 
 }
 
@@ -377,8 +373,8 @@ html{
   font-weight: 500;
   font-size: 3.5vw;
   text-transform: uppercase;
-  color: rgb(47, 45, 45);
   line-height: 4.5vw;
+  
 
 }
 
@@ -666,7 +662,7 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 13vh;
+  height: 10vh;
 cursor: pointer;
   border-radius: 10vw;
 }
@@ -680,7 +676,7 @@ cursor: pointer;
 
 .Ourservices{
   width: 100%;
-  margin-top: 16vh;
+  margin-top: 8vh;
   height: 100%;
   background-color: #689D48;
   position: relative;
@@ -1203,7 +1199,7 @@ width: 100%;
     opacity: 0;
   }
   .Loader h1{
-    font-size: 7vw;
+    font-size: 5vw;
     }
   .navbar {
     opacity: 1;
@@ -1283,7 +1279,7 @@ width: 100%;
 
 .Home{
   width: 100%;
-  margin-top: -5vw;
+  margin-top:1vw;
   margin-bottom: 12vw;
 
   }
@@ -1310,7 +1306,7 @@ width: 100%;
   }
 
   .Marquee {
-    height: 30vh;
+    height: 36vh;
 
   }
   .Marquee h1 {
@@ -1451,7 +1447,7 @@ padding: 0 4vw;
 }
 
  .myskills{
-  margin-top: 9vh;
+  margin-top: 5vh;
   width: 100%;
   margin-bottom: 1vh;
 }
@@ -1472,7 +1468,7 @@ padding: 0 4vw;
 
 .Ourservices{
   width: 100%;
-  margin-top: 12vh;
+  margin-top: 7vh;
   height: 100%;
   background-color: #689D48;
   position: relative;
@@ -1725,7 +1721,6 @@ color: whitesmoke;
 
 @media (min-width: 768px) and (max-width: 1024px){
 
-
   .cursor {
 
     opacity: 0;
@@ -1813,7 +1808,7 @@ color: whitesmoke;
   }
 
   .Marquee {
-    height: 36vh;
+    height: 40vh;
 
   }
   .Marquee h1 {
@@ -2255,8 +2250,6 @@ margin-bottom: 3vw;
 
 
 @media (min-width: 1025px) and (max-width: 1280px){
- 
-
 
   .cursor {
     height: 3.7vh;
@@ -2268,7 +2261,7 @@ margin-bottom: 3vw;
     }
   
     .navbar {
-      height:7vh;
+      height:6vh;
       width: 93%;
       display: flex;
       align-items: center;
@@ -2277,18 +2270,15 @@ margin-bottom: 3vw;
       top: 0; 
       left: 50%; 
       transform: translateX(-50%);
-      z-index: 99099;
-      margin-top: 1vw;
-      border-radius: 30vw;
-    
-      
+      z-index: 999999;
+      margin-top: 1.3vw;
     
     }
+    
   
     .bottom {
       background-color: #f7f4f3;
       height: 100%;
-      border-radius: 3vw;
       width: 48%;
     }
     .bottom h2 {
@@ -2300,23 +2290,24 @@ margin-bottom: 3vw;
     }
   
   
-  
-  .end{
-    height: 100%;
-    width: 9vw;
-    display:flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-  #btnheader {
-    font-size: 1.2vw;
-    
-  }
 
+    #btnheader {
+      padding: 2.2vh 2.2vw;
+      font-size: 1.2vw;
+      outline: none;
+      border: none;
+      font-family: actay;
+      border-radius: 10px;
+      transition: 0.5s;
+      background: #1e1e1e;
+      cursor: pointer;
+      color: whitesmoke;
+      box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+    }
+    
   
   .Home{
     width: 100%;
-    margin-top: 7vw;
      
     }
     
@@ -2466,7 +2457,7 @@ margin-bottom: 3vw;
   .myskills{
     margin-top: 13vh;
     width: 100%;
-    margin-bottom: 10vh;
+    margin-bottom: 6vh;
   }
   
   .myskills h1{
@@ -2486,7 +2477,7 @@ margin-bottom: 3vw;
   
   .Ourservices{
     width: 100%;
-    margin-top: 16vh;
+    margin-top: 8vh;
     height: 100%;
     background-color: #689D48;
     position: relative;
