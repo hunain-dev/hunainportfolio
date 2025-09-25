@@ -34,15 +34,15 @@ const Cards = () => {
     const offRight = () => {
       if (isMobile) return width + 1400;
       if (isTablet) return width + 3000;
-      if (isDesktop) return width + 2499;
-      if (isLargeDesktop) return width + 2400;
+      if (isDesktop) return width + 2500;
+      if (isLargeDesktop) return width + 2500;
     };
   
     const offLeft = () => {
       if (isMobile) return -width - 1300;
       if (isTablet) return -width - 2940;
-      if (isDesktop) return -width - 2600;
-      if (isLargeDesktop) return -width - 2400;
+      if (isDesktop) return -width - 2500;
+      if (isLargeDesktop) return -width - 2500;
     };
   
     // 💡 Scroll distance (end) logic
@@ -91,9 +91,9 @@ const Cards = () => {
       comingMessage: "🚧 Coming Soon! This website will be live in 4 days.",
       cardbg: "#080808",
       cardvideo: mamtooth, // Changed from cardimg to cardvideo
-      desctittle: "mammothmurals",
+      desctittle: "unearthed  agency",
       carddesc:
-        "Mammoth Murals is a mural and sign painting agency based in Irondale, Alabama. They specialize in creating bold, hand-painted murals ",
+        "unearthed agency is a mural and sign painting agency based in Irondale, Alabama. They specialize in creating bold, hand-painted murals ",
       link: "",
     },
     {

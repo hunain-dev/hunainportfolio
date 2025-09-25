@@ -316,7 +316,7 @@ html{
   height: 3px;
   left: 0;
   bottom: 0;  
-  background-color: #ee8d2c;
+  background-color: black;
   transition: width 0.3s ease-in-out; /* Smooth animation */
 }
 
@@ -592,8 +592,8 @@ button{
 }
 
 .mans {
-  height: 93vh;
-  width: 50%;
+  height: 99vh;
+  width: 100%;
   position: absolute;
   z-index: 99;
   top: 50%;
@@ -605,7 +605,7 @@ button{
 .mans img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   animation: moveImage 4s ease-in-out infinite; /* Keyframe animation */
 }
@@ -1430,8 +1430,8 @@ padding: 0 4vw;
 }
 
 .mans {
-  height: 40vh;
-  width: 80%;
+  height: 60vh;
+  width:100%;
   position: absolute;
   z-index: 9999;
   top: 50%;
@@ -1931,8 +1931,8 @@ margin-bottom: 3vw;
 
 }
 .mans {
-  height: 60vh;
-  width: 80%;
+  height: 65vh;
+  width: 100%;
   position: absolute;
   z-index: 9999;
   top: 50%;
@@ -2533,7 +2533,16 @@ margin-bottom: 3vw;
    
   }
   
-     
+     .mans {
+  height: 99vh;
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
   
      .WorkCollection{
       width: 100%;

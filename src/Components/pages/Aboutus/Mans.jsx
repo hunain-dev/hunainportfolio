@@ -1,7 +1,7 @@
 const Mans = () => {
   return (
     <div className='mans'>
-        <img src="/Assets/images/girta.png" alt="Mans" />
+        <img src="/Assets/images/astronuat.png" alt="Mans" />
     </div>
   );
 };
