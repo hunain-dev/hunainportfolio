@@ -34,15 +34,15 @@ const Cards = () => {
     const offRight = () => {
       if (isMobile) return width + 1400;
       if (isTablet) return width + 3000;
-      if (isDesktop) return width + 2500;
-      if (isLargeDesktop) return width + 2500;
+      if (isDesktop) return width + 2100;
+      if (isLargeDesktop) return width + 2100;
     };
   
     const offLeft = () => {
       if (isMobile) return -width - 1300;
       if (isTablet) return -width - 2940;
-      if (isDesktop) return -width - 2500;
-      if (isLargeDesktop) return -width - 2500;
+      if (isDesktop) return -width - 2100;
+      if (isLargeDesktop) return -width - 2100;
     };
   
     // 💡 Scroll distance (end) logic

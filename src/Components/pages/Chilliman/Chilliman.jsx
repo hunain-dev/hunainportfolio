@@ -10,7 +10,7 @@ const Chilliman = () => {
   useEffect(() => {
     // Initial position - off screen to the right
     gsap.set(imgRef.current, {
-      x:1500,
+      x:1300,
       opacity: 0
     });
 
@@ -29,12 +29,12 @@ const Chilliman = () => {
         trigger: "body",
         start: "top top",
 end: "bottom+=4000",
-        scrub:12,
+        scrub:19,
       }
     });
     
     tl.to(imgRef.current, {
-      x:-1500,
+      x:-1300,
       rotate: 0,
     })
 
