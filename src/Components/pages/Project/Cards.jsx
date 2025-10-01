@@ -32,16 +32,16 @@ const Cards = () => {
   
     // 💡 Horizontal offset logic
     const offRight = () => {
-      if (isMobile) return width + 1400;
-      if (isTablet) return width + 3000;
-      if (isDesktop) return width + 2100;
+      if (isMobile) return width + 1600;
+      if (isTablet) return width + 3200;
+      if (isDesktop) return width + 2500;
       if (isLargeDesktop) return width + 2100;
     };
   
     const offLeft = () => {
-      if (isMobile) return -width - 1300;
-      if (isTablet) return -width - 2940;
-      if (isDesktop) return -width - 2100;
+      if (isMobile) return -width - 1600;
+      if (isTablet) return -width - 3200;
+      if (isDesktop) return -width - 2500;
       if (isLargeDesktop) return -width - 2100;
     };
   
@@ -120,7 +120,7 @@ const Cards = () => {
       cardbg: "#080808",
       cardimg: jobs,
       desctittle: "Career Hunt – Global Jobs",
-      carddesc: "Your dream career is just one click away.",
+      carddesc: "Carret Hunt is an interactive and engaging web-based game designed to test quick reflexes, accuracy, and focus. The player’s main objective",
       link: "https://careerhant.netlify.app/",
     },
     {
@@ -128,7 +128,7 @@ const Cards = () => {
       cardimg: ochi,
       desctittle: "Ochi Clone",
       carddesc:
-        "Recreating digital excellence that earned global recognition.",
+        "Ochi Designs is a modern and minimalistic creative agency website clone, built to highlight branding, strategy, and interactive design.",
       link: "https://ochi-design-production.netlify.app/",
     },
     {
@@ -136,58 +136,59 @@ const Cards = () => {
       cardimg: christmasweb,
       desctittle: "Santa's Companion",
       carddesc:
-        "Holiday magic in a digital store. Gifts, decor & more online.",
+        "Santa Company is a festive and interactive web experience designed to capture the magic of the holiday season",
       link: "https://santas-store.netlify.app/",
     },
     {
       cardbg: "#080808",
       cardimg: tictacgame,
       desctittle: "Tic-Tac-Toe Game",
-      carddesc: "Classic game reimagined. Strategy meets UI.",
+      carddesc: "Tic Tac Toe is a simple and interactive web game designed to capture the fun and competitive spirit of the classic two-player strategy",
       link: "https://reactxogame.netlify.app/",
     },
     {
       cardbg: "#080808",
       cardimg: spacergabor,
-      desctittle: "spencergabor.work",
-      carddesc: "Creative digital agency for brands.",
+      desctittle: "spencergabor work",
+      carddesc: "Memory Game is an engaging and interactive web-based project designed to challenge concentration and recall skills. With smooth animations,",
       link: "https://spancer-gabor.netlify.app/",
     },
     {
       cardbg: "#080808",
       cardimg: weather,
       desctittle: "Weather App",
-      carddesc: "Real-time weather tracking with modern UI.",
+      carddesc: "Weather App is a modern and user-friendly web application designed to provide real-time weather updates for any location.",
       link: "https://macro-weather-app.netlify.app/",
     },
     {
       cardbg: "#080808",
       cardimg: TwoGoodGoodSave,
       desctittle: "Two Good Company",
-      carddesc: "Empowering social change with strong branding.",
+      carddesc: "Two Good Company is a fully animated and responsive website clone inspired by the award-winning brand. With smooth animations, responsive layout,",
       link: "https://twogoodcompany.netlify.app/",
     },
     {
       cardbg: "#080808",
       cardimg: furnitureweb,
       desctittle: "Furni – Interior Design",
-      carddesc: "Modern, immersive web experience for interior design.",
+      carddesc: "Furni is a modern and minimalistic interior design website built to showcase elegant layouts and stylish aesthetics. With smooth animations,",
+
       link: "https://furni-interior-design.netlify.app/",
     },
     {
       cardbg: "#080808",
       cardimg: hello,
-      desctittle: "Rejouice Website Clone",
-      carddesc:
-        "Bringing animation and interaction to static websites beautifully.",
+      desctittle: "We think elastic",
+      carddesc: "We Think Elastic is a modern and interactive website clone inspired by an award-winning design. With smooth animations, responsive layout,",
+
       link: "https://myrejoucie.netlify.app/",
     },
     {
       cardbg: "#080808",
       cardimg: rejouices,
-      desctittle: "We Think Elastic",
-      carddesc:
-        "Stretching web creativity. Elastic design for elastic minds.",
+      desctittle: "rejouices",
+      carddesc: "Rejouice is a fully animated and responsive website clone inspired by the award-winning agency site. With smooth animations,",
+
       link: "https://wethinkelastic.netlify.app/",
     },
   ];
@@ -198,7 +199,7 @@ const Cards = () => {
         <h2>Projects</h2>
 
         <div
-          className="frontprojectshowcase flex gap-5"
+          className="frontprojectshowcase  "
           ref={cardsWrapperRef} // ✅ ref attached here
         >
           {cardcollection.map((elem, index) => (

@@ -818,7 +818,7 @@ text-transform: uppercase;
   justify-content: flex-start;
   flex-direction: column;
   overflow: hidden;
-   width:21vw,
+   width:21vw;
   
 
 
@@ -836,12 +836,23 @@ text-transform: uppercase;
 object-fit: cover;
 object-position: center;
 }
+.Braveresult{
+  width: 100%;
+  padding: 2vw 0;
+  margin-bottom: 5vw;
+}
 
+.Braveresult h2{
+  font-family: GeoplaceSC;
+  text-transform: uppercase;
+  color: white;
+  font-size:11vw;
+}
 
 .information{
   height:37vh;
   width: 100%;
-  padding: 1.4vw 0;
+  padding: 1vw 0;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1538,20 +1549,32 @@ padding: 0 4vw;
 font-size: 19vw;
   
 }
+/* .frontprojectshowcase{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vw;
+  background-color: red;
+  flex-direction: column;
 
+
+} */
 
 .cardscollection{
-  min-width: 59vw;
-  height: 43vh;
-   width:47vw,
-  
+  min-width: 62vw;
+  height: 47vh;
+   width:49vw;
 
 
 }
 .information{
-  height:43vh;
   width: 100%;
-  gap: 14vw;
+  gap: 15vw;
+  height: 100%;
 
 }
 
@@ -1559,14 +1582,27 @@ font-size: 19vw;
 font-family: actay;
 font-size: 2.2vh;
 color: whitesmoke;
+padding: 1vw 0;
 }
 
 .informationdesc p{
   font-family: actay;
-  font-size: 1.5vh;
+  font-size: 1.6vh;
   font-weight: 400;
   color: whitesmoke;
 
+}
+
+.Braveresult{
+  width: 100%;
+  margin-bottom: 1vw;
+}
+
+.Braveresult h2{
+  font-family: GeoplaceSC;
+  text-transform: uppercase;
+  color: white;
+  font-size:14vw;
 }
 
 .CertifiedCard h2{
@@ -1719,8 +1755,21 @@ color: whitesmoke;
 
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
 
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .Braveresult h2{
+    font-family: GeoplaceSC;
+    text-transform: uppercase;
+    color: white;
+    font-size:14vw;
+  }
+  .Braveresult{
+    width: 100%;
+  }
+  
   .cursor {
 
     opacity: 0;
@@ -2250,7 +2299,18 @@ margin-bottom: 3vw;
 
 
 @media (min-width: 1025px) and (max-width: 1280px){
+  .Braveresult{
+    width: 100%;
+    padding: 2vw 0;
+  }
 
+  .Braveresult h2{
+    font-family: GeoplaceSC;
+    text-transform: uppercase;
+    color: white;
+    font-size:12vw;
+  }
+  
   .cursor {
     height: 3.7vh;
     width: 2vw;

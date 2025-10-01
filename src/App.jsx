@@ -46,9 +46,8 @@ const App = () => {
       <div id="Gitstatus" data-scroll><Gitstatus /></div>
       <div id="Footer" data-scroll><Contact /></div>
 
-      <Footer />
+      <Footer /> */
 
-      {/* <Chatbot/> */}
     </div>
   );
 };
