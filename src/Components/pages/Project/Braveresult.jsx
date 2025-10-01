@@ -41,7 +41,6 @@ const Braveresult = () => {
         0.5
       );
 
-      
 
       // Reveal RESULT (last)
       tl.fromTo(
