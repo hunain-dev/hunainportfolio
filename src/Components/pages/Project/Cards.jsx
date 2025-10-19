@@ -229,7 +229,7 @@ const Cards = () => {
                     className="h-full w-full object-cover rounded-lg"
                   ></video>
                 ) : (
-                  <img src={elem.cardimg} alt="" />
+                  <img src={elem.cardimg} alt="" loading="lazy"/>
                 )}
               </div>
               <div className="information">

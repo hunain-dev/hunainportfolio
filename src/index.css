@@ -11,109 +11,155 @@
 }
 @font-face {
   font-family: 'Actay';
-  src: url('/public/Assets/Fonts/Actay-Regular.otf') 
+  src: url('/public/Assets/Fonts/Actay-Regular.otf'); 
+    font-display: swap;
+
 }
 @font-face {
   font-family: 'ActayCondensed';
-  src: url('/public/Assets/Fonts/ActayCondensed-ThinItalic.otf') 
+  src: url('/public/Assets/Fonts/ActayCondensed-ThinItalic.otf');
+  font-display: swap;
+ 
 }
 @font-face {
   font-family: 'ppneuemontreal';
-  src: url('/public/Assets/Fonts/ppneuemontreal-bold.otf') 
+  src: url('/public/Assets/Fonts/ppneuemontreal-bold.otf');
+  font-display: swap;
+ 
 }
 
 @font-face {
   font-family: 'MarvinVisions';
-  src: url('/public/Assets/Fonts/MarvinVisions-Bold.otf') 
+  src: url('/public/Assets/Fonts/MarvinVisions-Bold.otf');
+  font-display: swap;
+ 
 }
 
 @font-face {
   font-family: 'Quasar';
-  src: url('/public/Assets/Fonts/Quasar.otf') 
+  src: url('/public/Assets/Fonts/Quasar.otf');
+  font-display: swap;
+ 
 }
 @font-face {
   font-family: 'sigana';
-  src: url('/public/Assets/Fonts/sigana-condensed.otf') 
+  src: url('/public/Assets/Fonts/sigana-condensed.otf');
+  font-display: swap;
+ 
 }
 @font-face {
   font-family: 'impact';
-  src: url('/public/Assets/Fonts/impact.ttf') 
+  src: url('/public/Assets/Fonts/impact.ttf');
+  font-display: swap;
+ 
 }
 
 @font-face {
   font-family: 'Stadium';
-  src: url('/public/Assets/Fonts/Stadium.ttf') 
+  src: url('/public/Assets/Fonts/Stadium.ttf');
+  font-display: swap;
+ 
 }
 @font-face {
   font-family: 'ThatAppeal';
-  src: url('/public/Assets/Fonts/ThatAppeal-FreeDemo-BF65b7880fefd18.otf') 
+  src: url('/public/Assets/Fonts/ThatAppeal-FreeDemo-BF65b7880fefd18.otf'); 
+  font-display: swap;
+
 }
 @font-face {
   font-family: 'TypeMonster';
-  src: url('/public/Assets/Fonts/TypeMonster-FreeDemo-BF65d7910e35896.otf') 
+  src: url('/public/Assets/Fonts/TypeMonster-FreeDemo-BF65d7910e35896.otf');
+  font-display: swap;
+ 
 }
 @font-face {
   font-family: 'Morganite';
-  src: url('/public/Assets/Fonts/Morganite-Black.ttf') 
+  src: url('/public/Assets/Fonts/Morganite-Black.ttf');
+  font-display: swap;
+ 
 }
 
 @font-face {
   font-family: 'Impacted';
-  src: url('/public/Assets/Fonts/Impacted.ttf') 
+  src: url('/public/Assets/Fonts/Impacted.ttf');
+  font-display: swap;
+ 
 }
 @font-face {
   font-family: 'rejouice';
-  src: url('/public/Assets/Fonts/rejoucie.ttf') 
+  src: url('/public/Assets/Fonts/rejoucie.ttf'); 
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: 'gunplay';
-  src: url('/public/Assets/Fonts/gunplay.ttf') 
+  src: url('/public/Assets/Fonts/gunplay.ttf');
+  font-display: swap;
+ 
 }
 
 @font-face {
   font-family: 'Akrobat';
-  src: url('/public/Assets/Fonts/Akrobat.ttf') 
+  src: url('/public/Assets/Fonts/Akrobat.ttf');
+  font-display: swap;
+ 
 }
 
 @font-face {
   font-family: 'GeoplaceSC';
-  src: url('/public/Assets/Fonts/GeoplaceSC-Bold.ttf') 
+  src: url('/public/Assets/Fonts/GeoplaceSC-Bold.ttf');
+  font-display: swap;
+ 
 }
 
 @font-face {
   font-family: 'FaqroExtendedWideTrial';
-  src: url('/public/Assets/Fonts/FaqroExtendedWideTrial-Regular.ttf') 
+  src: url('/public/Assets/Fonts/FaqroExtendedWideTrial-Regular.ttf'); 
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: 'Satoshi';
-  src: url('/public/Assets/Fonts/Satoshi.ttf') 
+  src: url('/public/Assets/Fonts/Satoshi.ttf');
+  font-display: swap;
+ 
 }
 
 @font-face {
   font-family: 'Satoshi-black';
-  src: url('/public/Assets/Fonts/Satoshi-Black.otf') 
+  src: url('/public/Assets/Fonts/Satoshi-Black.otf');
+  font-display: swap;
+ 
 }
 
 @font-face {
   font-family: 'Queen';
-  src: url('/public/Assets/Fonts/Queen.ttf') 
+  src: url('/public/Assets/Fonts/Queen.ttf');
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: 'Fontspring';
-  src: url('/public/Assets/Fonts/Fontspring.otf') 
+  src: url('/public/Assets/Fonts/Fontspring.otf');
+  font-display: swap;
+ 
 }
 
 @font-face {
   font-family: 'playwrite';
-  src: url('/public/Assets/Fonts/plauwrite.ttf') 
+  src: url('/public/Assets/Fonts/plauwrite.ttf');
+  font-display: swap;
+ 
 }
 
 @font-face {
   font-family: 'Garelin';
-  src: url('/public/Assets/Fonts/GarelinaBold-rgZ0p.ttf') 
+  src: url('/public/Assets/Fonts/GarelinaBold-rgZ0p.ttf');
+  font-display: swap;
+
 }
 
 

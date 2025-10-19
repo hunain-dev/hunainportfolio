@@ -13,9 +13,9 @@ const Happyclient = () => {
         <div className="Client">
           {obj.map((elem, index) => (
             <div key={index} className="selectives">
-              <img src={elem.tagimg1}  />
-              <img src={elem.tagimg2}  />
-              <img src={elem.tagimg3}  />
+              <img src={elem.tagimg1} loading="lazy" />
+              <img src={elem.tagimg2} loading="lazy"  />
+              <img src={elem.tagimg3}  loading="lazy"/>
               <h2>{elem.tittle}</h2>
             </div>
           ))}

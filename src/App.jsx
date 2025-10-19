@@ -1,19 +1,22 @@
 import { useEffect, useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
-// import Chatbot from "./Components/pages/Chatbot/Chatbot";
+
+// Normal Imports (essential components)
 import Header from "./Components/Header";
+import Loader from "./Components/Loader/Loader";
+import Cursor from "./Components/pages/Cursor/Cursor";
+import Chilliman from "./Components/pages/Chilliman/Chilliman";
 import Home from "./Components/pages/Home/Home";
+import Footer from "./Components/Footer";
+
+// All Pages (removed lazy loading)
 import Aboutus from "./Components/pages/Aboutus/Aboutus";
 import Stack from "./Components/pages/Stack/Stack";
 import Ourservices from "./Components/pages/Ourservices/Ourservices";
 import Project from "./Components/pages/Project/Project";
-import Footer from "./Components/Footer";
-import Cursor from "./Components/pages/Cursor/Cursor";
 import Gitstatus from "./Components/pages/Git-status/Gitstatus";
 import Contact from "./Components/pages/Contact/Contact";
-import Chilliman from "./Components/pages/Chilliman/Chilliman";
-import Loader from "./Components/Loader/Loader";
 
 const App = () => {
   const scrollRef = useRef(null);
@@ -22,10 +25,9 @@ const App = () => {
     const scroll = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
-      lerp: 0.1, // Smoothness speed
+      lerp: 0.1,
     });
 
-    // Clean up on unmount
     return () => {
       if (scroll) scroll.destroy();
     };
@@ -33,8 +35,8 @@ const App = () => {
 
   return (
     <div data-scroll-container ref={scrollRef} className="smooth-scroll">
-      <Loader/>
-      <Chilliman/>    
+      <Loader />
+      <Chilliman />
       <Header />
       <Cursor />
 
@@ -46,8 +48,7 @@ const App = () => {
       <div id="Gitstatus" data-scroll><Gitstatus /></div>
       <div id="Footer" data-scroll><Contact /></div>
 
-      <Footer /> */
-
+      <Footer />
     </div>
   );
 };

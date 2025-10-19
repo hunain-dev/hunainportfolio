@@ -15,7 +15,7 @@ const AboutClient = () => {
             <h4>Kind words from Client</h4>
             {obj.map((elem, index) => (
               <div key={index} className="AboutClients">
-                <img src={elem.clientimg}  />
+                <img src={elem.clientimg} loading="lazy" />
                 <h3>{elem.clientname    }</h3>
                 <h5>{elem.clientmanager}</h5>
                 <h6>{elem.clienttareff}</h6>

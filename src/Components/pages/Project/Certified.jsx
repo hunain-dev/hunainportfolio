@@ -13,7 +13,7 @@ const Certified = () => {
           {data.map((elem, index) => (
             <div key={index}>
               <div className="Certifiedcardsimage">
-                <img src={elem.cardimg} alt="Certification" />
+                <img src={elem.cardimg} alt="Certification"  loading="lazy" />
               </div>
             </div>
           ))}

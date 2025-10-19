@@ -14,8 +14,8 @@ const Ourservices = () => {
         <div className="ourservicesbottom">
             <div className="ourserivesimagepart" >
                 <div className="images" data-scroll data-scroll-speed='0.3'>
-                <img src={image1} alt="" />
-                <img src={image2} alt="" />
+                <img src={image1} alt="" loading="lazy" />
+                <img src={image2} alt=""  loading="lazy"/>
                 </div>
               
             </div>

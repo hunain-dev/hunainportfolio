@@ -28,7 +28,7 @@ const Myskillss = () => {
             dragConstraints={constraintsRef}
             dragElastic={0.2}
           >
-            <img src={elem.img} alt={`Skill ${index + 1}`} />
+            <img src={elem.img} alt={`Skill ${index + 1}`} loading="lazy" />
           </motion.div>
         ))}
       </motion.div>
