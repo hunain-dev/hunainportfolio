@@ -10,7 +10,7 @@ import christmasweb from "../../../../public/Assets/images/Christmas image.png";
 import tictacgame from "../../../../public/Assets/images/tictac.png";
 import spacergabor from "../../../../public/Assets/images/spacer.png";
 import weather from "../../../../public/Assets/images/weather.jpg";
-import klearmind from "../../../../public/Assets/images/klearmind.png";
+import klearmind from "../../../../public/Assets/images/Klearmindtherapy.png";
 import TwoGoodGoodSave from "../../../../public/Assets/images/TwoGoodGoodSave.jpg";
 import furnitureweb from "../../../../public/Assets/images/furniture.jpeg";
 import hello from "../../../../public/Assets/images/hello.jpg";
