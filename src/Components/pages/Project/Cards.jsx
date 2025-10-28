@@ -10,6 +10,7 @@ import christmasweb from "../../../../public/Assets/images/Christmas image.png";
 import tictacgame from "../../../../public/Assets/images/tictac.png";
 import spacergabor from "../../../../public/Assets/images/spacer.png";
 import weather from "../../../../public/Assets/images/weather.jpg";
+import klearmind from "../../../../public/Assets/images/klearmind.png";
 import TwoGoodGoodSave from "../../../../public/Assets/images/TwoGoodGoodSave.jpg";
 import furnitureweb from "../../../../public/Assets/images/furniture.jpeg";
 import hello from "../../../../public/Assets/images/hello.jpg";
@@ -34,15 +35,15 @@ const Cards = () => {
     const offRight = () => {
       if (isMobile) return width + 1600;
       if (isTablet) return width + 3200;
-      if (isDesktop) return width + 2500;
-      if (isLargeDesktop) return width + 2100;
+      if (isDesktop) return width + 2600;
+      if (isLargeDesktop) return width + 2600;
     };
   
     const offLeft = () => {
       if (isMobile) return -width - 1600;
       if (isTablet) return -width - 3200;
-      if (isDesktop) return -width - 2500;
-      if (isLargeDesktop) return -width - 2100;
+      if (isDesktop) return -width - 2600;
+      if (isLargeDesktop) return -width - 2600;
     };
   
     // 💡 Scroll distance (end) logic
@@ -90,21 +91,18 @@ const Cards = () => {
       comingMessage: "🚧 Coming Soon! This website will be live in 4 days.",
       cardbg: "#080808",
       cardvideo: mamtooth, // Changed from cardimg to cardvideo
-      desctittle: "Mamooth Murals  agency",
+      desctittle: "mammothmurals   agency",
       carddesc:
         "unearthed agency is a mural and sign painting agency based in Irondale, Alabama. They specialize in creating bold, hand-painted murals ",
       link: "",
     },
     {
-      status: "coming-soon",
-      comingMessage: "Live now..!",
       cardbg: "#080808",
-      cardimg:
-        "https://assets.awwwards.com/awards/submissions/2025/08/68a2eddcb8d07435807694.png",
+      cardimg:klearmind,
       desctittle: "Klearmind Clinics",
       carddesc:
         "A modern website for a Ketamine & IV therapy clinic in California. Designed to reflect clarity, wellness, and trust.",
-      link: "",
+      link: "https://klearmind-therapy-clinics.netlify.app/",
     },
 
     {
