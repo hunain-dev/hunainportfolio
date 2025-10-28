@@ -82,7 +82,6 @@ const Cards = () => {
     };
   }, []);
   
-  
 
   // Project cards
   const cardcollection = [
@@ -91,14 +90,14 @@ const Cards = () => {
       comingMessage: "🚧 Coming Soon! This website will be live in 4 days.",
       cardbg: "#080808",
       cardvideo: mamtooth, // Changed from cardimg to cardvideo
-      desctittle: "unearthed  agency",
+      desctittle: "Mamooth Murals  agency",
       carddesc:
         "unearthed agency is a mural and sign painting agency based in Irondale, Alabama. They specialize in creating bold, hand-painted murals ",
       link: "",
     },
     {
       status: "coming-soon",
-      comingMessage: "🚧 Coming Soon! This website will be live in 2 weeks.",
+      comingMessage: "Live now..!",
       cardbg: "#080808",
       cardimg:
         "https://assets.awwwards.com/awards/submissions/2025/08/68a2eddcb8d07435807694.png",
