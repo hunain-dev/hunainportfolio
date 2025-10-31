@@ -134,10 +134,19 @@
  
 }
 
+.Satoshi-black{
+  font-family: 'Satoshi-black';
+
+}
 @font-face {
   font-family: 'Queen';
   src: url('/public/Assets/Fonts/Queen.ttf');
   font-display: swap;
+
+}
+
+.Queen{
+  font-family: 'Queen';
 
 }
 
@@ -254,15 +263,12 @@ font-family: FaqroExtendedWideTrial;
 text-align: center;
 
 }
-body{
-    height: 100%;
-    width: 100%;
+body,html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
     background-color: #F0F0F0;
 }
-html{
-  scroll-behavior: smooth;
-}
+
 .smooth-scroll {
   scroll-behavior: smooth;
 }
@@ -566,68 +572,14 @@ button{
 
  }
 
- .AboutClient{
-  margin: 0 auto;
-  margin-top:9vw;
-  width: 75%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
- }
 
- .AboutClients{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
- }
- .AboutClient h4{
 
-  font-family: Satoshi;
-  margin: 1vw 0;
- font-size: 2vw;
 
- }
 
- .AboutClients img{
-
-  height: 15vh;
-  margin: 1vw 0;
-
- }
-
- .AboutClients h3{
- font-family: Satoshi;
-  font-size: 2vw;
-  font-weight: 500;
-  color: #242627;
-
- }
-
- .AboutClients h5{
-
-  font-family: 'Satoshi';
-  font-size: 2vw;
-  font-weight: 500;
-  margin: 1vw 0;
-  color: #242627;
-
- } .AboutClients h6{
-
-  font-family: 'Satoshi';
-  font-size: 1.5vw;
-  text-align: center;
-  font-weight: 500;
-  margin: 2vw 0;
-  padding: 0 3vw;
-  color: #242627;
-
- }
 
  .Impactfulldesign {
   width: 100%;
-  margin-top: 19vh;
+  margin-top: 3vh;
   padding: 1vw;
   text-align: center;
   line-height: 21vw;
@@ -1480,7 +1432,6 @@ padding: 0 4vw;
  }
 
  .Impactfulldesign {
-  margin-top: 5vh;
   line-height: 31vw;
   padding: 5vw 1vw;
 
@@ -1504,7 +1455,7 @@ padding: 0 4vw;
 }
 
  .myskills{
-  margin-top: 5vh;
+  margin-top: 1vh;
   width: 100%;
   margin-bottom: 1vh;
 }
@@ -1514,7 +1465,7 @@ padding: 0 4vw;
 
 }
 .skills {
-  gap: 3.5vw; 
+  gap: 3vw; 
   width: 100%;
 }
 
