@@ -2514,7 +2514,6 @@ margin-bottom: 3vw;
   .myskills{
     margin-top: 13vh;
     width: 100%;
-    margin-bottom: 6vh;
   }
   
   .myskills h1{
@@ -2524,8 +2523,8 @@ margin-bottom: 3vw;
   }
   
   .skill-item {
-    width: 12vh;
-    height: 12vh;
+    width: 13vh;
+    height: 13vh;
   }
   
   
